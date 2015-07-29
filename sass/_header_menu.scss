@@ -82,7 +82,7 @@ button.cart i {
 }
 .cart-number {
   margin-left: 18px;
-  background-color: #ffb79d;
+  background-color: $btn-highlight;
   padding: 14px 18px;
   border-radius: 0px 3px 3px 0;
 }
@@ -95,7 +95,7 @@ button.cart i {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  border-left: 1px solid #696969;
+  border-left: 1px solid $primary-gray;
 }
 .navigation li {
   display: inline-block;
@@ -106,7 +106,7 @@ button.cart i {
   font-family: $default-font-narrow;
 }
 .navigation ul.nav-menu > li {
-  border-right: 1px solid #696969;
+  border-right: 1px solid $primary-gray;
 }
 .navigation ul.nav-menu > li > a {
   padding: 0 15px;
@@ -125,7 +125,7 @@ button.cart i {
 .navigation ul ul {
   font-family: $default-font;
 /*   font-weight: 700; */
-  background-color: #696969;
+  background-color: $primary-gray;
   display: none;
   float: left;
   position: absolute;

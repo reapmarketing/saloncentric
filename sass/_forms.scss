@@ -1,5 +1,6 @@
 fieldset {
   border: none;
+  width: 100%;
 }
 
 button,
@@ -83,8 +84,8 @@ input[type=submit],
   font-family: $default-font;
   font-weight: 400;
   color: white;
-  background-color: $primary-color;
-  border-bottom: 1px solid $primary-darken;
+  background-color: $btn-color;
+  border-bottom: 1px solid darken($btn-color, 30%);
 }
 
 btn.focus, .btn:focus, .btn:hover, .hs-form .hs-button:focus, .hs-form .hs-button:hover {
@@ -97,7 +98,7 @@ input[type=submit]:hover,
 button:hover,
 .button:hover,
 .hs-form .hs-button:hover {
-  background-color: $primary-color-btn-highlight;
+  background-color: $btn-highlight;
 }
 .button.medium,
 button.medium {

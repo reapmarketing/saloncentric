@@ -125,10 +125,10 @@ a:visited {
   color: $primary-color;
 }
 a:hover {
-  color: #ff5a1d;
+  color: darken($primary-color, 10%);
 }
 a:active {
-  color: #ffa483;
+  color: darken($primary-color, 10%);
 }
 
 
