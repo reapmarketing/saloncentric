@@ -108,6 +108,19 @@ a:hover {
 a:active {
   color: #41a5e9; }
 
+.default, .navigation ul ul ul a, button,
+.button,
+input[type=button],
+input[type=submit],
+.hs-form .hs-button, .hs-input, body, html, .alternative {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif; }
+
+.narrow, .navigation ul li, .listing p.title, .pricebox .left-price, .product-form label, .product-form .questions, .brochure-download, .rating, .add-rating-link, .create-account button, .login form {
+  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif; }
+
+.special, .search form, .search p, .search input, .search span, .search a, .search button, .hello-container a, .hello-container p, .hello-container div {
+  font-family: "PT Sans Caption", Arial, Helvetica, sans-serif; }
+
 .strike {
   text-decoration: line-through; }
 
@@ -123,8 +136,10 @@ a:active {
 
 .allcaps {
   text-transform: uppercase; }
-  .allcaps.featured > a {
+  .allcaps.featured {
     color: #6FBBEE; }
+    .allcaps.featured > a {
+      color: #6FBBEE; }
 
 .lowercase {
   text-transform: lowercase; }
@@ -137,6 +152,9 @@ strong {
 
 .sans {
   font-family: "PT Sans", Arial, Helvetica, sans-serif; }
+
+.listing p.title {
+  min-height: 34px; }
 
 .white {
   background-color: #fff; }
@@ -344,6 +362,8 @@ body .update_cart_button {
   width: 320px;
   background-color: #B4D6F1; }
 
+.social-icons > div {
+  float: none; }
 .social-icons a {
   color: #a9a9a9;
   font-size: 30px;
@@ -387,6 +407,9 @@ body .update_cart_button {
 
 footer .container-fluid, .footer-child {
   background-color: #4d4d4d; }
+
+footer .container-fluid.footer-content {
+  background-color: #cdcdcd; }
 
 .footer-logo {
   /*display: block;*/
@@ -537,11 +560,18 @@ input[type=submit],
   border-top: none;
   border-right: none;
   border-left: none;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: white;
   background-color: #DF3D75;
   border-bottom: 1px solid #701333; }
+
+.btn-hello {
+  background-color: #7ecdf4;
+  border-bottom: 1px solid #20a8ec; }
+
+.button.btn-hello:hover {
+  background-color: #96d6f6;
+  border-bottom: 1px solid #4fbaf0; }
 
 btn.focus, .btn:focus, .btn:hover, .hs-form .hs-button:focus, .hs-form .hs-button:hover {
   color: white;
@@ -656,7 +686,6 @@ input.form-control {
 /* ~~~ Hubspot Stuff ~~~ */
 .hs-input {
   color: #a9a9a9;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 2.25em; }
@@ -734,7 +763,6 @@ audio:not([controls]) {
   display: none; }
 
 body {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   /* font-family: sans-serif; */
   /* 1 */
   -ms-text-size-adjust: 100%;
@@ -743,7 +771,6 @@ body {
   /* 2 */ }
 
 html {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   /* font-family: sans-serif; */
   /* 1 */
   -ms-text-size-adjust: 100%;
@@ -791,6 +818,9 @@ hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
+
+hr.dark {
+  border-top: 1px solid #B8B8B8; }
 
 label, .label {
   font-weight: normal;
@@ -874,6 +904,12 @@ legend {
   margin: 10px 0;
   border-bottom: 1px solid #dcdcdc; }
 
+.padd-top {
+  padding-top: 15px; }
+
+.padd-bottom-10 {
+  padding-bottom: 10px; }
+
 .top-margin {
   margin-top: 15px; }
 
@@ -953,15 +989,13 @@ legend {
   padding: 30px; }
 
 .create-account button {
-  color: #fff;
-  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif; }
+  color: #fff; }
 
 .login {
   font-size: 14px; }
 
 .login form {
   margin: 40px 70px;
-  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
   text-align: left; }
 
 .login form a {
@@ -1017,7 +1051,6 @@ legend {
   background: #EFEFEF;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.25;
@@ -1191,128 +1224,30 @@ body .vex.vex-theme-flat-attack .vex-content {
 .blog h3:first-child {
   margin-top: 0px; }
 
-.navigation ul ul a span,
-.cat span {
-  background: #6FBBEE;
-  padding: 2px 5px;
-  border-radius: 2px;
-  margin-left: 5px;
-  color: #696969; }
-
-.cat span {
-  position: absolute;
-  left: -62px;
-  top: 2px; }
-
-.navigation ul ul a span {
-  position: absolute;
-  padding: 2px 2px 0px 2px;
-  top: 2px; }
-
-.hello-container {
-  background-color: #6FBBEE;
-  z-index: 20;
-  box-shadow: 0 0 2px 0 white;
-  color: black;
-  height: 60px;
-  right: 0px; }
-
-.hello.container, hbar_content {
-  height: 100%;
-  vertical-align: middle;
-  position: relative; }
-
-.hello p {
-  font-size: 1rem; }
-
-.hello .coral-text {
-  /* color: #821512; */
-  color: white;
-  font-style: italic; }
-
-.hello a, .hello a:link {
-  color: black;
-  font-style: italic;
-  text-decoration: underline;
-  /*  text-shadow: 1px 1px 0 #888; */ }
-
-.hello a strong {
-  color: black;
-  font-style: italic; }
-
-.hello i {
-  font-size: 22px;
-  position: relative;
-  color: #B4D6F1;
-  /* Standish Green */
-  color: #bb8600;
-  /*  Gold */
-  color: #a30935;
-  text-shadow: 1px 1px 0 white;
-  margin: 0 4px; }
-
-.hello .bold {
-  color: #696969; }
-
-.hello strong {
-  color: black; }
-
-.hello p {
-  line-height: 32px;
-  margin-top: 15px; }
-
-.right-hello {
-  color: white; }
-
-.hello .container_12 {
-  position: relative; }
-
-.left-hello {
-  margin-left: 60px; }
-
-.hello-tag {
-  position: absolute;
-  top: 19px;
-  left: 0; }
-
-.hello-icon {
-  display: inline-block;
-  top: 0;
-  float: left;
-  left: -24px;
-  position: relative; }
-
-.hello-tab {
-  background: #f5f5dc;
-  width: 25px;
-  height: 25px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  position: absolute;
-  top: -5px;
-  right: 100px;
-  z-index: 1; }
-
-.hello-tab i {
-  font-size: 20px;
-  position: relative;
-  top: 5px;
-  left: 7px; }
-
 .header {
   background-color: #fff;
   width: 100%; }
 
 .logo {
   display: block;
-  background: url("/assets/templates/standish-responsive/images/standish-logo.png");
+  background: url("/assets/templates/standish-responsive/images/KaemarkLogo.png");
   background-repeat: no-repeat;
   width: 277px;
-  height: 34px;
+  height: 53px;
   text-indent: -9999em;
   position: relative;
-  top: -12px;
+  top: 0;
   left: -25px; }
+
+.logo-footer {
+  background: url("/assets/templates/standish-responsive/images/KaemarkLogo.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 100%;
+  height: 80px;
+  text-indent: -9999em;
+  float: none;
+  display: inline-block; }
 
 @media only screen and (max-width: 61.9375em) {
   header {
@@ -1323,18 +1258,15 @@ body .vex.vex-theme-flat-attack .vex-content {
     font-size: 1rem;
     height: 2.875em; }
 
-  header button.cart.large {
-    margin-top: 15px; }
-
   header button.cart .cart-number {
     margin-left: 0; }
 
   .logo {
-    background: url("/assets/templates/standish-responsive/images/Standish-Logo-Mobile.png");
+    background: url("/assets/templates/standish-responsive/images/KaemarkLogo.png");
     background-size: 200px auto;
     background-repeat: no-repeat;
     height: 80px;
-    top: -28px;
+    top: 0;
     left: -10px; }
 
   .searchlight-result-text {
@@ -1364,7 +1296,6 @@ body .vex.vex-theme-flat-attack .vex-content {
   .toggle-navigation a.btn:hover, .toggle-navigation a.btn:focus, .toggle-navigation a.btn:active {
     color: #333; } }
 header button.cart {
-  margin-top: 25px;
   margin-right: 0;
   padding-right: 0; }
 
@@ -1394,14 +1325,13 @@ button.cart i {
   margin: 0;
   line-height: 60px;
   height: 60px;
-  position: relative;
-  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif; }
+  position: relative; }
 
 .navigation ul.nav-menu > li {
   border-right: 1px solid #696969; }
 
 .navigation ul.nav-menu > li > a {
-  padding: 0 15px; }
+  padding: 0 29px; }
 
 .navigation a {
   font-size: .8em;
@@ -1415,7 +1345,6 @@ button.cart i {
   text-decoration: none; }
 
 .navigation ul ul {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   /*   font-weight: 700; */
   background-color: #696969;
   display: none;
@@ -1452,7 +1381,6 @@ button.cart i {
   line-height: 16px;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   color: #B4D6F1;
   padding: 4px 25px; }
@@ -1499,21 +1427,26 @@ li.far a {
 li.first.far a {
   padding: 0 0px 0 14px; }
 
-.search {
-  top: -10px;
-  position: relative;
-  margin-bottom: 20px; }
-
+.search .input-group-btn > .btn {
+  position: absolute; }
+.search button, .search .button {
+  background: transparent none;
+  z-index: 2;
+  top: 0;
+  height: 100%;
+  border: 0 none; }
+  .search button:hover, .search button:focus, .search .button:hover, .search .button:focus {
+    border: 0 none; }
 .search input {
   font-size: 14px;
   color: #a9a9a9;
-  border: 1px solid #dcdcdc;
-  -webkit-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
+  background-color: #efefef;
+  border: 1px solid #a9a9a9;
+  -webkit-border-radius: 0;
+  border-radius: 0;
   margin: 0;
   width: 200px;
-  height: 16px;
-  min-height: 28px; }
+  min-height: 27px; }
 
 .search-button {
   font-size: 16px;
@@ -1530,6 +1463,69 @@ li.first.far a {
 
 .panel {
   padding: 10px; }
+
+.navigation ul ul a span,
+.cat span {
+  background: #6FBBEE;
+  padding: 2px 5px;
+  border-radius: 2px;
+  margin-left: 5px;
+  color: #696969; }
+
+.cat span {
+  position: absolute;
+  left: -62px;
+  top: 2px; }
+
+.navigation ul ul a span {
+  position: absolute;
+  padding: 2px 2px 0px 2px;
+  top: 2px; }
+
+.hello-container {
+  background-color: #ADDFF8;
+  border-bottom: 2px solid #DF3D75;
+  z-index: 20;
+  box-shadow: 0 0 2px 0 white;
+  color: black;
+  height: 60px;
+  right: 0px; }
+
+.hello.container, .hbar_content {
+  height: 100%;
+  vertical-align: middle;
+  position: relative; }
+  .hello.container p, .hbar_content p {
+    display: inline; }
+
+.hello-tag {
+  position: absolute;
+  top: 19px;
+  left: 0; }
+
+.hello-icon {
+  display: inline-block;
+  top: 0;
+  float: left;
+  left: -24px;
+  position: relative; }
+
+.hello-tab {
+  background: #f5f5dc;
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  position: absolute;
+  top: -5px;
+  right: 100px;
+  z-index: 1; }
+
+.hello-tab i {
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+  left: 7px; }
 
 /*Add 5-col class...*/
 @media (min-width: 992px) {
@@ -1548,9 +1544,6 @@ li.first.far a {
 @media (min-width: 1200px) {
   .container {
     width: 1000px; } }
-@media (min-width: 1000px) {
-  header {
-    min-height: 150px; } }
 /* Sidr Side mobile menu */
 .sidr-inner .sidr-class-hidden {
   display: none; }
@@ -1783,10 +1776,6 @@ li.first.far a {
 .listing p.price {
   margin: 6px 0; }
 
-.listing p.title {
-  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
-  min-height: 34px; }
-
 .listing p.msrp {
   color: #a9a9a9;
   text-decoration: line-through; }
@@ -1822,7 +1811,6 @@ li.first.far a {
 .pricebox .left-price {
   font-size: 42px;
   text-align: center;
-  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
   line-height: 110px;
   position: relative; }
 
@@ -1874,9 +1862,6 @@ fieldset {
   margin-bottom: 10px;
   padding: 10px; }
 
-.product-form label {
-  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif; }
-
 .product-form .fancy-select {
   margin-right: 0;
   width: 293px;
@@ -1896,7 +1881,6 @@ fieldset {
   height: 50px; }
 
 .product-form .questions {
-  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
   text-align: center;
   float: right;
   line-height: 27px; }
@@ -1931,8 +1915,7 @@ fieldset {
   */
   text-align: right;
   margin-bottom: 10px;
-  font-size: 14px;
-  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif; }
+  font-size: 14px; }
 
 .brochure-download i {
   font-size: 18px;
@@ -1948,16 +1931,6 @@ fieldset {
   border-bottom: 1px solid #dcdcdc;
   padding-bottom: 10px; }
 
-/*
-.related-products a,
-.related-accessories a {
-  font-family: $default-font-narrow;
-  position: absolute;
-  font-size: 14px;
-  top: 2px;
-  right: 0;
-}
-*/
 .review {
   border-bottom: 1px solid #dcdcdc;
   padding-bottom: 25px;
@@ -1974,8 +1947,7 @@ fieldset {
 .rating {
   font-size: 14px;
   font-style: italic;
-  color: #a9a9a9;
-  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif; }
+  color: #a9a9a9; }
 
 .stars {
   position: relative;
@@ -2003,7 +1975,6 @@ fieldset {
   content: "\f005"; }
 
 .add-rating-link {
-  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
   font-size: 14px; }
 
 .add-rating-link i {

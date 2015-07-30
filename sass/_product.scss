@@ -219,10 +219,6 @@
 .listing p.price {
   margin: 6px 0;
 }
-.listing p.title {
-  font-family: $default-font-narrow;
-  min-height: 34px;
-}
 .listing p.msrp {
   color: #a9a9a9;
   text-decoration: line-through;
@@ -258,7 +254,6 @@
 .pricebox .left-price {
   font-size: 42px;
   text-align: center;
-  font-family: $default-font-narrow;
   line-height: 110px;
   position: relative;
 }
@@ -311,9 +306,7 @@ fieldset {
   padding: 10px;
 }
 
-.product-form label {
-  font-family: $default-font-narrow;
-}
+
 .product-form .fancy-select {
   margin-right: 0;
   width: 293px;
@@ -333,7 +326,6 @@ fieldset {
   height: 50px;
 }
 .product-form .questions {
-  font-family: $default-font-narrow;
   text-align: center;
   float: right;
   line-height: 27px;
@@ -370,7 +362,6 @@ fieldset {
   text-align: right;
   margin-bottom: 10px;
   font-size: 14px;
-  font-family: $default-font-narrow;
 }
 .brochure-download i {
   font-size: 18px;
@@ -386,16 +377,6 @@ fieldset {
   border-bottom: 1px solid #dcdcdc;
   padding-bottom: 10px;
 }
-/*
-.related-products a,
-.related-accessories a {
-  font-family: $default-font-narrow;
-  position: absolute;
-  font-size: 14px;
-  top: 2px;
-  right: 0;
-}
-*/
 
 .review {
   border-bottom: 1px solid #dcdcdc;
@@ -414,7 +395,6 @@ fieldset {
   font-size: 14px;
   font-style: italic;
   color: #a9a9a9;
-  font-family: $default-font-narrow;
 }
 .stars {
   position: relative;
@@ -442,7 +422,6 @@ fieldset {
   content: "\f005";
 }
 .add-rating-link {
-  font-family: $default-font-narrow;
   font-size: 14px;
 }
 .add-rating-link i {

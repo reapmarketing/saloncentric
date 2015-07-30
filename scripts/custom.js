@@ -25,6 +25,14 @@
 		];
 		resizeColumns(groups);
 	}
+
+	Standish.CloseHello = function(helloparent) {
+		$(helloparent).find('.close').on('click', function() {
+			$(helloparent).fadeOut(300, function() { $(this).remove(); });
+
+		});
+
+	}
 	
 	Standish.SearchForm = function() {
 		var tabletBkPt = 991;
@@ -112,11 +120,16 @@
 		Standish.TemplateSwitcher();
 		Standish.SearchForm();
 		Standish.EmptyCart();
+		Standish.CloseHello();
+
+		Standish.CloseHello('.hello-container');
 	});
 	// Add callback to window resize event
 	$(window).on('resize', function() {
 		Standish.EqualHeights();
 		Standish.SearchForm();
+
+
 	});
 	
 })(jQuery);

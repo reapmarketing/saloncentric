@@ -31,7 +31,7 @@ $( function(){
 <link href="assets/templates/common/3dzoom/magiczoomplus.css" rel="stylesheet" type="text/css" media="screen" />
 
 <article class="col-md-12" itemscope itemtype="http://schema.org/Product">
-	<div class="col-md-12 search-container">
+	<div class="col-md-12 breadcrumb-container">
     <!--START: CATEGORY_FULLINE-->
       <!--IF: CATEGORY_FULLINE-->
         <!-- display breadcrumbs in the main template if they exist -->
@@ -42,18 +42,8 @@ $( function(){
         </div>
       <!--ENDIF: CATEGORY_FULLINE-->
     <!--END: CATEGORY_FULLINE-->
-  
-    <div class="col-md-4 pull-right search">
-      <form method="get" name="searchForm" action="search.asp">
-          <div class="input-group">
-            <input type="text" size="25" name="keyword" id="searchlight" class="search-text form-control" onfocus="javascript:if (document.searchForm.keyword.value=='search by keyword') {document.searchForm.keyword.value='';};" onblur="if(this.value.length == 0) this.value = 'search by keyword'" value="search by keyword" autocomplete="on">
-            <span class="input-group-btn">
-                <button name="search" class="search-button gainsboro btn"><i class="fa fa-search"></i></i></button>
-              </span>
-          </div>
-      </form>
-    </div>
   </div>
+  <hr/>
 	<form enctype="multipart/form-data" method="post" action="add_cart.asp" name="add" id="add" class="product-form">
 		<input type="hidden" name="item_id" value="[catalogid]" />
 		<input type="hidden" name="itemid" value="[id]" ID="itemid" />
@@ -229,7 +219,7 @@ $( function(){
               <!--START: SALEPRICE-->
                 <p class="msrp nozero">[product_yourprice] [ITEMPRICE]</p>
                 <!-- <span class="coral-text">[product_onsale]: </span> -->
-                <p class="price bold allcaps"><img src="assets/templates/common/images/on_sale.png" alt="On Sale" style="position: relative;top: 4px;" border="0" /> <span class="nozero">[ITEMSALEPRICE]</span></p>
+                <p class="price bold allcaps"><span><i class="fa fa-tag featured"></i> On Sale </span> <span class="nozero">[ITEMSALEPRICE]</span></p>
               <!--END: SALEPRICE-->
               <!-- <button>Add to Cart</button> -->
               <!-- <input type="checkbox" name="item_id" value="[catalogid]" /> -->
@@ -250,7 +240,7 @@ $( function(){
 						<!--START: SALEPRICE-->
 							<p class="msrp nozero">[product_yourprice] [ITEMPRICE]</p>
 							<!-- <span class="coral-text">[product_onsale]: </span> -->
-							<p class="price bold allcaps"><img src="assets/templates/common/images/on_sale.png" alt="On Sale" style="position: relative;top: 4px;" border="0" /> <span class="nozero">[ITEMSALEPRICE]</span></p>
+							<p class="price bold allcaps"><span><i class="fa fa-tag featured"></i> On Sale </span> <span class="nozero">[ITEMSALEPRICE]</span></p>
 						<!--END: SALEPRICE-->
 						<!-- <button>Add to Cart</button> -->
 
@@ -564,7 +554,7 @@ $( function(){
               <!--END: ITEMPRICE-->
               <!--START: SALEPRICE-->
                 <p class="msrp">[product_yourprice] <span class="nozero">[ITEMPRICE]</span></p>
-                <p class="price bold allcaps"><img src="assets/templates/common/images/on_sale.png" alt="On Sale" border="0" style="position: relative;top: 4px;" /> <span class="nozero">[ITEMSALEPRICE]</span></p>							
+                <p class="price bold allcaps"><span><i class="fa fa-tag featured"></i> On Sale </span> <span class="nozero">[ITEMSALEPRICE]</span></p>							
 						<!--END: SALEPRICE-->
             </div>
             <input type="button" value="[category_buyitlink]" onclick="window.location='add_cart.asp?quick=1&item_id=[catalogid]'" class="button btn" style="display:block; width: 100%;">

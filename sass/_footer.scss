@@ -26,11 +26,16 @@
   width: 320px;
   background-color: $secondary-color;
 }
-.social-icons a {
-  color: #a9a9a9;
-  font-size: 30px;
-  margin: 42px 1px;
-  text-decoration: none;
+.social-icons {
+  & > div {
+    float: none;
+  }
+  a {
+    color: #a9a9a9;
+    font-size: 30px;
+    margin: 42px 1px;
+    text-decoration: none;
+  }
 }
 .social-icons a i {
   margin: 2px;
@@ -69,6 +74,9 @@
 }
 footer .container-fluid, .footer-child {
   background-color: $neutral-dark;
+}
+footer .container-fluid.footer-content {
+  background-color: lighten($neutral-dark, 50%);
 }
 .footer-logo {
   /*display: block;*/

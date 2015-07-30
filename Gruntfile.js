@@ -23,6 +23,7 @@ module.exports = function(grunt) {
         tasks: ['sass'],
         options: {
           livereload: true,
+          sourcemap: "auto",
         },
       },
       js: {

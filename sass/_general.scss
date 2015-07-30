@@ -28,7 +28,7 @@ audio:not([controls]) {
   display: none;
 }
 body {
-	font-family: $default-font;
+	@extend .default;
   /* font-family: sans-serif; */
 /* 1 */
   -ms-text-size-adjust: 100%;
@@ -37,7 +37,7 @@ body {
 /* 2 */
 }
 html {
-  font-family: $default-font;
+  @extend .default;
   /* font-family: sans-serif; */
 /* 1 */
   -ms-text-size-adjust: 100%;
@@ -86,6 +86,9 @@ hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
+}
+hr.dark {
+  border-top: 1px solid $light-gray;
 }
 label, .label {
 	font-weight: normal;
@@ -168,6 +171,14 @@ legend {
 .hr {
   margin: 10px 0;
   border-bottom: 1px solid #dcdcdc;
+}
+
+.padd-top {
+  padding-top: 15px;
+
+}
+.padd-bottom-10 {
+  padding-bottom: 10px;
 }
 
 .top-margin {
@@ -253,14 +264,14 @@ legend {
 }
 .create-account button {
   color: #fff;
-  font-family: $default-font-narrow;
+  @extend .narrow;
 }
 .login {
   font-size: 14px;
 }
 .login form {
   margin: 40px 70px;
-  font-family: $default-font-narrow;
+  @extend .narrow;
   text-align: left;
 }
 .login form a {
@@ -324,7 +335,7 @@ legend {
   background: #EFEFEF;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  font-family: $default-font;
+  @extend .default;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.25;
@@ -509,116 +520,5 @@ body .vex.vex-theme-flat-attack .vex-content {
 .blog h3:first-child {
   margin-top: 0px;
 }
-
-
-.navigation ul ul a span,
-.cat span {
-  background: $highlight-color;
-  padding: 2px 5px;
-  border-radius: 2px;
-  margin-left: 5px;
-  color: $primary-gray;
-}
-.cat span {
-  position: absolute;
-  left: -62px;
-  top: 2px;
-}
-.navigation ul ul a span {
-  position: absolute;
-  padding: 2px 2px 0px 2px;
-  top: 2px;
-}
-
-.hello-container {
-  background-color: $accent-color;
-  z-index: 20;
-  box-shadow: 0 0 2px 0 white;
-  color: black;
-  height: 60px;
-  right: 0px;
-}
-.hello.container, hbar_content {
-  height: 100%;
-  vertical-align: middle;
-  position:relative;
-}
-.hello p {
-  font-size: 1rem;
-}
-
-.hello .coral-text{
-  /* color: #821512; */
-  color: white;
-  font-style: italic;
-}
-.hello a, .hello a:link {
-  color: black;
-  font-style: italic;
-  text-decoration: underline;
-/*  text-shadow: 1px 1px 0 #888; */
-}
-.hello a strong {
-  color: black;
-  font-style: italic;
-}
-.hello i {
-  font-size: 22px;
-  position: relative;
-  color: $secondary-color; /* Standish Green */
-  color: #bb8600; /*  Gold */
-  color: #a30935;
-  text-shadow: 1px 1px 0 white;
-  margin: 0 4px;
-}
-.hello .bold {
-  color: $primary-gray;
-}
-.hello strong {
-  color: black;
-}
-.hello p {
-  line-height: 32px;
-  margin-top: 15px;
-}
-.right-hello {
-  color:white;
-}
-.hello .container_12 {
-  position: relative;
-}
-.left-hello {
-  margin-left: 60px;
-}
-.hello-tag {
-  position: absolute;
-  top: 19px;
-  left: 0;
-}
-.hello-icon {
-  display: inline-block;
-  top: 0;
-  float: left;
-  left: -24px;
-  position: relative;
-}
-.hello-tab {
-  background: #f5f5dc;
-  width: 25px;
-  height: 25px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  position: absolute;
-  top: -5px;
-  right: 100px;
-  z-index: 1;
-}
-.hello-tab i {
-  font-size: 20px;
-  position: relative;
-  top: 5px;
-  left: 7px;
-}
-
 
 

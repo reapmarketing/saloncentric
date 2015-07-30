@@ -81,11 +81,19 @@ input[type=submit],
   border-top: none;
   border-right: none;
   border-left: none;
-  font-family: $default-font;
   font-weight: 400;
   color: white;
   background-color: $btn-color;
   border-bottom: 1px solid darken($btn-color, 30%);
+}
+
+.btn-hello {
+  background-color: darken($accent-color, 10%);
+  border-bottom: 1px solid darken($accent-color, 30%);
+}
+.button.btn-hello:hover {
+  background-color: darken($accent-color, 5%);
+  border-bottom: 1px solid darken($accent-color, 20%);
 }
 
 btn.focus, .btn:focus, .btn:hover, .hs-form .hs-button:focus, .hs-form .hs-button:hover {
@@ -205,7 +213,6 @@ input.form-control {
 /* ~~~ Hubspot Stuff ~~~ */
 .hs-input {
   color: #a9a9a9;
-  font-family: $default-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 2.25em;

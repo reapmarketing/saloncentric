@@ -132,7 +132,12 @@ a:active {
 }
 
 
+// Classes for extension
+.default {font-family: $default-font;}
 
+.narrow {font-family: $default-font-narrow;}
+
+.special {font-family: $special-font;}
 
 .strike {
 	text-decoration:line-through
@@ -150,6 +155,7 @@ a:active {
 .allcaps {
   text-transform: uppercase;
   &.featured {
+    color: $highlight-color;
     & > a {
       color: $highlight-color;
     } 
@@ -167,4 +173,63 @@ strong {
 .sans {
   font-family: $default-font;
 }
+
+
+
+
+// HEADER level customizations to Font
+.navigation ul {
+  li {
+    @extend .narrow;
+  }
+  ul ul a {
+    @extend .default;
+  }
+}
+
+.search {
+  form, p, input, span, a, button {
+    @extend .special;
+  }
+
+}
+
+// Product level customizations to Font
+.listing p.title {
+  @extend .narrow;
+  min-height: 34px;
+}
+.pricebox .left-price {
+  @extend .narrow;
+}
+.product-form label {
+  @extend .narrow;
+}
+.product-form .questions {
+  @extend .narrow;
+}
+.brochure-download {
+  @extend .narrow;
+}
+.rating {
+  @extend .narrow;
+}
+.add-rating-link {
+  @extend .narrow;
+}
+
+// Form Font Stuff -- hubspot craziness
+
+button,
+.button,
+input[type=button],
+input[type=submit],
+.hs-form .hs-button {
+  @extend .default;
+}
+
+.hs-input {
+  @extend .default;
+}
+
 
