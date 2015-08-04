@@ -14,6 +14,9 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'style/main.css': 'sass/main.scss'
+        },
+        options: {
+          lineNumbers: true,
         }
       }
     },
@@ -23,7 +26,6 @@ module.exports = function(grunt) {
         tasks: ['sass'],
         options: {
           livereload: true,
-          sourcemap: "auto",
         },
       },
       js: {

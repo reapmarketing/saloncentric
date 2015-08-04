@@ -15,7 +15,7 @@
   left: -25px;
 }
 .logo-footer {
-  background: url("/assets/templates/standish-responsive/images/KaemarkLogo.png");
+  background: url("/assets/templates/standish-responsive/images/Kaemark-SC.png");
   background-repeat: no-repeat;
   width: 100%;
   background-size: 100%;
@@ -286,6 +286,8 @@ li.first.far a {
 .hello-container {
   a, p, div {
     @extend .special;
+    color: lighten($primary-gray, 10%);
+    font-weight: 100;
   }
 }
 

@@ -31,7 +31,6 @@
     float: none;
   }
   a {
-    color: #a9a9a9;
     font-size: 30px;
     margin: 42px 1px;
     text-decoration: none;
@@ -41,7 +40,6 @@
   margin: 2px;
 }
 .social-icons a:hover {
-  color: $secondary-color;
 }
 .footer-navigation {
   height: 50px;
@@ -72,11 +70,19 @@
   background: #f5f5dc;
   color: $neutral-dark;
 }
+footer {
+  p, span, ul, li {
+    color: lighten($primary-gray, 20%)
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: $primary-color;
+  }
+}
 footer .container-fluid, .footer-child {
   background-color: $neutral-dark;
 }
 footer .container-fluid.footer-content {
-  background-color: lighten($neutral-dark, 50%);
+  background-color: $neutral-dark;
 }
 .footer-logo {
   /*display: block;*/

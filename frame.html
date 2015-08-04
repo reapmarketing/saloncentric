@@ -205,19 +205,16 @@
     <!-- navbar -->
     <div class="container search-container">
       <div class="row">
-        <div class="col-md-11">
-          <div class="col-md-4 pull-right search">
-            <form method="get" name="searchForm" action="search.asp">
-                <div class="input-group">
-                  <input type="text" size="25" name="keyword" id="searchlight" class="search-text form-control" onfocus="javascript:if (document.searchForm.keyword.value=='search by keyword') {document.searchForm.keyword.value='';};" onblur="if(this.value.length == 0) this.value = 'search by keyword'" value="search by keyword" autocomplete="on">
-                  <span class="input-group-btn">
-                      <button name="search" class="search-button gainsboro btn"><i class="fa fa-search"></i></i></button>
-                    </span>
-                </div>
-            </form>
-          </div>
+        <div class="col-md-4 pull-right search">
+          <form method="get" name="searchForm" action="search.asp">
+              <div class="input-group pull-right">
+                <input type="text" size="25" name="keyword" id="searchlight" class="search-text form-control" onfocus="javascript:if (document.searchForm.keyword.value=='search by keyword') {document.searchForm.keyword.value='';};" onblur="if(this.value.length == 0) this.value = 'search by keyword'" value="search by keyword" autocomplete="on">
+                <span class="input-group-btn">
+                    <button name="search" class="search-button gainsboro btn"><i class="fa fa-search"></i></i></button>
+                  </span>
+              </div>
+          </form>
         </div>
-
       </div>
     </div>
     <hr class="dark" />
@@ -238,31 +235,13 @@
             </div>
         -->
         <!--START: LEFT BAR-->
-        <div class="col-md-2 hidden-sm hidden-xs left-bar">
+        <div class="col-md-2 hidden-sm hidden-xs left-bar" id="category-sidebar">
+          
+
           <!--START: LEFT_BAR_BLOCKS-->
-            <!--START: FRAME_SEARCH-->
-            <!--
-            <div class="texturedBG">
-              <form method="get" name="searchForm" action="search.asp" style="margin: 0px; padding: 7px 8px;">
-                <input type="text" size="25" name="keyword" id="searchlight" class="search-text" onfocus="javascript:if (document.searchForm.keyword.value=='search by keyword') {document.searchForm.keyword.value='';};"  onblur="if(this.value.length == 0) this.value = 'search by keyword'" value="search by keyword" />
-                <input type="image" src="assets/templates/[template]/images/search_btn.png" name="search" value="GO" />
-              </form>
-            </div>
-            -->
-            <!--END: FRAME_SEARCH-->
       
             <div class="filters"></div>
-      
-            <!--START: FRAME_MANUFACTURER-->
-              <!--[frame_manufacturer]-->
-      <!-- 				<div class="allcaps serif black-text bold">Brand</div> -->
-      <!-- 				<ul> -->
-                <!--START: manufacturer_format-->
-      <!-- 						<li><a href="search_groups.asp?manf=[mfgid]" class="cat">[manufacturer]</a> -->
-                <!--END: manufacturer_format-->
-      <!-- 				</ul> -->
-            <!--END: FRAME_MANUFACTURER-->
-      
+
             <!--START: FRAME_CATEGORY-->
               <div class="allcaps featured serif black-text bold">[frame_categories]</div>
               <div id="catframe">
@@ -271,7 +250,6 @@
                 <!--START: CATEGORY_FORMAT-->
                   <li><a href="view_category.asp?cat=CATID" class="cat">CATEGORY</a></li>
                 <!--END: CATEGORY_FORMAT-->
-                
                 <!--START: SUB_CATEGORY_FORMAT-->
                   <li class="indent"><a href="view_category.asp?cat=CATID" class="subcat">CATEGORY</a></li>
                 <!--END: SUB_CATEGORY_FORMAT-->
@@ -279,19 +257,6 @@
               <!--END: CATEGORIES-->
               </div>
             <!--END: FRAME_CATEGORY-->
-      
-            <!--START: FRAME_BYPRICE-->
-      <!-- 				<div class="allcaps serif black-text bold">[frame_byprice]</div> -->
-      <!-- 				<ul> -->
-                <!--START: byprice_format-->
-      <!-- 						<li><a href="search_groups.asp?keyword=[id]&byprice=[id]" class="cat">[title]</a> -->
-                <!--END: byprice_format-->
-      <!-- 				</ul> -->
-            <!--END: FRAME_BYPRICE-->
-      
-            <!--START: LEFT_BANNER-->
-      <!-- 				[LEFT_BANNER] -->
-            <!--END: LEFT_BANNER-->
           <!--END: LEFT_BAR_BLOCKS-->
           <div class="img-banner"><a href="http://cannibalcat.itch.io/secret-of-qwerty"><img class="img-responsive" src="/assets/images/displayad.png"/></a></div>
 
@@ -323,15 +288,15 @@
         </div>
         <div class="col-md-3">
           <h5>About Us</h5>
-          <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p>
+          <p>We are a Texas-based company passionate about bringing you the perfect balance between affordable and quality. With a wide variety of products to outfit your salon, including many items made here in the USA, we are your one-stop shop for all things salon equipment.</p>
         </div>
         <div class="col-md-3">
           <h5>Trusted Partners</h5>
-          <div class="col-md-6">
+          <div class="col-md-12">
             <div><img src="assets/templates/[template]/images/SalonCentricLogos_PMSandCMYK.png" height="56"/></div>
           </div>
-          <div class="col-md-6">
-            <div><img src="assets/templates/[template]/images/Standish-Logo-Mobile.png" /></div>
+          <div class="col-md-12">
+            <div><img src="assets/templates/[template]/images/Standish-Logo-Mobile.png" height="56" /></div>
           </div>
         </div>
         <div class="col-md-3">
@@ -344,7 +309,7 @@
               <a target="_blank" href="http://twitter.com/StandishStuff"><i class="fa fa-twitter-square"></i></a>
               <a target="_blank" href="http://www.facebook.com/standishstuff"><i class="fa fa-facebook-square"></i></a>
               <a target="_blank" href="https://plus.google.com/116238618067398415215/about?gl=us&hl=en"><i class="fa fa-google-plus-square"></i></a>
-              </div>
+            </div>
         </div>  
       </div>
         <!--END: FRAME_MAILLIST-->
@@ -353,7 +318,7 @@
         <!--START: global_footer-->[GLOBAL_FOOTER]<!--END: global_footer-->
       </div>
       <div class="col-md-12 footer-child">
-        <p class="footer-copy">&copy; 2015 Standish Salon Goods | <a href="/dallas-salon-furniture-showroom.html">Dallas Showroom</a> | <a href="/Privacy-Policy_ep_60-1.html">Privacy Policy</a> | <span class="bold"><script type="text/JavaScript" src="https://secure.ifbyphone.com/js/keyword_replacement.js"></script></span></p>
+        <p class="footer-copy">&copy; Kaemark. All Rights Reserved | <a href="/dallas-salon-furniture-showroom.html">Dallas Showroom</a> | <a href="/Privacy-Policy_ep_60-1.html">Privacy Policy</a> | <span class="bold"><script type="text/JavaScript" src="https://secure.ifbyphone.com/js/keyword_replacement.js"></script></span></p>
       </div>
     </div>
 	</footer>
@@ -373,7 +338,7 @@
     <script type="text/javascript" src="/assets/templates/[template]/scripts/enversa-global-tracking-pixel.js"></script>
     <!-- End of Enversa Global Tracking Pixel -->
     <!--  Pinterest Tracking Pixel -->
-    <img height="1" width="1" alt="" src="https://ct.pinterest.com/?tid=9vm4Li6QLNo"/>
+    <img style="display: none" height="1" width="1" alt="" src="https://ct.pinterest.com/?tid=9vm4Li6QLNo"/>
     <!-- End of Pinterest Tracking Pixel -->
     <!-- Adroll -->
 		<script src="/assets/templates/[template]/scripts/adroll-script.js"></script>

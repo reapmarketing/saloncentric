@@ -132,21 +132,13 @@ $( function(){
 				<ul>
 					<li class="pinit"><a href="" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a></li>
 					<li><a class="tweet_button" target="_blank" href="#tweet"></a></li>
-					<!-- <a href="https://twitter.com/share" class="twitter-share-button" data-via="StandishStuff" data-related="StandishStuff" data-count="none">Tweet</a> -->
-<!--
-
-					<li class="like"><div class="fb-like" data-href="https://standishsalongoods.com" data-colorscheme="light" data-layout="button" data-action="like" data-show-faces="false" data-send="false"></div></li>
-
--->
 					<!--START: email_friend-->
 						<!-- <img src="assets/templates/common/images/productpage_emailfriend.png" alt="[product_emailtofriend]" border="0" /> -->
 						<li class="email"><i class="icon-envelope coral-text"></i> <a href="#" rel="nofollow" onclick="javascript:window.open('recommendafriend.asp?url=[friendurl]','popup','height=460,width=550,location=no,' + 'scrollbars=no,menubars=no,toolbars=no,resizable=yes');">[product_emailtofriend]</a></li>
 					<!--END: email_friend-->
 					<!-- <i class="icon-plus-sign"></i> -->
 				</ul>
-				<!--START: product_social-bookmarking-->
-					[product_social-bookmarking]
-				<!--END: product_social-bookmarking-->
+				
 			</div>
 			<!--START: reviews-->
 			<div class="reviews">
@@ -210,20 +202,20 @@ $( function(){
 				<!--START: accessories_items0-->
 					<div class="col-md-4 listing alpha">
 						<div class="listing-container">
-              <a href="product.asp?itemid=[catalogid]"><img class="product_thumb" src="thumbnail.asp?file=[THUMBNAIL]&maxx=138&maxy=178" alt="[name]" border="0" /></a>
-              <p class="title"><a href="product.asp?itemid=[catalogid]">[name]</a></p>
-              <!--START: ITEMPRICE-->
-                <!-- [product_yourprice] -->
-                <p class="price">[product_yourprice] [ITEMPRICE]</p>
-              <!--END: ITEMPRICE-->
-              <!--START: SALEPRICE-->
-                <p class="msrp nozero">[product_yourprice] [ITEMPRICE]</p>
-                <!-- <span class="coral-text">[product_onsale]: </span> -->
-                <p class="price bold allcaps"><span><i class="fa fa-tag featured"></i> On Sale </span> <span class="nozero">[ITEMSALEPRICE]</span></p>
-              <!--END: SALEPRICE-->
-              <!-- <button>Add to Cart</button> -->
-              <!-- <input type="checkbox" name="item_id" value="[catalogid]" /> -->
-              <input type="hidden" name="qty-[counter]" value="1" />
+			              <a href="product.asp?itemid=[catalogid]"><img class="product_thumb" src="thumbnail.asp?file=[THUMBNAIL]&maxx=138&maxy=178" alt="[name]" border="0" /></a>
+			              <p class="title"><a href="product.asp?itemid=[catalogid]">[name]</a></p>
+			              <!--START: ITEMPRICE-->
+			                <!-- [product_yourprice] -->
+			                <p class="price">[product_yourprice] [ITEMPRICE]</p>
+			              <!--END: ITEMPRICE-->
+			              <!--START: SALEPRICE-->
+			                <p class="msrp nozero">[product_yourprice] [ITEMPRICE]</p>
+			                <!-- <span class="coral-text">[product_onsale]: </span> -->
+			                <p class="price bold allcaps"><span><i class="fa fa-tag featured"></i> On Sale </span> <span class="nozero">[ITEMSALEPRICE]</span></p>
+			              <!--END: SALEPRICE-->
+			              <!-- <button>Add to Cart</button> -->
+			              <!-- <input type="checkbox" name="item_id" value="[catalogid]" /> -->
+			              <input type="hidden" name="qty-[counter]" value="1" />
 						</div>
 						<input type="button" value="[category_buyitlink]" onclick="window.location='add_cart.asp?quick=1&item_id=[catalogid]'" class="button btn" style="display:block; width: 100%;">
 					</div>
@@ -379,7 +371,7 @@ $( function(){
 						<!--END: radio-format-->
 
 						<!--START: dropdown-format-->
-							<div class="fancy-select form-group pull-right col-md-6">
+							<div class="fancy-select form-group col-md-6 col-sm-6">
 								<select name="[oname]" onchange="nozeros();validateValues(document.add,1);selectOption(this);">
 									<!--START: option-->
 									<option value="[value]" [selected]>[feature] <span class="nozero">[oprice]</span></option>
@@ -390,7 +382,7 @@ $( function(){
 						<!--END: dropdown-format-->
 
 						<!--START: dropdownimage-format-->
-							<div class="fancy-select form-group pull-right col-md-6">
+							<div class="fancy-select form-group col-md-6 col-sm-6">
 								<!-- note: image_click function changes image with option position -->
 								<!-- image_click($(this).find(':selected').index()+1); -->
 								<select name="[oname]" onchange="nozeros();validateValues(document.add,1);selectOption(this);">
@@ -409,9 +401,9 @@ $( function(){
 							<!-- [OPTIONLABEL] [OPTIONFIELD] -->
 						<!--END: opt-title-->
 						<!--START: opt-regular-->
-							<div class="option-row">
-								<label for="name">[OPTIONLABEL]: </label>
-								[OPTIONFIELD]
+							<div class="option-row row">
+								<label for="name" class="col-md-2 col-sm-6">[OPTIONLABEL]: </label>
+								<div class="col-md-10 col-sm-6">[OPTIONFIELD]</div>
 							</div>
 							<!--START: help--> 
 								<a href="#" onclick="popup('optionhelp.asp?optionid=[optid]',300,200)"><img src="assets/templates/common/images/help_icon.gif" border="0" alt="help" /></a> 
@@ -426,7 +418,7 @@ $( function(){
 			<!--START: RECURRINGORDER-->
 				<div class="option-row">
 					<label>[recurringorders_addcart-question]</label>
-					<div class="fancy-select form-group pull-right col-md-6">
+					<div class="fancy-select form-group col-md-6">
 						<select name="recurring_frequency" class="txtBoxStyle" id="recurring_frequency">
 							<option value="">[recurringorders_select-frequency]</option>
               [recurring_frequency]
@@ -451,14 +443,14 @@ $( function(){
 									<!-- [PRICE] -->
 								<!--END: quantity_items-->
 							<!--END: quantity-->
-								<div class="option-row">
-									<div class="col-md-4 col-sm-6 col-xs-6">
-                  <label for="quantity">[product_quantity]: </label>
-                    <!-- <input id="quantity" type="text" placeholder="1" value="1"> -->
-                    <input id="quantity" type="text" size="3" name="qty-0" value="1" onchange="nozeros();validateValues(document.add,1);" />
-                  </div>
-									
-									<div class="questions text-right col-md-8 col-sm-6 col-xs-6"><span>Questions?</span> Call <span class="bold">888.271.8434</span></div>
+								<div class="option-row row">
+										<label for="quantity" class="col-md-2 col-sm-6 col-md-6">[product_quantity]: </label>
+										<div class="col-md-11 col-sm-6 col-md-6">
+											<input id="quantity" type="text" size="3" name="qty-0" value="1" onchange="nozeros();validateValues(document.add,1);" />
+										</div>
+									</div>
+
+									<div class="questions text-right col-md-12"><span>Questions?</span> Call <span class="bold">888.271.8434</span></div>
 								</div>
 								
 								
