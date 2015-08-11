@@ -93,6 +93,14 @@
 
 }
 
+
+// mobile menu tablet icons
+@media only screen and (min-width:$xs + 1) and (max-width:$medium - 1) {
+	#mobile-menu {
+		i.fa {font-size: 4em;}
+	}
+}
+
 @media only screen and (max-width: 61.9375em) {
 	.toggle-navigation {
 		padding: 0;

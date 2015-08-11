@@ -40,15 +40,6 @@ jQuery( function($) {
 /* 	$("a.cat:contains(Sale!)").append('<span class="green"><i class="icon icon-dollar"></i> Sale</span>'); */
 	var width = document.body.clientWidth; 
 
-	// Limit this to width
-	if (width > 750) {
-
-		$nav = $('.navigation');
-		$nav.find("a:contains(Oakworks)").append('<span><i class="icon icon-star"></i> New</span>');
-		$nav.find("a:contains(William Marvy)").append('<span><i class="icon icon-star"></i> New</span>');
-		$nav.find("a:contains(Adjust-a-Sink)").append('<span><i class="icon icon-star"></i> New</span>');
-	}
-
 	$('.nextnav a').click( function() {
 		ga('send', 'event', 'pdp-button', 'click', 'nextnav-link');
 	});

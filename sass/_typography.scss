@@ -219,6 +219,11 @@ strong {
   @extend .narrow;
 }
 
+.return { color: $yellow; }
+.usa-blue { color: $usa-blue; }
+.money { color: $green; }
+
+
 // Form Font Stuff -- hubspot craziness
 
 button,

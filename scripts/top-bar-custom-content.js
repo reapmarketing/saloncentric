@@ -92,8 +92,7 @@
 			});
 */
 			var JSON_LOADED = false;
-			$('.hello-container').delay(2000).animate({opacity: 1}, function() {
-			});
+			$('.hello-container').delay(2000).animate({opacity: 1});
 			
 			var hbar_slug = 'default';
 			// This code will change the slug if it finds an override.
