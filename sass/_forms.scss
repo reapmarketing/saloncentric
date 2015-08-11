@@ -73,25 +73,35 @@ button,
 .button,
 input[type=button],
 input[type=submit],
+button[type=submit],
 .hs-form .hs-button {
-  -webkit-appearance:none;
-  cursor: pointer;
-  -webkit-border-radius: 3px;
+  background: $btn-highlight;
+  background-image: -webkit-linear-gradient(top, $btn-highlight, $btn-color);
+  background-image: -moz-linear-gradient(top, $btn-highlight, $btn-color);
+  background-image: -ms-linear-gradient(top, $btn-highlight, $btn-color);
+  background-image: -o-linear-gradient(top, $btn-highlight, $btn-color);
+  background-image: linear-gradient(to bottom, $btn-highlight, $btn-color);
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
   border-radius: 3px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  font-weight: 400;
+  text-shadow: 0px -1px 0px $btn-highlight;
   color: white;
-  background-color: $btn-color;
-  border-bottom: 1px solid darken($btn-color, 30%);
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  border: solid $accent-color 1px;
+  text-decoration: none;
+}
+
+button[type=submit].btn-lg, .btn.btn-lg {
+  padding: 10px 16px;
+  font-size: 105%;
 }
 
 .btn-hello {
   background-color: darken($accent-color, 10%);
   border-bottom: 1px solid darken($accent-color, 30%);
 }
-.button.btn-hello:hover {
+.btn-hello:hover {
   background-color: darken($accent-color, 5%);
   border-bottom: 1px solid darken($accent-color, 20%);
 }
@@ -106,7 +116,13 @@ input[type=submit]:hover,
 button:hover,
 .button:hover,
 .hs-form .hs-button:hover {
-  background-color: $btn-highlight;
+  background: $btn-color;
+  background-image: -webkit-linear-gradient(top, $btn-color, $btn-color);
+  background-image: -moz-linear-gradient(top, $btn-color, $btn-color);
+  background-image: -ms-linear-gradient(top, $btn-color, $btn-color);
+  background-image: -o-linear-gradient(top, $btn-color, $btn-color);
+  background-image: linear-gradient(to bottom, $btn-color, $btn-color);
+  text-decoration: none;
 }
 .button.medium,
 button.medium {
@@ -234,7 +250,7 @@ textarea.hs-input {
   line-height: 1.5em;
 }
 .main_content .hbspt-form {
-  background: #C2D3BD;
+  background: $hbspt-form-bkg;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -khtml-border-radius: 5px;

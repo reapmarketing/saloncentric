@@ -5,6 +5,7 @@
 	$.Standish = (function() {});
 	window.Standish = window.Standish || {};
 
+
 	Standish.EqualHeights = function() {
 		function resizeColumns(groups) {
 			$.each(groups, function(index, value) {
@@ -114,22 +115,49 @@
 		
 	}
 
+	$(function() {
+		// Wait till dom is ready to use slick
+		Standish.ActivateSliderNotFancy = function(htmlelement) {
+			if ( typeof $.fn.slick == "function" ) {
+				$(htmlelement).slick({
+					vertical: true,
+					arrows: false,
+					slidesToShow: 1,
+					autoplay: true
+				});
+			}
+		}
+		Standish.ActivateSliderFancy = function(element) {
+			if ( typeof $.fn.slick == "function" ) {
+				$(element).slick({
+
+				});
+			}
+
+		}
+	
+	});
+
 	// Events
 	$(function() {
+		// 1. Activate Equal Heights
 		Standish.EqualHeights();
+		// 2. Activate custom Template switching
 		Standish.TemplateSwitcher();
+		// 3. Make search input large for mobile devices
 		Standish.SearchForm();
+		// 4. Empty cart message unless at a different page
 		Standish.EmptyCart();
-		Standish.CloseHello();
-
+		// 5. Close the Hello Bar		
 		Standish.CloseHello('.hello-container');
+		// 6. Activate the slider for features at top
+		Standish.ActivateSliderNotFancy('#slickShow');
+
 	});
 	// Add callback to window resize event
 	$(window).on('resize', function() {
 		Standish.EqualHeights();
 		Standish.SearchForm();
-
-
 	});
 	
-})(jQuery);
+})(jQuery)

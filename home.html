@@ -3,14 +3,70 @@
     
     <!-- Uncomment here and at the very bottom for a left navigation bar on the homepage -->
     <script type="text/javascript">$('.left-bar').show();</script>
-		<div class="col-md-10">
+	<div class="col-md-10">
 			<!-- [category_Header-specials] -->
         <!--START: CATEGORY_HEADER-->
-        <div class="col-md-12 hidden-sm hidden-xs">
+        <div class="row">
             [CONTENT]
         </div>
         <!--END: CATEGORY_HEADER-->
-    
+        
+        <div class="col-md-12 hidden-md hidden-lg filters">
+            <br/>
+            <div class="fancy-select-lg form-group col-md-12">
+                <select class="input-lg" onchange="location = this.options[this.selectedIndex].value;">
+                <option value="">Select Equipment Type</option>
+                <optgroup label="Chairs:">
+                    <option value="/adjust-a-sink">Main</option>
+                    <option value="/salon-styling-chairs">Styling Chairs</option>
+                    <option value="/all-purpose-salon-chairs">All-Purpose Chairs</option>
+                    <option value="/barber-chairs">Barber Chairs</option>
+                    <option value="/salon-shampoo-chairs">Shampoo Chairs</option>
+                    <option value="/salon-dryer-chair-units">Dryer Chairs</option>
+                    <option value="/salon-stools">Stools</option>
+                    <option value="/salon-reception-seating">Reception Chairs</option>
+                    <option value="/salon-pedicure-chairs">Pedicure Chairs</option>
+                    <option value="/salon-chair-covers">Chair Covers </option>
+                </optgroup>
+                <optgroup label="Color Bars:">
+                    <option value="/salon-color-bars">Main</option>
+                </optgroup>
+                <optgroup label="Stations:">
+                    <option value="/salon-styling-stations">Main</option>
+                    <option value="/single-salon-styling-stations">Single Stations</option>
+                    <option value="/back-to-back-salon-styling-stations">Back-to-Back Stations</option>
+                    <option value="/salon-tower-stations">Tower Stations</option>
+                    <option value="/salon-wet-stations">Wet Stations</option>
+                    <option value="/glass-stations-mirrors">Glass & Mirror Stations</option>
+                </optgroup>
+                <optgroup label="Manicure & Pedicure:">
+                    <option value="/manicure-pedicure-equipment">Main</option>
+                    <option value="/salon-manicure-tables">Manicure Tables</option>
+                    <option value="/salon-pedicure-chairs">Pedicure Chairs</option>
+                    <option value="/nail-technician-chairs">Nail Tech Chairs</option>
+                    <option value="/pedicure-carts-trolleys">Carts & Trolleys</option>
+                </optgroup>
+                <optgroup label="Shampoo:">
+                    <option value="/manicure-pedicure-equipment">Main</option>
+                    <option value="/salon-manicure-tables">Manicure Tables</option>
+                    <option value="/salon-pedicure-chairs">Pedicure Chairs</option>
+                    <option value="/nail-technician-chairs">Nail Tech Chairs</option>
+                    <option value="/pedicure-carts-trolleys">Carts & Trolleys</option>
+                </optgroup>
+                <optgroup label="Reception:">
+                    <option value="/salon-reception-area-equipment">Main</option>
+                    <option value="/salon-reception-desks">Desks</option>
+                    <option value="/salon-reception-seating">Chairs</option>
+                    <option value="/salon-retail-displays">Retail Displays</option>
+                </optgroup>
+                <optgroup label="Appliances:">
+                    <option value="/appliances">Main</option>
+                </optgroup>
+                </select>
+                <i class="fa fa-caret-down fa-sm"></i>
+            </div>
+        </div>
+
         <!--START: FEATURE_MENU-->
             <!--START: CATEGORY_ITEMS-->
                 <!--START: ITEM_TEMPLATE_0-->
@@ -20,7 +76,7 @@
                             <!-- <div class="item">[review_count] Review(s)</div> -->
                         <!--END: product_review_average-->
                     <!--END: product_review-->
-                    <div class="col-md-2-2 col-sm-4 col-xs-6 listing">
+                    <div class="col-md-2-2 col-sm-3 col-xs-4 listing">
                         <a href="product.asp?itemid=[catalogid]">
                         <img class="product_thumb center-block" src="thumbnail.asp?file=[THUMBNAIL]&maxx=138&maxy=178" alt="[name]" /></a>
                         <div class="listing-container">
@@ -37,7 +93,7 @@
                         <!-- <button>Add to Cart</button> -->
                         <!-- [category_buyitlink] -->
                         </div> 
-                         <input type="button" value="See Details" onclick="window.location='product.asp?itemid=[catalogid]'" class="button btn">
+                         <input type="button" value="See Details" onclick="window.location='product.asp?itemid=[catalogid]'" class="button btn hidden-sm hidden-xs">
                     </div>
                 <!--END: ITEM_TEMPLATE_0-->
             <!--END: CATEGORY_ITEMS-->

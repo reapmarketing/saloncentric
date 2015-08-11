@@ -38,12 +38,16 @@ jQuery( function($) {
 
 /* 	Alternate Green Callout */
 /* 	$("a.cat:contains(Sale!)").append('<span class="green"><i class="icon icon-dollar"></i> Sale</span>'); */
+	var width = document.body.clientWidth; 
 
-	$nav = $('.navigation');
-	$nav.find("a:contains(Oakworks)").append('<span><i class="icon icon-star"></i> New</span>');
-	$nav.find("a:contains(William Marvy)").append('<span><i class="icon icon-star"></i> New</span>');
-	$nav.find("a:contains(Adjust-a-Sink)").append('<span><i class="icon icon-star"></i> New</span>');
+	// Limit this to width
+	if (width > 750) {
 
+		$nav = $('.navigation');
+		$nav.find("a:contains(Oakworks)").append('<span><i class="icon icon-star"></i> New</span>');
+		$nav.find("a:contains(William Marvy)").append('<span><i class="icon icon-star"></i> New</span>');
+		$nav.find("a:contains(Adjust-a-Sink)").append('<span><i class="icon icon-star"></i> New</span>');
+	}
 
 	$('.nextnav a').click( function() {
 		ga('send', 'event', 'pdp-button', 'click', 'nextnav-link');

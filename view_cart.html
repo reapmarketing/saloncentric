@@ -90,18 +90,22 @@ jQuery(function(){
       <div>
         <div class="cart_items row">
           <div class="cart_items_header row">
-            <div class='col-md-7 col-sm-7 col-xs-7'><span class="pull-right">Description</div>
-            <div class='col-md-2 col-sm-2 col-xs-2'>Qty.</div>
+            <div class='col-md-7 col-sm-7 col-xs-7'>Description</div>
+            <div class='col-md-2 col-sm-2 col-xs-2'>Cartons</div>
             <div class='col-md-3 col-sm-3 col-xs-3'>Price</div>
           </div>
           <!--START: SHOPPING_CART_ITEM-->
       
           <div class="cart_item row">
             <div class='col-md-7 col-sm-7 col-xs-7'>
+              <div class="col-md-6 col-sm-6">
               <!--START: itemthumbnail-->
                 <a href="product.asp?itemid=[ITEM_CATALOGID]"><img src="thumbnail.asp?file=[THUMBNAIL]&maxx=160&maxy=160" border="0" height="160" width="160"></a>
               <!--END: itemthumbnail-->
-              <div class="bold serif coral-text" style="margin-bottom:8px;"><a href="product.asp?itemid=[ITEM_CATALOGID]" class="item-name">[ITEM_NAME]</a></div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="bold serif coral-text" style="margin-bottom:8px;"><a href="product.asp?itemid=[ITEM_CATALOGID]" class="item-name">[ITEM_NAME]</a></div>
+              </div>
               <!--START: itemoptions-->
                 <!-- <a href='#' onClick="toggle('opt[ITEM_ID]')">View/Hide options</a> -->
                 <!-- <div id=opt[ITEM_ID] name=opt[ITEM_ID] style="display:none;">[OPTIONS]</div> -->
@@ -139,8 +143,6 @@ jQuery(function(){
           	<a class="button standishgray btn" style="color:white;" href="[continue_url]"><span class="add-on-left"><i class="fa fa-arrow-left"></i></span>Continue Shopping</a>
           	<a class="button standishgreen btn" href ="/myaccount.asp?action=save_cart"><span class="add-on-left"><i class="fa fa-floppy-o"></i></span>Save for Later</a>
           	<input type="submit" name="Add" value="[shoppingcart_updatecart]" class="update_cart_button btn" id="Submit2">
-          <!-- 	<input type="submit" class="gainsboro btn" value="Update Cart" /> -->
-        <!-- 	<button type="submit" class="gainsboro" style="margin-left: 80px;" onclick="document.recalculate.submit();"><span class="add-on-left"><i class="icon-repeat"></i></span>Update Cart</button> -->
         </div>
         <br />
         <br />
@@ -153,9 +155,9 @@ jQuery(function(){
 
     
     <!-- The right side -->
-    <div class="col-md-5 col-sm-6">
+    <div class="col-md-5 col-sm-6 clearfix">
       <div class="total lightgray" style="border-radius: 3px;">
-    <!-- 		<p>Subtotal<span>[CARTSUBTOTAL]</span></p> -->
+      <!-- 		<p>Subtotal<span>[CARTSUBTOTAL]</span></p> -->
     
         <!--START: BUYSAFE_CONTROL-->
           <!--START: BUYSAFE_LEARNMORE-->
@@ -189,7 +191,7 @@ jQuery(function(){
     
       <!--END: PROMOTIONS-->
     
-    <form action="recalculate.asp" method="post" name="recalculate" id="recalculate">
+      <form action="recalculate.asp" method="post" name="recalculate" id="recalculate">
     
         <!-- [shoppingcart_total] -->
         <div class="subtotal white" style="padding: 10px 0; border-radius: 5px; box-shadow: inset 0 1px 4px #CCC;">
@@ -368,42 +370,38 @@ jQuery(function(){
           <!--END: viewcart_ship-->
         </div>
         <!--END: ShipQuote-->
-    </form>
+        </form>
     
       </div>
       
     </div>
     <!-- End of the Right Side -->
     
-    
-    
-    <div class="col-md-12 coupon clearfix">
-    <!-- Coupon Codes -->
-    <form action="recalculate.asp" method="post">
-      
-        <br />
-        <!--START: apply_coupon-->
-        <p>
-        <strong class="dimgray-text">[viewcart_coupon-header]</strong>
-        </p>
-        <div class="input-group col-md-4 pull-left">
-          <input type="text" name="coupon_code" class="form-control txtBoxStyle">
-          <span class="input-group-btn">
-            <input type="submit" class="standishgreen form-control" value="Go!" id="Submit1" name="Submit1" />
-          </span>
-        </div>
-        <!--END: apply_coupon-->
-        <br />
-        <br />
-      
-    </form>
-    </div>
-    <!-- End of Coupon Codes -->
-    
-    
-    
     <div class="clearfix"></div>
-    <br />
+    
+    <div class="col-md-12 coupon">
+      <!-- Coupon Codes -->
+      <form action="recalculate.asp" method="post">
+        
+          <br />
+          <!--START: apply_coupon-->
+          <p>
+          <strong class="dimgray-text">[viewcart_coupon-header]</strong>
+          </p>
+          <div class="input-group col-md-4 pull-left">
+            <input type="text" name="coupon_code" class="form-control txtBoxStyle">
+            <span class="input-group-btn">
+              <input type="submit" class="standishgreen form-control" value="Go!" id="Submit1" name="Submit1" />
+            </span>
+          </div>
+          <!--END: apply_coupon-->
+          <br />
+          <br />
+        
+      </form>
+      <!-- End of Coupon Codes -->
+    </div>
+
     <p style="text-align: center;">[viewcart_total-note]</p>
     
     

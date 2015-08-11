@@ -47,6 +47,7 @@
 
 		$('.toggle-navigation').sidr({
 			name: 'mobile-open',
+			side: 'right',
 			source: '.main-navigation',
 			onOpen: function() {
 				$('.sidr-inner > ul > li.sidr-class-subcategories').each(function() {

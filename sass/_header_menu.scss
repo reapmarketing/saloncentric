@@ -1,85 +1,14 @@
 
 .header {
-  background-color: #fff;
   width: 100%;
 }
 .logo {
   display: block;
-  background: url("/assets/templates/standish-responsive/images/KaemarkLogo.png");
-  background-repeat: no-repeat;
-  width: 277px;
-  height: 53px;
-  text-indent: -9999em;
-  position: relative;
-  top: 0;
-  left: -25px;
 }
-.logo-footer {
-  background: url("/assets/templates/standish-responsive/images/Kaemark-SC.png");
-  background-repeat: no-repeat;
-  width: 100%;
-  background-size: 100%;
-  height: 80px;
+.logo-footer {  
   text-indent: -9999em;
   float: none;
   display: inline-block;
-}
-@media only screen and (max-width: 61.9375em) {
-	header {
-		min-height: 80px;
-		padding-top: 15px;
-	}
-	button.cart, button.large, .button.large {
-		font-size: 1rem;
-		height: 2.875em;
-  }
-	header button.cart.large {
-	}
-	header button.cart .cart-number {
-		margin-left: 0;
-	}
-	
-	.logo {
-		background: url("/assets/templates/standish-responsive/images/KaemarkLogo.png");
-		background-size: 200px auto;
-		background-repeat: no-repeat;
-		height: 80px;
-    top: 0;
-		left: -10px;
-	}
-
-	.searchlight-result-text {
-		font-size: 15px;
-	}
-	table.searchlight-results {
-		width: 90%;
-	
-	}
-	body section#prime-content {
-  margin-top: 0;
-	}
-	.badge-product {
-		width: 100%;
-	}
-}
-@media only screen and (max-width: 31.250em) {
-.logo {
-	background-size: 50% auto;
-}
-}
-@media only screen and (max-width: 61.9375em) {
-	.toggle-navigation, .site-branding {
-	  margin-top: 20px;
-	}
-	.toggle-navigation {
-		padding: 0;
-	}
-	.toggle-navigation a.btn {
-		color: #474747;
-	}
-	.toggle-navigation a.btn:hover,.toggle-navigation a.btn:focus, .toggle-navigation a.btn:active {
-		color: #333;
-	}
 }
 header button.cart {
   margin-right: 0;
@@ -92,7 +21,7 @@ button.cart i {
 .cart-number {
   margin-left: 18px;
   background-color: $btn-highlight;
-  padding: 14px 18px;
+  padding: 13px 18px;
   border-radius: 0px 3px 3px 0;
 }
 .navigation {
@@ -340,6 +269,19 @@ li.first.far a {
   top: 5px;
   left: 7px;
 }
+
+// Rotator STYLES
+
+#slickShow {
+  overflow: hidden;
+  margin-top: 2.3rem;
+  .slide-option-text {
+    font-size: .9rem;
+  }
+}
+
+
+
 
 
 

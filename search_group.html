@@ -18,19 +18,19 @@
 	<div class="col-md-8 col-sm-6">
 		[category_Header-products] (Total Items: [productnumber])
 	</div>
-  <div class="form-group col-md-3 col-sm-4 col-xs-12 fancy-select">
-    <form action="search_groups.asp?keyword=[keyword]&manf=[manf]&byprice=[byprice]" method="post" name="frmsortby">
-      <!--START: sortbylist-->
-        <select name="sortby" onchange="frmsortby.submit();" class="txtBoxStyle form-control">
-        [sortbylist]
-        </select>
-        <i class="fa fa-caret-down fa-sm"></i>
-      <!--END: sortbylist-->
-    </form>
-  </div>
-  
+	<div class="form-group col-md-3 col-sm-4 col-xs-12 fancy-select">
+		<form action="search_groups.asp?keyword=[keyword]&manf=[manf]&byprice=[byprice]" method="post" name="frmsortby">
+		  <!--START: sortbylist-->
+		    <select name="sortby" onchange="frmsortby.submit();">
+		    [sortbylist]
+		    </select>
+		    <i class="fa fa-caret-down fa-sm"></i>
+		  <!--END: sortbylist-->
+		</form>
+	</div>
+  	<div class="clearfix"></div>
 	<!--START: PAGING-->
-	<div class="col-md-12 clearfix">
+	<div class="col-md-12">
 		<!-- [category_moreresults] -->
 		<div class="pagination">
 			<!--START: PREV-->
@@ -82,7 +82,7 @@
             <!--END: SALEPRICE-->
             </div>
           <!-- <button>Add to Cart</button> -->
-          <input type="button" value="See Details" onclick="window.location='add_cart.asp?quick=1&amp;item_id=[catalogid]'" class="button btn" style="display:block; width: 100%;">
+          <input type="button" value="See Details" onclick="window.location='add_cart.asp?quick=1&amp;item_id=[catalogid]'" class="button btn hidden-sm hidden-xs" style="display:block; width: 100%;">
         </div>
       <!--END: ITEM_TEMPLATE-->
     <!--END: CATEGORY_ITEMS-->
