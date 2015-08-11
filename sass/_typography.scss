@@ -175,7 +175,9 @@ strong {
   font-family: $default-font;
 }
 
-
+.return { color: $btn-color; }
+.usa-blue { color: $primary-color; }
+.money { color: $btn-highlight; }
 
 
 // HEADER level customizations to Font
@@ -218,10 +220,6 @@ strong {
 .add-rating-link {
   @extend .narrow;
 }
-
-.return { color: $yellow; }
-.usa-blue { color: $usa-blue; }
-.money { color: $green; }
 
 
 // Form Font Stuff -- hubspot craziness

@@ -195,21 +195,21 @@ strong {
 .sans {
   font-family: "PT Sans", Arial, Helvetica, sans-serif; }
 
-/* line 199, ../sass/_typography.scss */
+/* line 178, ../sass/_typography.scss */
+.return {
+  color: #e82a79; }
+
+/* line 179, ../sass/_typography.scss */
+.usa-blue {
+  color: #6FBBEE; }
+
+/* line 180, ../sass/_typography.scss */
+.money {
+  color: #e687ba; }
+
+/* line 201, ../sass/_typography.scss */
 .listing p.title {
   min-height: 34px; }
-
-/* line 222, ../sass/_typography.scss */
-.return {
-  color: #D1B43B; }
-
-/* line 223, ../sass/_typography.scss */
-.usa-blue {
-  color: #000fa5; }
-
-/* line 224, ../sass/_typography.scss */
-.money {
-  color: #C1D3BE; }
 
 /* line 1, ../sass/_branding.scss */
 .white {
