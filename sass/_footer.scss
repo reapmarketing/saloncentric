@@ -74,7 +74,7 @@ footer {
   margin-top: 35px;
 
   img {
-    max-width: 250px;
+    max-width: 100%;
   }
   p, span, ul, li {
     color: lighten($primary-gray, 20%)
@@ -92,54 +92,54 @@ footer .container-fluid.footer-content {
 .footer-logo {
   /*display: block;*/
   /*float: left;*/
-  background-image: url("/assets/templates/standish-responsive/images/footer-sprite.png");
+  background-image: url("/assets/templates/salon-responsive/images/footer-sprite.png");
   margin: 44px 16px 20px 16px;
   display: inline-block;
   float: none;
   vertical-align: top;
 }
-.norton {
+footer .norton {
   margin-top: 63px;
   width: 107px;
   height: 57px;
   background: none;
 }
-.usa {
+footer .usa {
   margin-top: 70px;
   width: 125px;
   height: 51px;
   background-position: -120px 0;
 }
-.pba {
+footer .pba {
   width: 60px;
   height: 117px;
   background-position: -254px 0;
 }
-.interesting {
+footer .interesting {
   width: 53px;
   height: 92px;
   background-position: -317px 0;
 }
-.bbb {
+footer .bbb {
   margin-top: 75px;
   width: 108px;
   height: 42px;
   background-position: 0 -58px;
   background: none;
 }
-.bofa {
+footer .bofa {
   margin-top: 70px;
   width: 145px;
   height: 50px;
   background-position: -109px -50px;
 }
-.bravo {
+footer .bravo {
 	margin-top: 49px;
 	width: 95px;
 	height: 85px;
 	background-position: -371px 0px;
 }
-.quest {
+footer .quest {
 	margin-top: 61px;
 	width: 130px;
 	height: 72px;

@@ -64,78 +64,82 @@ h6 {
 p {
   font-size: 1em; }
 
+/* line 65, ../sass/_typography.scss */
+.subheader {
+  font-size: 78%; }
+
 @media only screen and (max-width: 61.9375em) {
-  /* line 67, ../sass/_typography.scss */
+  /* line 71, ../sass/_typography.scss */
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4; }
 
-  /* line 71, ../sass/_typography.scss */
+  /* line 75, ../sass/_typography.scss */
   h1 {
     font-size: 2.75rem; }
 
-  /* line 75, ../sass/_typography.scss */
+  /* line 79, ../sass/_typography.scss */
   h2 {
     font-size: 2.3125rem; }
 
-  /* line 79, ../sass/_typography.scss */
+  /* line 83, ../sass/_typography.scss */
   h3 {
     font-size: 1.6875rem; }
 
-  /* line 83, ../sass/_typography.scss */
+  /* line 87, ../sass/_typography.scss */
   h4 {
     font-size: 1.4375rem; }
 
-  /* line 87, ../sass/_typography.scss */
+  /* line 91, ../sass/_typography.scss */
   h5 {
     font-size: 1.4375rem; }
 
-  /* line 91, ../sass/_typography.scss */
+  /* line 95, ../sass/_typography.scss */
   h6 {
     font-size: 1.4375rem; }
 
-  /* line 94, ../sass/_typography.scss */
+  /* line 98, ../sass/_typography.scss */
   p {
     font-size: 1.125rem; }
 
-  /* line 97, ../sass/_typography.scss */
+  /* line 101, ../sass/_typography.scss */
   p.title {
     font-size: 1.25rem;
     font-weight: 100; }
 
-  /* line 101, ../sass/_typography.scss */
+  /* line 105, ../sass/_typography.scss */
   .hello p {
     font-size: 1.25rem; } }
-/* line 106, ../sass/_typography.scss */
+/* line 110, ../sass/_typography.scss */
 p {
   margin: 0 0 10px; }
 
-/* line 110, ../sass/_typography.scss */
+/* line 114, ../sass/_typography.scss */
 a.button,
 a:link.button,
 a:visited.button {
   color: white;
   text-decoration: none; }
 
-/* line 116, ../sass/_typography.scss */
+/* line 120, ../sass/_typography.scss */
 a:hover.button,
 a:active.button {
   text-decoration: none; }
 
-/* line 122, ../sass/_typography.scss */
+/* line 126, ../sass/_typography.scss */
 a,
 a:link,
 a:visited {
   color: #6FBBEE; }
 
-/* line 127, ../sass/_typography.scss */
+/* line 131, ../sass/_typography.scss */
 a:hover {
   color: #41a5e9; }
 
-/* line 130, ../sass/_typography.scss */
+/* line 134, ../sass/_typography.scss */
 a:active {
   color: #41a5e9; }
 
-/* line 136, ../sass/_typography.scss */
+/* line 140, ../sass/_typography.scss */
 .default, .navigation ul ul ul a, button,
 .button,
 input[type=button],
@@ -143,70 +147,70 @@ input[type=submit],
 .hs-form .hs-button, .hs-input, body, html, .alternative {
   font-family: "PT Sans", Arial, Helvetica, sans-serif; }
 
-/* line 138, ../sass/_typography.scss */
+/* line 142, ../sass/_typography.scss */
 .narrow, .navigation ul li, .listing p.title, .pricebox .left-price, .product-form label, .product-form .questions, .brochure-download, .rating, .add-rating-link, .create-account button, .login form {
   font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif; }
 
-/* line 140, ../sass/_typography.scss */
+/* line 144, ../sass/_typography.scss */
 .special, .search form, .search p, .search input, .search span, .search a, .search button, .hello-container a, .hello-container p, .hello-container div {
   font-family: "PT Sans Caption", Arial, Helvetica, sans-serif; }
 
-/* line 142, ../sass/_typography.scss */
+/* line 146, ../sass/_typography.scss */
 .strike {
   text-decoration: line-through; }
 
-/* line 145, ../sass/_typography.scss */
+/* line 149, ../sass/_typography.scss */
 .bold {
   font-weight: 700;
   color: #6FBBEE; }
 
-/* line 149, ../sass/_typography.scss */
+/* line 153, ../sass/_typography.scss */
 .center {
   text-align: center; }
 
-/* line 152, ../sass/_typography.scss */
+/* line 156, ../sass/_typography.scss */
 .italic {
   font-style: italic; }
 
-/* line 155, ../sass/_typography.scss */
+/* line 159, ../sass/_typography.scss */
 .allcaps {
   text-transform: uppercase; }
-  /* line 157, ../sass/_typography.scss */
+  /* line 161, ../sass/_typography.scss */
   .allcaps.featured {
     color: #6FBBEE; }
-    /* line 159, ../sass/_typography.scss */
+    /* line 163, ../sass/_typography.scss */
     .allcaps.featured > a {
       color: #6FBBEE; }
 
-/* line 164, ../sass/_typography.scss */
+/* line 168, ../sass/_typography.scss */
 .lowercase {
   text-transform: lowercase; }
 
-/* line 167, ../sass/_typography.scss */
+/* line 171, ../sass/_typography.scss */
 strong {
   color: #6FBBEE; }
 
-/* line 170, ../sass/_typography.scss */
+/* line 174, ../sass/_typography.scss */
 .serif {
   font-family: "PT Serif", "Times New Roman", Times, serif; }
 
-/* line 173, ../sass/_typography.scss */
+/* line 177, ../sass/_typography.scss */
 .sans {
   font-family: "PT Sans", Arial, Helvetica, sans-serif; }
 
-/* line 177, ../sass/_typography.scss */
+/* line 181, ../sass/_typography.scss */
 .return {
   color: #e82a79; }
 
-/* line 178, ../sass/_typography.scss */
+/* line 182, ../sass/_typography.scss */
 .usa-blue {
   color: #6FBBEE; }
 
-/* line 179, ../sass/_typography.scss */
+/* line 183, ../sass/_typography.scss */
 .money {
   color: #e687ba; }
 
-/* line 200, ../sass/_typography.scss */
+/* line 204, ../sass/_typography.scss */
 .listing p.title {
   min-height: 34px; }
 
@@ -405,30 +409,10 @@ body .update_cart_button {
   width: 240px; }
 
 /* ~~~CartSprite~~~ */
-/* line 90, ../sass/_cart.scss */
-.cartsprite .ppal {
-  width: 140px;
-  height: 20px;
-  float: left;
-  margin-top: 37px; }
+/* line 94, ../sass/_cart.scss */
+.cartsprite div:first-child .ppal {
+  margin-top: 31px; }
 
-/* line 96, ../sass/_cart.scss */
-.cartsprite .norton {
-  background-image: url("/assets/templates/standish-responsive/images/cart-sprite.png");
-  background-position: 0px -21px;
-  height: 50px;
-  width: 90px;
-  float: right;
-  margin-top: 24px; }
-
-@media only screen and (max-width: 767px) {
-  /* line 105, ../sass/_cart.scss */
-  .cartsprite .cards {
-    margin-top: -12px; }
-
-  /* line 108, ../sass/_cart.scss */
-  .cartsprite .norton {
-    margin-top: -40px; } }
 /* Stuff that goes in the footer */
 /* line 3, ../sass/_footer.scss */
 .newsletter-signup {
@@ -513,7 +497,7 @@ footer {
   margin-top: 35px; }
   /* line 76, ../sass/_footer.scss */
   footer img {
-    max-width: 250px; }
+    max-width: 100%; }
   /* line 79, ../sass/_footer.scss */
   footer p, footer span, footer ul, footer li {
     color: #9c9c9c; }
@@ -533,40 +517,40 @@ footer .container-fluid.footer-content {
 .footer-logo {
   /*display: block;*/
   /*float: left;*/
-  background-image: url("/assets/templates/standish-responsive/images/footer-sprite.png");
+  background-image: url("/assets/templates/salon-responsive/images/footer-sprite.png");
   margin: 44px 16px 20px 16px;
   display: inline-block;
   float: none;
   vertical-align: top; }
 
 /* line 101, ../sass/_footer.scss */
-.norton {
+footer .norton {
   margin-top: 63px;
   width: 107px;
   height: 57px;
   background: none; }
 
 /* line 107, ../sass/_footer.scss */
-.usa {
+footer .usa {
   margin-top: 70px;
   width: 125px;
   height: 51px;
   background-position: -120px 0; }
 
 /* line 113, ../sass/_footer.scss */
-.pba {
+footer .pba {
   width: 60px;
   height: 117px;
   background-position: -254px 0; }
 
 /* line 118, ../sass/_footer.scss */
-.interesting {
+footer .interesting {
   width: 53px;
   height: 92px;
   background-position: -317px 0; }
 
 /* line 123, ../sass/_footer.scss */
-.bbb {
+footer .bbb {
   margin-top: 75px;
   width: 108px;
   height: 42px;
@@ -574,21 +558,21 @@ footer .container-fluid.footer-content {
   background: none; }
 
 /* line 130, ../sass/_footer.scss */
-.bofa {
+footer .bofa {
   margin-top: 70px;
   width: 145px;
   height: 50px;
   background-position: -109px -50px; }
 
 /* line 136, ../sass/_footer.scss */
-.bravo {
+footer .bravo {
   margin-top: 49px;
   width: 95px;
   height: 85px;
   background-position: -371px 0px; }
 
 /* line 142, ../sass/_footer.scss */
-.quest {
+footer .quest {
   margin-top: 61px;
   width: 130px;
   height: 72px;
@@ -1170,7 +1154,7 @@ legend {
 .corner-tag {
   width: 75px;
   height: 75px;
-  background: url("/assets/templates/standish-responsive/images/corner-tag-sprite.png");
+  background: url("/assets/templates/salon-responsive/images/corner-tag-sprite.png");
   position: relative;
   top: 74px;
   left: 4px;
@@ -2000,22 +1984,29 @@ li.first.far a {
     background-color: #efefef;
     padding: 10px 12px;
     height: 100%; } }
-/* line 201, ../sass/_mobile.scss */
+@media only screen and (max-width: 768px) {
+  /* line 203, ../sass/_mobile.scss */
+  .total {
+    padding: 20px 10px; }
+    /* line 206, ../sass/_mobile.scss */
+    .total .button.large {
+      padding: 0 10px; } }
+/* line 214, ../sass/_mobile.scss */
 .fancy-select-lg {
   margin-right: 0;
   width: 100%;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   height: 3.2rem; }
-  /* line 203, ../sass/_mobile.scss */
+  /* line 216, ../sass/_mobile.scss */
   .fancy-select-lg.form-group {
     margin-bottom: 0; }
-  /* line 212, ../sass/_mobile.scss */
+  /* line 225, ../sass/_mobile.scss */
   .fancy-select-lg select {
     font-size: 1.2rem;
     width: 100%;
     height: 100%; }
-  /* line 218, ../sass/_mobile.scss */
+  /* line 231, ../sass/_mobile.scss */
   .fancy-select-lg i {
     font-size: x-large;
     background-color: #efefef;
@@ -2024,16 +2015,16 @@ li.first.far a {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 480px) {
-  /* line 228, ../sass/_mobile.scss */
+  /* line 241, ../sass/_mobile.scss */
   .badges .badges-list .badge-product {
     width: 100%; } }
 @media only screen and (max-width: 768px) {
-  /* line 239, ../sass/_mobile.scss */
+  /* line 252, ../sass/_mobile.scss */
   .listing .listing-container .product_thumb {
     border: 0 none; } }
 /*Add 5-col class...*/
 @media (min-width: 992px) {
-  /* line 253, ../sass/_mobile.scss */
+  /* line 266, ../sass/_mobile.scss */
   .col-md-2-2 {
     width: 20%;
     position: relative;
@@ -2042,52 +2033,52 @@ li.first.far a {
     float: left; } }
 /*Override bootstrap container class...*/
 @media (max-width: 1000px) {
-  /* line 268, ../sass/_mobile.scss */
+  /* line 281, ../sass/_mobile.scss */
   .container {
     width: 100%;
     padding: 0; } }
 /* Override bootstrap container in large width so it doesn't look stretched out */
 @media (min-width: 1200px) {
-  /* line 276, ../sass/_mobile.scss */
+  /* line 289, ../sass/_mobile.scss */
   .container {
     width: 1000px; } }
-/* line 282, ../sass/_mobile.scss */
+/* line 295, ../sass/_mobile.scss */
 .sidr-class-hidden-xs,
 .sidr-class-hidden-sm,
 .sidr-class-hidden-md,
 .sidr-class-hidden-lg {
   display: none; }
 
-/* line 289, ../sass/_mobile.scss */
+/* line 302, ../sass/_mobile.scss */
 .sidr .sidr-inner ul li {
   /* Sidr Side mobile menu */ }
-  /* line 291, ../sass/_mobile.scss */
+  /* line 304, ../sass/_mobile.scss */
   .sidr .sidr-inner ul li .sidr-class-hidden-xs,
   .sidr .sidr-inner ul li .sidr-class-hidden-sm,
   .sidr .sidr-inner ul li .sidr-class-hidden-md,
   .sidr .sidr-inner ul li .sidr-class-hidden-lg {
     display: none; }
 
-/* line 300, ../sass/_mobile.scss */
+/* line 313, ../sass/_mobile.scss */
 .sidr-inner .sidr-class-hidden {
   display: none; }
 
-/* line 304, ../sass/_mobile.scss */
+/* line 317, ../sass/_mobile.scss */
 .sidr ul li.sidr-class-subcategories a.sidr-class-menu-open {
   color: #676767; }
 
 /* Table Based Page Styles */
 /*override mobile bootstrap table styles*/
 @media screen and (max-width: 767px) {
-  /* line 311, ../sass/_mobile.scss */
+  /* line 324, ../sass/_mobile.scss */
   .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tfoot > tr > td, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > thead > tr > th {
     white-space: normal; }
 
-  /* line 314, ../sass/_mobile.scss */
+  /* line 327, ../sass/_mobile.scss */
   .table-responsive {
     border: 0 none; } }
 @media screen and (max-width: 767px) {
-  /* line 319, ../sass/_mobile.scss */
+  /* line 332, ../sass/_mobile.scss */
   .product-form .MagicZoomPlus, .MagicZoomPlus:hover {
     cursor: pointer !important; } }
 /* Product and Category Pages */
@@ -2106,7 +2097,7 @@ li.first.far a {
   display: block;
   height: 60px;
   width: 60px;
-  background: url("/assets/templates/standish-responsive/images/badges-sprite.png");
+  background: url("/assets/templates/salon-responsive/images/badges-sprite.png");
   -webkit-background-size: 800%;
   -moz-background-size: 800%;
   background-size: 800%;
@@ -2143,7 +2134,7 @@ li.first.far a {
 
 /* line 49, ../sass/_product.scss */
 .badge-made-usa i, .badge-made-usa span, .badge-made-usa em {
-  background: url("/assets/templates/standish-responsive/images/made-usa-badge.png");
+  background: url("/assets/templates/salon-responsive/images/made-usa-badge.png");
   background-repeat: no-repeat;
   background-size: 100%; }
 
@@ -2651,7 +2642,7 @@ fieldset {
 /* line 469, ../sass/_product.scss */
 .cornersprite {
   display: none;
-  background-image: url("/assets/templates/standish-responsive/images/corner-tag-sprite.png");
+  background-image: url("/assets/templates/salon-responsive/images/corner-tag-sprite.png");
   width: 75px;
   height: 75px;
   background-position: -76px 0;
@@ -2665,7 +2656,7 @@ fieldset {
 
 /* line 482, ../sass/_product.scss */
 .tweet_button {
-  background: url("/assets/templates/standish-responsive/images/tweet-sprite.png");
+  background: url("/assets/templates/salon-responsive/images/tweet-sprite.png");
   width: 56px;
   height: 21px;
   display: inline-block; }

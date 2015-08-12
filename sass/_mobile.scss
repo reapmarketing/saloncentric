@@ -198,6 +198,19 @@
 
 }
 
+//~~~~~~~~ CART STYLES ~~~~~~~~//
+@media only screen and (max-width : $tablet) {
+	.total {
+		padding: 20px 10px;
+
+		.button.large {
+			padding: 0 10px;
+		}
+
+	}
+
+}
+
 .fancy-select-lg {
 	@extend .fancy-select;
 	&.form-group {

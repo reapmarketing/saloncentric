@@ -47,57 +47,54 @@ jQuery(function(){
 
 </script>
 	<div class="col-md-12">
-  	<div id="cart-header" class="col-md-12 col-sm-12">
-    	<div class="col-md-7 col-sm-6">
-        <h2>Your Cart</h2>
-      </div>
-      <div class="col-md-5 col-sm-6 cartsprite">
-        <div class="ppal"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png" alt="Pay with PayPal, PayPal Credit or any major credit card" /></div>
-        <div class="norton"></div>
-      </div>
-      <!--START: CATEGORY_HEADER-->
-        [CONTENT]
-      <!--END: CATEGORY_HEADER-->
-      <form action="shipquote.asp" method="post" name="shipquote" onSubmit="return submitForm();">
-        <input type="hidden" name="thispage" value="">
-        <input type="hidden" name="shipping_zip" value="[shipping_zip]" id="Hidden2" style="min-height: 27px;">
-        <script language="javascript">document.shipquote.thispage.value = window.location.href;</script>
-      </form>
-      
-      <!-- <input type="button" value="[viewcart_continue-shopping]" onclick="document.location.href='[continue_url]';" class="btn" onMouseOver="this.className='btn_over'" onMouseOut="this.className='btn'"> -->
-      <!-- <input type="button" onclick="window.location='checkout.asp?step=1'" value="[viewcart_checkout-button]" class="btn" onMouseOver="this.className='btn_over'" onMouseOut="this.className='btn'"> -->
-    
-    
-    
-        <!--START: SHOPPING_CART_SHIPMENT_INFO-->
-        Ship To [name] [address]
-        <!--START: EDITADDRESS-->
-        <a href='edit_shipment.asp?shipmentid=[shipmentid]&action=editaddresses'>Edit Address</a>
-        <!--END: EDITADDRESS-->
-    
-        <!--END: SHOPPING_CART_SHIPMENT_INFO-->
-    <!--
-        [shoppingcart_items]
-        [shoppingcart_quantity]
-        [shoppingcart_price]
-        [shoppingcart_total]
-    -->
-    </div>
+
   	
-    <div class="col-md-7 col-sm-6">    	    
+    <div class="col-md-7 col-sm-6">
+      <div id="cart-header" class="col-md-12 col-sm-12">
+        <h2>Your Cart</h2>
+        
+        <!--START: CATEGORY_HEADER-->
+          [CONTENT]
+        <!--END: CATEGORY_HEADER-->
+        <form action="shipquote.asp" method="post" name="shipquote" onSubmit="return submitForm();">
+          <input type="hidden" name="thispage" value="">
+          <input type="hidden" name="shipping_zip" value="[shipping_zip]" id="Hidden2" style="min-height: 27px;">
+          <script language="javascript">document.shipquote.thispage.value = window.location.href;</script>
+        </form>
+        
+        <!-- <input type="button" value="[viewcart_continue-shopping]" onclick="document.location.href='[continue_url]';" class="btn" onMouseOver="this.className='btn_over'" onMouseOut="this.className='btn'"> -->
+        <!-- <input type="button" onclick="window.location='checkout.asp?step=1'" value="[viewcart_checkout-button]" class="btn" onMouseOver="this.className='btn_over'" onMouseOut="this.className='btn'"> -->
+      
+      
+      
+          <!--START: SHOPPING_CART_SHIPMENT_INFO-->
+          Ship To [name] [address]
+          <!--START: EDITADDRESS-->
+          <a href='edit_shipment.asp?shipmentid=[shipmentid]&action=editaddresses'>Edit Address</a>
+          <!--END: EDITADDRESS-->
+      
+          <!--END: SHOPPING_CART_SHIPMENT_INFO-->
+      <!--
+          [shoppingcart_items]
+          [shoppingcart_quantity]
+          [shoppingcart_price]
+          [shoppingcart_total]
+      -->
+    </div>
+      <div class="clearfix"></div>
       <form action="recalculate.asp" method="post" name="recal" id="recal">
       <!-- The Left Side -->
       <div>
         <div class="cart_items row">
           <div class="cart_items_header row">
-            <div class='col-md-7 col-sm-7 col-xs-7'>Description</div>
-            <div class='col-md-2 col-sm-2 col-xs-2'>Items</div>
+            <div class='col-md-7 col-sm-7 col-xs-6'>Description</div>
+            <div class='col-md-2 col-sm-2 col-xs-3'>Items</div>
             <div class='col-md-3 col-sm-3 col-xs-3'>Price</div>
           </div>
           <!--START: SHOPPING_CART_ITEM-->
       
           <div class="cart_item row">
-            <div class='col-md-7 col-sm-7 col-xs-7'>
+            <div class='col-md-7 col-sm-7 col-xs-6'>
               <div class="col-md-6 col-sm-6">
               <!--START: itemthumbnail-->
                 <a href="product.asp?itemid=[ITEM_CATALOGID]"><img src="thumbnail.asp?file=[THUMBNAIL]&maxx=160&maxy=160" border="0" height="160" width="160"></a>
@@ -121,7 +118,7 @@ jQuery(function(){
                 <!--END: recurring_frequency-->
             </div>
             </div><!-- .cart_col1 -->
-            <div class="col-md-2 col-sm-2 col-xs-2">
+            <div class="col-md-2 col-sm-2 col-xs-3">
               <input type="text" name="qtyitemnum" value="[ITEM_QUANTITY]" size="3" maxlength="5" class="txtBoxStyle form-control">
               <input type="hidden" name="coliditemnum" value="[ITEM_ID]" size="3" maxlength="5" id="Hidden3">
               <i class="icon-reload"></i>
@@ -153,6 +150,16 @@ jQuery(function(){
     
     <!-- The right side -->
     <div class="col-md-5 col-sm-6 clearfix">
+      <div class="cartsprite row padd-bottom-10">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="ppal pull-left"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png" alt="Pay with PayPal, PayPal Credit or any major credit card" /></div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="pull-right norton"><img src="assets/templates/[template]/images/cart-sprite-norton.png" /></div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
       <div class="total lightgray" style="border-radius: 3px;">
       <!-- 		<p>Subtotal<span>[CARTSUBTOTAL]</span></p> -->
     

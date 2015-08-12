@@ -22,7 +22,8 @@
 			'.listing .listing-container',
 			'.column .eqhgt',
 			'.column .eqhgt-g1',
-			'.pricebox-eqhgt'
+			'.pricebox-eqhgt',
+			'.footer-logo-sm'
 		];
 		resizeColumns(groups);
 	}
@@ -60,13 +61,13 @@
 				case 'listing_3':
 					var script = document.createElement('script');
 					script.id = 'listing';
-					script.src = '/assets/templates/standish-responsive/scripts/listing-scripts.js';
+					script.src = '/assets/templates/salon-responsive/scripts/listing-scripts.js';
 					document.head.appendChild(script);
 				return;
 				case ( 'listing_2' ):
 					var script = document.createElement('script');
 					script.id = 'listing';
-					script.src = '/assets/templates/standish-responsive/scripts/listing-scripts.js';
+					script.src = '/assets/templates/salon-responsive/scripts/listing-scripts.js';
 					document.head.appendChild(script);
 					// Insert hbspt script
 					var scriptb = document.createElement('script');

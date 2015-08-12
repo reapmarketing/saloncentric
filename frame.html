@@ -27,10 +27,10 @@
 
 		<link rel="shortcut icon" href="assets/images/Favicon/favicon.ico"/>
 		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="assets/templates/[template]/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/templates/[template]/style/bootstrap.min.css">
 
 		<!-- Optional theme -->
-		<link rel="stylesheet" href="assets/templates/[template]/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="assets/templates/[template]/style/bootstrap-theme.min.css">
 		
 		<link rel="stylesheet" href="assets/templates/[template]/style/jquery.sidr.light.css">
 
@@ -41,14 +41,14 @@
 
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" />
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="assets/templates/[template]/style/main.css?cachebuster=20150007" />
+		<link rel="stylesheet" href="assets/templates/[template]/style/main.css?cachebuster=201500478" />
 
 
 		<link rel="stylesheet" href="assets/templates/common/quicksearch/quicksearch.css" /> 
 
 
-				<!-- Bootstrap -->
-		<script type="text/javascript" src="assets/templates/[template]/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- Bootstrap -->
+		<script type="text/javascript" src="assets/templates/[template]/scripts/bootstrap.min.js"></script>
 
 		<!-- Javascript Support -->
 		<script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
@@ -93,7 +93,7 @@
 
 		<!-- Hubspot Form Script -->
 		<script charset="utf-8" src="https://js.hubspot.com/forms/current.js"></script>
-		<!-- Newsletter Signup -- Load after hubspot --> 
+		<!-- Newsletter Signup Load after hubspot --> 
 		<script type="text/javascript" src="assets/templates/[template]/scripts/hubspot-newsletter-sign-up-form.js"></script>
 		<script type="text/javascript" src="assets/templates/[template]/scripts/instafeed.js"></script>
 		<!-- discourage robots from indexing check out page -->
@@ -103,7 +103,7 @@
 					$('meta[name=ROBOTS]').attr('CONTENT', 'NOINDEX, NOFOLLOW');
 			}
 		</script>
-		<!-- 3d quick search -- search the site -->
+		<!-- 3d quick search search the site -->
 		<script type="text/javascript" src="assets/templates/[template]/scripts/3dquicksearch.js"></script>
 		<!---- Custom ajax script that takes in json from custom top bar content -->
 		<script type="text/javascript" src="assets/templates/[template]/scripts/top-bar-custom-content.js"></script>
@@ -186,11 +186,11 @@
 								<div id="mobile-menu" class="hidden-md hidden-lg col-sm-12">
 
 									<div class="row">
-										<div class="site-branding col-sm-6 col-xs-6">
+										<div class="site-branding col-sm-4 col-xs-6">
 											<a href="/"><h2 class="logo" title="Kaemark"><img class="img-responsive" src="/assets/images/StandishPartnerLogo.png"></h2></a>
 										</div>
 
-										<div class="col-sm-6 col-xs-6">
+										<div class="col-sm-8 col-xs-6">
 											<div class="pull-right">
 												<a class="inline" href="/view_cart.asp"><span>[ITEMSINCART]</span><i class="fa fa-shopping-cart fa-2x"></i></a>
 												<a class="inline" href="/myaccount.asp?secure"><i class="fa fa-user fa-2x"></i></a>
@@ -399,7 +399,7 @@
 
 	<footer>
 			<div class="container-fluid footer-content padd-top padd-bottom-10">
-				<div class="col-md-3 col-sm-3">
+				<div class="col-md-3 col-sm-4">
 					<h5>Trusted Partners</h5>
 					<div class="col-md-12">
 						<div><img src="assets/templates/[template]/images/standish_salon_goods.png" height="56"/></div>
@@ -412,33 +412,45 @@
 					</div>
 				</div>
 
-				<div class="col-md-3 col-sm-3">
+				<div class="col-md-6 col-sm-5">
 					<h5>About Us</h5>
-					<p>We are a Texas-based company passionate about bringing you the perfect balance between affordable and quality. With a wide variety of products to outfit your salon, including many items made here in the USA, we are your one-stop shop for all things salon equipment.</p>
-				</div>
-
-				<div class="col-md-3 col-sm-3 footer-logos">
+					<p>Standish is a proud partner of SalonCentric. We are a Texas-based company passionate about bringing you the perfect balance between affordability and quality. With a wide variety of products to outfit your salon, including many items made here in the USA, we are your one-stop shop for all things salon equipment.</p>
+				
 					<div class="row">
-						<div class="col-md-4 col-sm-4 col-xs-3 col-xs-offset-1 col-sm-offset-0 footer-logo-sm">
-							<img class="img-responsive" src="/assets/templates/[template]/images/PBA.png">
+						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4">
+							<h6 class="subheader">Accredited: </h6>
+							<a target="_blank" id="bbblink" class="ruhzbus" href="https://www.bbb.org/dallas/business-reviews/beauty-supplies-and-equipment/standish-salon-goods-in-dallas-tx-90402331#bbblogo" title="Standish Salon Goods, LLC, Beauty Supplies & Equipment, Dallas, TX" style="display: block;position: relative;overflow: hidden; width: 100px; height: 45px; margin: 0px; padding: 0px;">
+							<img style="padding: 0px; border: none;" id="bbblinkimg" src="https://seal-dallas.bbb.org/logo/ruhzbus/standish-salon-goods-90402331.png" alt="Standish Salon Goods, LLC, Beauty Supplies & Equipment, Dallas, TX"></a><script type="text/javascript">var bbbprotocol = ( ("https:" == document.location.protocol) ? "https://" : "http://" ); document.write(unescape("%3Cscript src='" + bbbprotocol + 'seal-dallas.bbb.org' + unescape('%2Flogo%2Fstandish-salon-goods-90402331.js') + "' type='text/javascript'%3E%3C/script%3E"));</script>
 						</div>
-						<div class="col-md-4 col-sm-4 col-xs-3 footer-logo-sm">
-							<img class="img-responsive" src="/assets/templates/[template]/images/New_Norton_Logo.png">
+						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4">
+							<a href="https://probeauty.org/">
+								<h6 class="subheader">Industry Recognized: </h6>
+								<img class="img-responsive" src="/assets/templates/[template]/images/PBA.png">
+							</a>
 						</div>
-						<div class="col-md-4 col-sm-4 col-xs-3 footer-logo-sm">
-							<img class="img-responsive" src="/assets/templates/[template]/images/IC.png">
+						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4">
+							<a href="http://interestingcompanies.com/portfolio/standish-salon-goods/">
+								<h6 class="subheader">Award Winning: </h6>
+								<img class="img-responsive" src="/assets/templates/[template]/images/IC.png">
+							</a>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 col-sm-4 col-xs-3 col-xs-offset-1 col-sm-offset-0 footer-logo-sm">
-							<img class="img-responsive" src="/assets/templates/[template]/images/BBB.png">
+						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4">
+							<h6 class="subheader">As Seen On: </h6>
+							<img class="img-responsive" src="/assets/templates/[template]/images/Bravo-tv-logo.png">
 						</div>
-						<div class="col-md-4 col-sm-4 col-xs-3 footer-logo-sm">
-							<img class="img-responsive" src="/assets/templates/[template]/images/BOA.png">
+						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4">
+							<h6 class="subheader">Secure Browsing: </h6>
+							<img class="img-responsive" src="/assets/templates/[template]/images/New_Norton_Logo_White.png">
 						</div>
-						<div class="col-md-4 col-sm-4 col-xs-3 footer-logo-sm">
-							<img class="img-responsive" src="/assets/templates/[template]/images/Bravo.png">
+						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4">
+							<h6 class="subheader">U.S. Items: </h6>
+							<img class="img-responsive" src="/assets/templates/[template]/images/made-usa-badge-white.png">
 						</div>
+						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4">
+							<h6 class="subheader">Secure Checkout: </h6>
+							<img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/ppcredit_SM_BNPOT_1x.png" alt="PayPal Credit" />
+						</div>
+						
 					</div>
 				</div>
 
@@ -488,7 +500,7 @@
 		<!-- Adroll -->
 		<script src="/assets/templates/[template]/scripts/adroll-script.js"></script>
 	
-		<!-- Scroll Tracking Code -- Tracks scrolling and sends to GA -->
+		<!-- Scroll Tracking Code Tracks scrolling and sends to GA -->
 		<script type="text/javascript" src="/assets/templates/[template]/scripts/scroll-tracking.js"></script>
 	
 		<!-- datafeedexperts.com click tracking code -->
