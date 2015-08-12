@@ -34,6 +34,8 @@
 		
 		<link rel="stylesheet" href="assets/templates/[template]/style/jquery.sidr.light.css">
 
+		<link rel="stylesheet" href="assets/templates/[template]/style/slick.css">
+
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic|PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic" />
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Serif+Caption' rel='stylesheet' type='text/css'>
 
@@ -42,9 +44,70 @@
 		<link rel="stylesheet" href="assets/templates/[template]/style/main.css?cachebuster=20150007" />
 
 
-		<link rel="stylesheet" href="assets/templates/common/quicksearch/quicksearch.css" />
+		<link rel="stylesheet" href="assets/templates/common/quicksearch/quicksearch.css" /> 
 
-		<!-- Slick! -->
+
+				<!-- Bootstrap -->
+		<script type="text/javascript" src="assets/templates/[template]/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<!-- Javascript Support -->
+		<script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+		<script type='text/javascript' src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>  
+
+		<!-- IE hacks -->
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+		<![endif]-->
+
+		<!-- Equal Heights -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.6.0/jquery.matchHeight-min.js"></script>
+		<!-- Slick -->
+		<script type="text/javascript" src="assets/templates/[template]/scripts/slick.min.js"></script>
+
+		<!-- Sidr -->
+		<script type="text/javascript" language="javascript" src="assets/templates/[template]/scripts/jquery.sidr.min.js"></script>
+		<!-- Custom Stuff -->
+		<script type="text/javascript" src="assets/templates/[template]/scripts/scrollDepth.js"></script>
+		<script type="text/javascript" src="assets/templates/[template]/scripts/hacks.js"></script>
+		<script type="text/javascript" src="assets/templates/common/js/utilities.js"></script>
+		
+
+		<script type="text/javascript" src="assets/templates/[template]/scripts/custom.js?cachebuster=20150007"></script>
+		<script type="text/javascript" src="assets/templates/[template]/scripts/menu-behaviors.js"></script>
+		<!-- Set up customer account variables -->
+		<script type="text/javascript">
+			var account_greeting = '[account_greeting]';
+			var username = '[username]';
+			(function($) {
+				$(function() {
+					// Change Account link when user is logged in.
+					if ( username !== 'Guest' ) {
+						$('.account-button.login').html('<i class="fa fa-sign-out"></i> Logout of your account');
+						$('.account-button.login').attr('href', '/logout.asp');
+					}
+				});
+			})(jQuery);
+		</script>
+
+		<!-- Hubspot Form Script -->
+		<script charset="utf-8" src="https://js.hubspot.com/forms/current.js"></script>
+		<!-- Newsletter Signup -- Load after hubspot --> 
+		<script type="text/javascript" src="assets/templates/[template]/scripts/hubspot-newsletter-sign-up-form.js"></script>
+		<script type="text/javascript" src="assets/templates/[template]/scripts/instafeed.js"></script>
+		<!-- discourage robots from indexing check out page -->
+		<script type="text/javascript">
+			//check if page is a checkout page and if true then add no index no follow
+			if (window.location.href.indexOf("thankyou") > -1) {
+					$('meta[name=ROBOTS]').attr('CONTENT', 'NOINDEX, NOFOLLOW');
+			}
+		</script>
+		<!-- 3d quick search -- search the site -->
+		<script type="text/javascript" src="assets/templates/[template]/scripts/3dquicksearch.js"></script>
+		<!---- Custom ajax script that takes in json from custom top bar content -->
+		<script type="text/javascript" src="assets/templates/[template]/scripts/top-bar-custom-content.js"></script>
+		
 
 		
 		 <!-- Google Analytics -->
@@ -108,15 +171,15 @@
 				<div id="fb-root"></div>
 				<!-- Header -->
 				<div class="hello-container center-block col-md-12 hidden-sm hidden-xs" data-spy="affix" data-offset-top="60" data-offset-bottom="200" style="opacity: .04;">
-						<div class="hello container hello-alert">
-								<div class="col-md-12">
-									<div class="row">
-										<div class="col-md-3"><img src="assets/templates/[template]/images/SalonCentricLogos_PMSandCMYK.png" height="56"/></div>
-										<div class="col-md-8 padd-top"><p>Special Deals for Salon Centric customers</p> <a class="btn btn-hello">See More</a></div>
-										<div class="col-md-1 padd-top"><button type="button" class="close" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times-circle"></i></span></button></div>
-									</div>
+					<div class="hello container hello-alert">
+							<div class="col-md-12">
+								<div class="row">
+									<!--START: RIGHT_BANNER-->
+										[RIGHT_BANNER]
+									<!--END: RIGHT_BANNER-->
 								</div>
-						</div>
+							</div>
+					</div>
 				</div>
 				<div class="header center-block row">
 						<div class="container">
@@ -139,24 +202,21 @@
 								</div>
 
 
-								<div class="col-md-4 hidden-sm hidden-xs">
-									<div class="toggle-navigation hidden-md hidden-lg col-sm-3 col-xs-3">
-											<a class="btn btn-default gainsboro"><i class="fa fa-bars fa-1x"></i></a>
-									</div>
-									<div class="site-branding col-sm-9 col-xs-9"><a href="/"><h2 class="logo"><img class="img-responsive" src="/assets/images/StandishPartnerLogo.png"></h2></a></div>
+								<div class="col-md-3 hidden-sm hidden-xs">
+									<div class="site-branding col-md-12"><a href="/"><h2 class="logo"><img class="img-responsive" src="/assets/images/StandishPartnerLogo.png"></h2></a></div>
 									<div class="credentials hidden-sm hidden-xs"></div>
 								</div>
 
-								<div class="col-md-3 hidden-sm hidden-xs">
+								<div class="col-md-4 hidden-sm hidden-xs">
 									<div id="slickShow">
 										<div class="slide-option">
-											<span class="slide-option-text allcaps serif"><i class="usa-blue fa fa-flag fa-lg"></i>  USA-Made Items</span>
+											<span class="slide-option-text allcaps serif pull-right"><i class="usa-blue fa fa-flag fa-lg"></i>  USA-Made Items</span>
 										</div>
 										<div class="slide-option">
-											<span class="slide-option-text allcaps serif"><i class="return fa fa-reply fa-lg"></i>  Generous Return Policy</span>
+											<span class="slide-option-text allcaps serif pull-right"><i class="return fa fa-reply fa-lg"></i>  Generous Return Policy</span>
 										</div>
 										<div class="slide-option">
-											<span class="slide-option-text allcaps serif"><i class="money fa fa-usd fa-lg"></i>  Lots of Deals!</span>
+											<span class="slide-option-text allcaps serif pull-right"><i class="money fa fa-usd fa-lg"></i>  Lots of Deals!</span>
 										</div>
 									</div>
 								</div>
@@ -181,7 +241,7 @@
 					<ul class="nav-menu">
 						<li class="allcaps has-submenu"><a href="#">Brands</a>
 							<ul class="submenu">
-								<li><a href="/adjust-a-sink">Adjust-a-Sink <span> <i class="icon icon-star"></i> New</span> </a></li>
+								<li><a href="/adjust-a-sink">Adjust-a-Sink <span class="hidden-sm hidden-xs"> <i class="icon icon-star"></i> New</span> </a></li>
 								<li><a href="/belava-pedicure-equipment">Belava</a></li>
 								<li><a href="/continuum-pedicure-spas">Continuum</a></li>
 								<li><a href="/kaemark-salon-furnishings">Kaemark</a></li>
@@ -308,8 +368,12 @@
 							</div>
 						<!--END: FRAME_CATEGORY-->
 					<!--END: LEFT_BAR_BLOCKS-->
-					<div class="img-banner hidden-sm hidden-xs"><a href="http://cannibalcat.itch.io/secret-of-qwerty"><img class="img-responsive" src="/assets/images/displayad.png"/></a></div>
 
+
+					<!--START: LEFT_BANNER-->
+				        [LEFT_BANNER]
+				      <!--END: LEFT_BANNER-->
+					
 				</div>
 				<!--END: LEFT BAR-->
 
@@ -350,22 +414,24 @@
 
 				<div class="col-md-3 col-sm-3 footer-logos">
 					<div class="row">
-						<div class="col-md-4 col-sm-4 col-xs-4 footer-logo-sm">
+						<div class="col-md-4 col-sm-4 col-xs-3 col-xs-offset-1 col-sm-offset-0 footer-logo-sm">
 							<img class="img-responsive" src="/assets/templates/[template]/images/PBA.png">
 						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4 footer-logo-sm">
+						<div class="col-md-4 col-sm-4 col-xs-3 footer-logo-sm">
 							<img class="img-responsive" src="/assets/templates/[template]/images/New_Norton_Logo.png">
 						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4 footer-logo-sm">
+						<div class="col-md-4 col-sm-4 col-xs-3 footer-logo-sm">
 							<img class="img-responsive" src="/assets/templates/[template]/images/IC.png">
 						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4 footer-logo-sm">
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-3 col-xs-offset-1 col-sm-offset-0 footer-logo-sm">
 							<img class="img-responsive" src="/assets/templates/[template]/images/BBB.png">
 						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4 footer-logo-sm">
+						<div class="col-md-4 col-sm-4 col-xs-3 footer-logo-sm">
 							<img class="img-responsive" src="/assets/templates/[template]/images/BOA.png">
 						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4 footer-logo-sm">
+						<div class="col-md-4 col-sm-4 col-xs-3 footer-logo-sm">
 							<img class="img-responsive" src="/assets/templates/[template]/images/Bravo.png">
 						</div>
 					</div>
@@ -401,67 +467,7 @@
 
 
 
-		<!-- Bootstrap -->
-		<script type="text/javascript" src="assets/templates/[template]/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-		<!-- Javascript Support -->
-		<script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
-		<script type='text/javascript' src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>  
-
-		<!-- IE hacks -->
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-			<script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-			<script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
-		<![endif]-->
-
-		<!-- Equal Heights -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.6.0/jquery.matchHeight-min.js"></script>
-		<!-- Slick -->
-		<script type="text/javascript" src="assets/templates/[template]/scripts/slick.min.js"></script>
-
-		<!-- Sidr -->
-		<script type="text/javascript" language="javascript" src="assets/templates/[template]/scripts/jquery.sidr.min.js"></script>
-		<!-- Custom Stuff -->
-		<script type="text/javascript" src="assets/templates/[template]/scripts/scrollDepth.js"></script>
-		<script type="text/javascript" src="assets/templates/[template]/scripts/hacks.js"></script>
-		<script type="text/javascript" src="assets/templates/common/js/utilities.js"></script>
-		
-
-		<script type="text/javascript" src="assets/templates/[template]/scripts/custom.js"></script>
-		<script type="text/javascript" src="assets/templates/[template]/scripts/menu-behaviors.js"></script>
-		<!-- Set up customer account variables -->
-		<script type="text/javascript">
-			var account_greeting = '[account_greeting]';
-			var username = '[username]';
-			(function($) {
-				$(function() {
-					// Change Account link when user is logged in.
-					if ( username !== 'Guest' ) {
-						$('.account-button.login').html('<i class="fa fa-sign-out"></i> Logout of your account');
-						$('.account-button.login').attr('href', '/logout.asp');
-					}
-				});
-			})(jQuery);
-		</script>
-
-		<!-- Hubspot Form Script -->
-		<script charset="utf-8" src="https://js.hubspot.com/forms/current.js"></script>
-		<!-- Newsletter Signup -- Load after hubspot --> 
-		<script type="text/javascript" src="assets/templates/[template]/scripts/hubspot-newsletter-sign-up-form.js"></script>
-		<script type="text/javascript" src="assets/templates/[template]/scripts/instafeed.js"></script>
-		<!-- discourage robots from indexing check out page -->
-		<script type="text/javascript">
-			//check if page is a checkout page and if true then add no index no follow
-			if (window.location.href.indexOf("thankyou") > -1) {
-					$('meta[name=ROBOTS]').attr('CONTENT', 'NOINDEX, NOFOLLOW');
-			}
-		</script>
-		<!-- 3d quick search -- search the site -->
-		<script type="text/javascript" src="assets/templates/[template]/scripts/3dquicksearch.js"></script>
-		<!---- Custom ajax script that takes in json from custom top bar content -->
-		<script type="text/javascript" src="assets/templates/[template]/scripts/top-bar-custom-content.js"></script>
-		
 
 	<!--EXTERNAL OPTIMIZATIONS AND TRACKING SCRIPTS -->
 		<!-- Start of Async HubSpot Analytics Code -->

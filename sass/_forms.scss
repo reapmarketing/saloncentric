@@ -36,6 +36,11 @@ html input[disabled] {
   cursor: default;
 }
 
+
+.input-group-btn>.btn {
+  padding: 6px 20px;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -92,6 +97,18 @@ button[type=submit],
   text-decoration: none;
 }
 
+.button.btn.btn-secondary,
+.btn.btn-secondary,
+.btn-secondary {
+  background: $secondary-btn-highlight;
+  background-image: -webkit-linear-gradient(top, $secondary-btn-highlight, $secondary-btn-color);
+  background-image: -moz-linear-gradient(top, $secondary-btn-highlight, $secondary-btn-color);
+  background-image: -ms-linear-gradient(top, $secondary-btn-highlight, $secondary-btn-color);
+  background-image: -o-linear-gradient(top, $secondary-btn-highlight, $secondary-btn-color);
+  background-image: linear-gradient(to bottom, $secondary-btn-highlight, $secondary-btn-color);
+  text-shadow: 0px -1px 0px $secondary-btn-highlight;
+}
+
 button[type=submit].btn-lg, .btn.btn-lg {
   padding: 10px 16px;
   font-size: 105%;
@@ -124,6 +141,17 @@ button:hover,
   background-image: linear-gradient(to bottom, $btn-color, $btn-color);
   text-decoration: none;
 }
+.button.btn.btn-secondary:hover,
+.btn.btn-secondary:hover,
+.btn-secondary:hover {
+  background: $secondary-btn-color;
+  background-image: -webkit-linear-gradient(top, $secondary-btn-color, $secondary-btn-color);
+  background-image: -moz-linear-gradient(top, $secondary-btn-color, $secondary-btn-color);
+  background-image: -ms-linear-gradient(top, $secondary-btn-color, $secondary-btn-color);
+  background-image: -o-linear-gradient(top, $secondary-btn-color, $secondary-btn-color);
+  background-image: linear-gradient(to bottom, $secondary-btn-color, $secondary-btn-color);
+  text-decoration: none;
+}
 .button.medium,
 button.medium {
   font-size: 16px;
@@ -147,20 +175,7 @@ button.large {
   border-bottom-right-radius: 3px;
   font-size: 15px;
 }
-.btn.standishgreen,
-input[type=button].standishgreen,
-input[type=submit].standishgreen,
-.button.standishgreen,
-button.standishgreen {
-  background-color: $secondary-color;
-  color: $primary-gray;
-  border-color: #8f998c;
-}
-.button.standishgray,
-button.standishgray {
-  border-color: #000;
-  background-color: #4D4D4D;
-}
+
 .button.gainsboro,
 button.gainsboro {
   color: $primary-gray;
@@ -183,10 +198,7 @@ button .add-on-left i {
   top: 2px;
   font-size: 15px;
 }
-.button.standishgreen {
-  background-color: $secondary-color;
-  color: $primary-gray !important;
-}
+
 .form-stacked input[type="text"],
 .form-stacked input[type="password"],
 .form-stacked input[type="email"],

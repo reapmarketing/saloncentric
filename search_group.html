@@ -3,7 +3,7 @@
 
 <!-- This is very similar, but different from the category templates. The Category Template should be treated as the master, with changes carefully integrated here too. Pagination is unique to this template. -->
 
-<div class="right-side col-md-10">
+<div class="right-side col-md-10 padd-top">
 	<!--END: BODY_HEADER-->
 	
 	<!--START: MANUFACTURER_HEADER-->
@@ -11,7 +11,7 @@
 			<img src="[logo]" border="0">
 		<!--END: logo-->
 		<!--START: header-->
-			<div id="categoryHeader" class="data col-md-12 clearfix">[header]</div>
+			<div id="categoryHeader" class="data row clearfix">[header]</div>
 		<!--END: header-->
 	<!--END: MANUFACTURER_HEADER-->
 	<hr />
@@ -29,35 +29,6 @@
 		</form>
 	</div>
   	<div class="clearfix"></div>
-	<!--START: PAGING-->
-	<div class="col-md-12">
-		<!-- [category_moreresults] -->
-		<div class="pagination">
-			<!--START: PREV-->
-				<a class="btn first" href="search_groups.asp?keyword=[keyword]&amp;sortby=[sortby]&amp;manf=[manf]&amp;byprice=[byprice]&amp;page=[prev]">&laquo;</a>
-				<!-- [category_previouspage] -->
-			<!--END: PREV-->
-			<!--START: PAGES-->
-				<!--START: FIRST_PAGE-->
-					<a class="btn" href="search_groups.asp?keyword=[keyword]&amp;manf=[manf]&amp;byprice=[byprice]&amp;page=PAGE">PAGE...</a>
-				<!--END: FIRST_PAGE-->
-				<!--START: PAGES_SELECTED-->
-					<a class="btn active selected" href="#">PAGE</a>
-				<!--END: PAGES_SELECTED-->
-				<!--START: PAGES_NOTSELECTED-->
-					<a class="btn" href="search_groups.asp?keyword=[keyword]&amp;sortby=[sortby]&amp;manf=[manf]&amp;byprice=[byprice]&amp;page=PAGE">PAGE</a>
-				<!--END: PAGES_NOTSELECTED-->
-				<!--START: LAST_PAGE-->
-					<a class="btn" href="search_groups.asp?keyword=[keyword]&amp;sortby=[sortby]&amp;manf=[manf]&amp;byprice=[byprice]&amp;page=PAGE">...PAGE</a>
-				<!--END: LAST_PAGE-->
-			<!--END: PAGES-->
-			<!--START: NEXT-->
-				<a class="btn last" href="search_groups.asp?keyword=[keyword]&amp;sortby=[sortby]&amp;manf=[manf]&amp;byprice=[byprice]&amp;page=[next]">&raquo;</a>
-				<!-- [category_nextpage] -->
-			<!--END: NEXT-->
-		</div>
-	</div>
-	<!--END: PAGING-->
 	<div class="row clearfix">
     <!--START: CATEGORY_ITEMS-->
       <!--START: ITEM_TEMPLATE-->
@@ -69,7 +40,7 @@
         <!--END: product_review-->
         <div class="col-md-2-2 col-sm-4 col-xs-6 listing">
           <div class="listing-container">
-            <a href="product.asp?itemid=[catalogid]"><img class="product_thumb" src="thumbnail.asp?file=[THUMBNAIL]&maxx=138&maxy=178" alt="[name]" border="0" /></a>
+            <a href="product.asp?itemid=[catalogid]"><img class="product_thumb" src="[image1]" alt="[name]" border="0" style="max-height:190px; max-width:160px;" /></a>
             <p class="title"><a href="product.asp?itemid=[catalogid]">[name]</a></p>
             <!--START: ITEMPRICE-->
               <!-- [product_yourprice] -->
@@ -87,7 +58,6 @@
       <!--END: ITEM_TEMPLATE-->
     <!--END: CATEGORY_ITEMS-->
    </div>
-
 	<!--START: PAGING-->
 	<div class="col-md-12 clearfix">
 		<!-- [category_moreresults] -->

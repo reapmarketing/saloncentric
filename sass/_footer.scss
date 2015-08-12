@@ -71,6 +71,11 @@
   color: $neutral-dark;
 }
 footer {
+  margin-top: 35px;
+
+  img {
+    max-width: 250px;
+  }
   p, span, ul, li {
     color: lighten($primary-gray, 20%)
   }

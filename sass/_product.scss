@@ -203,7 +203,7 @@
 .listing {
   margin-top: 20px;
   margin-bottom: 20px;
-  min-height: 335px;
+  min-height: 250px;
 }
 .listing .product_thumb {
   border: 1px solid #dcdcdc;
@@ -468,7 +468,7 @@ fieldset {
 }
 .cornersprite {
   display: none;
-  background-image: url("/assets/templates/standish/images/corner-tag-sprite.png");
+  background-image: url("/assets/templates/standish-responsive/images/corner-tag-sprite.png");
   width: 75px;
   height: 75px;
   background-position: -76px 0;
@@ -480,7 +480,7 @@ fieldset {
   background-position: 0 0;
 }
 .tweet_button {
-  background: url("/assets/templates/standish/images/tweet-sprite.png");
+  background: url("/assets/templates/standish-responsive/images/tweet-sprite.png");
   width: 56px;
   height: 21px;
   display: inline-block;

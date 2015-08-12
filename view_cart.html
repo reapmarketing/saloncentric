@@ -52,7 +52,7 @@ jQuery(function(){
         <h2>Your Cart</h2>
       </div>
       <div class="col-md-5 col-sm-6 cartsprite">
-        <div class="cards"></div>
+        <div class="ppal"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppppcmcvdam.png" alt="Pay with PayPal, PayPal Credit or any major credit card" /></div>
         <div class="norton"></div>
       </div>
       <!--START: CATEGORY_HEADER-->
@@ -91,7 +91,7 @@ jQuery(function(){
         <div class="cart_items row">
           <div class="cart_items_header row">
             <div class='col-md-7 col-sm-7 col-xs-7'>Description</div>
-            <div class='col-md-2 col-sm-2 col-xs-2'>Cartons</div>
+            <div class='col-md-2 col-sm-2 col-xs-2'>Items</div>
             <div class='col-md-3 col-sm-3 col-xs-3'>Price</div>
           </div>
           <!--START: SHOPPING_CART_ITEM-->
@@ -105,24 +105,21 @@ jQuery(function(){
               </div>
               <div class="col-md-6 col-sm-6">
                 <div class="bold serif coral-text" style="margin-bottom:8px;"><a href="product.asp?itemid=[ITEM_CATALOGID]" class="item-name">[ITEM_NAME]</a></div>
-              </div>
-              <!--START: itemoptions-->
-                <!-- <a href='#' onClick="toggle('opt[ITEM_ID]')">View/Hide options</a> -->
-                <!-- <div id=opt[ITEM_ID] name=opt[ITEM_ID] style="display:none;">[OPTIONS]</div> -->
-              <!--END: itemoptions-->
-        
-              <!--START: itemoptions-->
-                <!-- <a href='#' onClick="toggle('opt[ITEM_ID]')">View/Hide options</a> -->
-                <div class="options-list">[OPTIONS]</div>
-              <!--END: itemoptions-->
-        
-              <!--START: recurring_frequency-->
-                <!-- This item will Autoship every <b>[recurring_frequency]</b> -->
-              <!--END: recurring_frequency-->
-      <!--
-              Example options markup, generated with jQuery hacks.
-              <div class="options-list"><span class="bold">Base:</span> Square</div>
-      -->
+                
+                <!--START: itemoptions-->
+                  <!-- <a href='#' onClick="toggle('opt[ITEM_ID]')">View/Hide options</a> -->
+                  <!-- <div id=opt[ITEM_ID] name=opt[ITEM_ID] style="display:none;">[OPTIONS]</div> -->
+                <!--END: itemoptions-->
+          
+                <!--START: itemoptions-->
+                  <!-- <a href='#' onClick="toggle('opt[ITEM_ID]')">View/Hide options</a> -->
+                  <div class="options-list">[OPTIONS]</div>
+                <!--END: itemoptions-->
+          
+                <!--START: recurring_frequency-->
+                  <!-- This item will Autoship every <b>[recurring_frequency]</b> -->
+                <!--END: recurring_frequency-->
+            </div>
             </div><!-- .cart_col1 -->
             <div class="col-md-2 col-sm-2 col-xs-2">
               <input type="text" name="qtyitemnum" value="[ITEM_QUANTITY]" size="3" maxlength="5" class="txtBoxStyle form-control">
@@ -140,9 +137,9 @@ jQuery(function(){
       
         </div><!-- .cart-items -->
         <div class="buttons-order row">
-          	<a class="button standishgray btn" style="color:white;" href="[continue_url]"><span class="add-on-left"><i class="fa fa-arrow-left"></i></span>Continue Shopping</a>
+          	<a class="button btn-secondary btn" style="color:white;" href="[continue_url]"><span class="add-on-left"><i class="fa fa-arrow-left"></i></span>Continue Shopping</a>
           	<a class="button standishgreen btn" href ="/myaccount.asp?action=save_cart"><span class="add-on-left"><i class="fa fa-floppy-o"></i></span>Save for Later</a>
-          	<input type="submit" name="Add" value="[shoppingcart_updatecart]" class="update_cart_button btn" id="Submit2">
+          	<input type="submit" name="Add" value="[shoppingcart_updatecart]" class="update_cart_button btn btn-secondary" id="Submit2">
         </div>
         <br />
         <br />
@@ -391,7 +388,7 @@ jQuery(function(){
           <div class="input-group col-md-4 pull-left">
             <input type="text" name="coupon_code" class="form-control txtBoxStyle">
             <span class="input-group-btn">
-              <input type="submit" class="standishgreen form-control" value="Go!" id="Submit1" name="Submit1" />
+              <input type="submit" class="button btn" value="Go!" id="Submit1" name="Submit1" />
             </span>
           </div>
           <!--END: apply_coupon-->

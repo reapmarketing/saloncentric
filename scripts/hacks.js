@@ -8,7 +8,6 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 jQuery( function($) {
 
 	// unWrappers
-/* 	$( '.productBlockContainer').unwrap(); */
 	$( '.productContainer' ).unwrap();
 	$( '.listing' ).unwrap();
 
@@ -33,12 +32,6 @@ jQuery( function($) {
 		$('.hello').hide();
 	}
 
-	$("a.cat:contains(Barber Poles)").append('<span><i class="icon icon-star"></i> New</span>');
-	$("a.cat:contains(Sale!)").append('<span><i class="icon icon-star"></i> New</span>');
-
-/* 	Alternate Green Callout */
-/* 	$("a.cat:contains(Sale!)").append('<span class="green"><i class="icon icon-dollar"></i> Sale</span>'); */
-	var width = document.body.clientWidth; 
 
 	$('.nextnav a').click( function() {
 		ga('send', 'event', 'pdp-button', 'click', 'nextnav-link');

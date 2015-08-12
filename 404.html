@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>404</title>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <title>404</title>
+    
+
     <meta name="google-site-verification" content="oNVXhQhAbUqSkzWN_iojtz9flX9pgrMngn7B9usgRaQ" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--Insert Meta tags at top -->
     <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!------- CSS -------->
-		<style>
+    <!-- CSS -->
+    <style>
     /* Not sure what this is for... */
     html.wait{
       cursor: wait !important;
@@ -16,89 +23,83 @@
       transition: opacity 0.5s ease;
     }
     </style>
-    <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico"/>
-    <link rel="stylesheet" href="/assets/templates/standish-responsive/bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/templates/standish-responsive/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="/assets/templates/standish-responsive/bower_components/sidr/stylesheets/jquery.sidr.light.css">
 
-    <link rel="stylesheet" href="/assets/templates/standish-responsive/style/main.css?cachebuster=20150007" />
+    <link rel="shortcut icon" href="assets/images/Favicon/favicon.ico"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/templates/standish-responsive/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="assets/templates/standish-responsive/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    
+    <link rel="stylesheet" href="assets/templates/standish-responsive/style/jquery.sidr.light.css">
+
+    <link rel="stylesheet" href="assets/templates/standish-responsive/style/slick.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic|PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Serif+Caption' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/templates/standish-responsive/style/main.css?cachebuster=20150007" />
+
 
     <link rel="stylesheet" href="assets/templates/common/quicksearch/quicksearch.css" />
-		<style>
+
+    <!-- Slick! -->
+
+    
+     <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-27463434-5', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <style>
       .edgeLoad-taglines { visibility:hidden; }
     </style>
     <style>
-			#spButton{
-				display:none;
-			}
-		</style>
+      #spButton{
+        display:none;
+      }
+      .sharebox {
+        max-height: 25px;
+      }
+      .sharebox ul {
+        top: -20px;
+        left: 130px;
+      }
+    </style>
       
-    <!------- JS --------->
+    <!-- JS -->
     <!-- schema.org site search optimization options -->
     <script type="application/ld+json">
-		{
-			 "@context": "http://schema.org",
-			 "@type": "WebSite",
-			 "url": "http://www.standishsalongoods.com",
-			 "potentialAction": {
-			 "@type": "SearchAction",
-			 "target": "http://www.standishsalongoods.com/search.asp?keyword={search_term_string}",
-			 "query-input": "required name=search_term_string"
-			 }
-		}
-		</script>
-     <!-- Set up customer account variables -->
-    <script type="text/javascript">
-		 var account_greeting = '[account_greeting]';
-		 var username = '[username]';
+    {
+       "@context": "http://schema.org",
+       "@type": "WebSite",
+       "url": "http://www.standishsalongoods.com",
+       "potentialAction": {
+       "@type": "SearchAction",
+       "target": "http://www.standishsalongoods.com/search.asp?keyword={search_term_string}",
+       "query-input": "required name=search_term_string"
+       }
+    }
     </script>
-    <!--[if lt IE 9]>
-		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-    <!-- SITE PLUGINS AND CUSTOM SCRIPTS -->
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="/assets/templates/standish-responsive/scripts/jquery.migrate.js"></script>
-    <script src="/assets/templates/standish-responsive/scripts/jquery.cycle2.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="/assets/templates/standish-responsive/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<!-- Equal Heights -->
-    <script src="/assets/templates/standish-responsive/bower_components/matchHeight/jquery.matchHeight-min.js"></script>
-    <!-- Sidr -->
-    <script src="/assets/templates/standish-responsive/bower_components/sidr/jquery.sidr.min.js"></script>
-    <!-- Custom Stuff -->
-    <script src="/assets/templates/standish-responsive/scripts/scrollDepth.js"></script>
-		<script src="/assets/templates/standish-responsive/scripts/hacks.js"></script>
-    <script src="/assets/templates/common/js/utilities.js"></script>
-    <script src="/assets/templates/standish-responsive/scripts/custom.js"></script>
-    <script src="/assets/templates/standish-responsive/scripts/menu-behaviors.js"></script>
 
-    <!-- Hubspot Form Script -->
-		<script charset="utf-8" src="https://js.hubspot.com/forms/current.js"></script>
-    <!-- Newsletter Signup -- Load after hubspot --> 
-		<script type="text/javascript" src="/assets/templates/standish-responsive/scripts/hubspot-newsletter-sign-up-form.js"></script>
-		<script src="/assets/templates/standish-responsive/scripts/instafeed.js"></script>
-    <!-- discourage robots from indexing check out page -->
-		<script type="text/javascript">
-			//check if page is a checkout page and if true then add no index no follow
-			if (window.location.href.indexOf("thankyou") > -1) {
-					$('meta[name=ROBOTS]').attr('CONTENT', 'NOINDEX, NOFOLLOW');
-			}
-		</script>
-    <!-- 3d quick search -- search the site -->
-    <script type="text/javascript" src="/assets/templates/standish-responsive/scripts/3dquicksearch.js"></script>
-    <!---- Custom ajax script that takes in json from custom top bar content -->
-    <script src="/assets/templates/standish-responsive/scripts/top-bar-custom-content.js"></script>
-    
+    <!-- optimizely note:needs to stay in header in order to work properly -->
+    <script src="//cdn.optimizely.com/js/2743921241.js"></script>
     <!-- TRACKING SCRIPTS THAT NEED TO GO IN THE HEADER -->
     <!-- ifbyphone scripts -->
-		<script type="text/javascript" src="https://secure.ifbyphone.com/js/ibp_clickto_referral.js"></script>
+    <script type="text/javascript" src="https://secure.ifbyphone.com/js/ibp_clickto_referral.js"></script>
     <script type="text/javascript">
-		var _ibp_public_key = "962b453a0efe61d97e1d0c783ec175d555de0cdc",
-				_ibp_formatting = true,
-				_ibp_keyword_set = 19501;
+      var _ibp_public_key = "962b453a0efe61d97e1d0c783ec175d555de0cdc",
+          _ibp_formatting = true,
+          _ibp_keyword_set = 34811;
     </script>
 
 
@@ -108,136 +109,333 @@
         <div id="fb-root"></div>
         <!-- Header -->
         <div class="hello-container center-block col-md-12 hidden-sm hidden-xs" data-spy="affix" data-offset-top="60" data-offset-bottom="200" style="opacity: .04;">
-            <div class="hello container">
-                <div class="col-md-8 hbar_content hidden-md hidden-sm hidden-xs">
-                </div>
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <p class="right-hello"><span class="coral-text">Need Help?</span> Call <span class="bold"><script type="text/JavaScript" src="https://secure.ifbyphone.com/js/keyword_replacement.js"></script></span></a></p>
+            <div class="hello container hello-alert">
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-md-3"><img src="assets/templates/standish-responsive/images/SalonCentricLogos_PMSandCMYK.png" height="56"/></div>
+                    <div class="col-md-8 padd-top"><p>Special Deals for Salon Centric customers</p> <a class="btn btn-hello">See More</a></div>
+                    <div class="col-md-1 padd-top"><button type="button" class="close" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times-circle"></i></span></button></div>
+                  </div>
                 </div>
             </div>
         </div>
         <div class="header center-block row">
             <div class="container">
-                <div class="col-md-5 col-sm-8 col-xs-7">
-                		<div class="toggle-navigation hidden-md hidden-lg col-sm-3 col-xs-3">
-                    		<a class="btn btn-default gainsboro"><i class="fa fa-bars fa-1x"></i></a>
+                <div id="mobile-menu" class="hidden-md hidden-lg col-sm-12">
+
+                  <div class="row">
+                    <div class="site-branding col-sm-6 col-xs-6">
+                      <a href="/"><h2 class="logo" title="Kaemark"><img class="img-responsive" src="/assets/images/StandishPartnerLogo.png"></h2></a>
                     </div>
-                    <div class="site-branding col-sm-9 col-xs-9"><a href="/"><h2 class="logo">Standish Salon Furniture</h2></a></div>
-                    <div class="credentials hidden-sm hidden-xs"></div>
+
+                    <div class="col-sm-6 col-xs-6">
+                      <div class="pull-right">
+                        <a class="inline" href="/view_cart.asp"><span>[ITEMSINCART]</span><i class="fa fa-shopping-cart fa-2x"></i></a>
+                        <a class="inline" href="/myaccount.asp?secure"><i class="fa fa-user fa-2x"></i></a>
+                        <a class="inline toggle-navigation"><i class="fa fa-bars fa-2x"></i></a>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
-                
+
+
                 <div class="col-md-3 hidden-sm hidden-xs">
-                    <div id="Stage" class="taglines" style="margin-top: 24px"></div>
+                  <div class="site-branding col-md-12"><a href="/"><h2 class="logo"><img class="img-responsive" src="/assets/images/StandishPartnerLogo.png"></h2></a></div>
+                  <div class="credentials hidden-sm hidden-xs"></div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-5 text-center">
-                    <a href="/view_cart.asp"><button class="button cart large btn"><i class="fa fa-shopping-cart"></i><span class="hidden-xs hidden-s">Your Cart</span><span class="cart-number"></span></button></a>
+
+                <div class="col-md-4 hidden-sm hidden-xs">
+                  <div id="slickShow">
+                    <div class="slide-option">
+                      <span class="slide-option-text allcaps serif pull-right"><i class="usa-blue fa fa-flag fa-lg"></i>  USA-Made Items</span>
+                    </div>
+                    <div class="slide-option">
+                      <span class="slide-option-text allcaps serif pull-right"><i class="return fa fa-reply fa-lg"></i>  Generous Return Policy</span>
+                    </div>
+                    <div class="slide-option">
+                      <span class="slide-option-text allcaps serif pull-right"><i class="money fa fa-usd fa-lg"></i>  Lots of Deals!</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-5 text-right padd-bottom-10 hidden-sm hidden-xs">
+                    <div class="col-md-12 hidden-sm hidden-xs">
+                      <p class="padd-top">Need Help? Give us a Call. <span class="bold">888-885-8511</span></a></p>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <a href="/view_cart.asp"><button class="button cart large btn"><i class="fa fa-shopping-cart"></i><span class="hidden-xs hidden-s">Your Cart</span><span class="cart-number">[ITEMSINCART]</span></button></a>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+        
     </header>
 
     <nav class="navigation navbar hidden-xs hidden-sm">
       <div class="container">
         <div class="main-navigation">
           <ul class="nav-menu">
-            <li class="allcaps"><a href="#">Brands</a></li>
-            <li class="allcaps"><a href="#">Equipment</a></li>
-            <li class="allcaps"><a href="/quality">Quality</a></li>
-            <li class="allcaps"><a href="/meet-the-team">About</a></li>
-            <li class="allcaps"><a href="/warranty">Warranty</a></li>
-            <li class="allcaps"><a href="/about-shipping">Shipping</a></li>
-            <li class="allcaps"><a href="/contact-us">Contact</a></li>
-            <li class="allcaps"><a href="/frequently-asked-questions">FAQ</a></li>
+            <li class="allcaps has-submenu"><a href="#">Brands</a>
+              <ul class="submenu">
+                <li><a href="/adjust-a-sink">Adjust-a-Sink <span> <i class="icon icon-star"></i> New</span> </a></li>
+                <li><a href="/belava-pedicure-equipment">Belava</a></li>
+                <li><a href="/continuum-pedicure-spas">Continuum</a></li>
+                <li><a href="/kaemark-salon-furnishings">Kaemark</a></li>
+                <li><a href="/kayline">Kayline</a></li>
+                <li><a href="/oakworks-massage-equipment">Oakworks</a></li>
+                <li><a href="/one-world-inspired-custom-furniture">One World Inspired</a></li>
+                <li><a href="/savvy-salon-equipment">Savvy</a></li>
+                <li><a href="/standish-salon-goods">Standish</a></li>
+                <li><a href="/william-marvy-barber-poles">William Marvy</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu"><a href="#">Equipment</a>
+              <ul class="submenu">
+                <li class="has-submenu"> <a class="category-header" href="/hair-salon-chairs">Chairs</a>
+                  <ul class="submenu">
+                    <li><a href="/salon-styling-chairs">Styling Chairs</a></li>
+                    <li><a href="/all-purpose-salon-chairs">All-Purpose Chairs</a></li>
+                    <li><a href="/barber-chairs">Barber Chairs</a></li>
+                    <li><a href="/salon-shampoo-chairs">Shampoo Chairs</a></li>
+                    <li><a href="/salon-dryer-chair-units">Dryer Chairs</a></li>
+                    <li><a href="/salon-stools">Stools</a></li>
+                    <li><a href="/salon-reception-seating">Reception Chairs</a></li>
+                    <li><a href="/salon-pedicure-chairs">Pedicure Chairs</a></li>
+                    <li><a href="/salon-chair-covers">Chair Covers </a></li>
+                  </ul>
+                </li>
+                <li class="has-submenu"> <a class="category-header" href="/salon-styling-stations">Stations</a>
+                  <ul class="submenu">
+                    <li> <a href="/single-salon-styling-stations">Single Stations</a></li>
+                    <li> <a href="/back-to-back-salon-styling-stations">Back-to-Back Stations</a></li>
+                    <li> <a href="/salon-tower-stations">Tower Stations</a></li>
+                    <li> <a href="/salon-wet-stations">Wet Stations</a></li>
+                    <li> <a href="/glass-stations-mirrors">Glass & Mirror Stations</a></li>
+                  </ul>
+                </li>
+                <li class="has-submenu"> <a class="category-header" href="/salon-color-bars">Color Bars</a></li>
+                <li class="has-submenu"> <a class="category-header" href="/manicure-pedicure-equipment">Manicure & Pedicure</a>
+                  <ul class="submenu">
+                    <li> <a href="/salon-manicure-tables">Manicure Tables</a></li>
+                    <li> <a href="/salon-pedicure-chairs">Pedicure Chairs</a></li>
+                    <li> <a href="/nail-technician-chairs">Nail Tech Chairs</a></li>
+                    <li> <a href="/pedicure-carts-trolleys">Carts & Trolleys</a></li>
+                  </ul>
+                </li>
+                <li class="has-submenu"> <a class="category-header" href="/salon-shampoo-area">Shampoo</a>
+                  <ul class="submenu">
+                    <li> <a href="/salon-shampoo-bowls">Shampoo Bowls</a></li>
+                    <li> <a href="/salon-shampoo-chairs">Shampoo Chairs</a></li>
+                    <li> <a href="/salon-shampoo-shuttles">Shampoo Shuttles</a></li>
+                    <li> <a href="/salon-wet-stations">Wet Stations</a></li>
+                    <li> <a href="/shampoo-parts-accessories">Parts & Accessories</a></li>
+                  </ul>
+                </li>
+                <li class="has-submenu"><a class="category-header" href="/salon-reception-area-equipment">Reception</a>
+                  <ul class="submenu">
+                    <li> <a href="/salon-reception-desks">Desks</a></li>
+                    <li> <a href="/salon-reception-seating">Chairs</a></li>
+                    <li> <a href="/salon-retail-displays">Retail Displays</a></li>
+                  </ul>
+                </li>
+                <li> <a class="category-header" href="/appliances">Appliances</a></li>
+              </ul>            
+            </li>
+            <li><a href="/quality">Quality</a></li>
+            <li><a href="/meet-the-team">About</a></li>
+            <li><a href="/warranty">Warranty</a></li>
+            <li><a href="/about-shipping">Shipping</a></li>
+            <li><a href="/contact-us">Contact</a></li>
+            <li><a href="/frequently-asked-questions">FAQ</a></li>
           </ul>
         </div>
+              <!--main navigation -->
       </div>
+          <!--container -->
     </nav>
     <!-- navbar -->
-
-	<!-- End of Header -->
-  <section class="container" id="prime-content">
-		<div class="container_12 main_content">
-      <h1>404! :O</h1>
-      <p>Sorry, but we can't seem to find the page you are looking for... </p>
-      <p>Perhaps you would like to take look at our <a href="http://www.standishsalongoods.com/salon-seating.html">Salon Seating</a>?</p>
-      <!-- End of Main Content -->
-      <div class="clearboth"></div>
-      <!-- 	<h2>Sidebar Blocks</h2> -->
-      <!-- chunks_o_code/SIDEBAR.HTML -->
+    <div class="container search-container">
+      <div class="col-md-4 col-sm-12 col-xs-12 pull-right search">
+        <form method="get" name="searchForm" action="search.asp">
+            <div class="input-group pull-right">
+              <input type="text" size="25" name="keyword" id="searchlight" class="search-text form-control" onfocus="javascript:if (document.searchForm.keyword.value=='search by keyword') {document.searchForm.keyword.value='';};" onblur="if(this.value.length == 0) this.value = 'search by keyword'" value="search by keyword" autocomplete="on">
+              <span class="input-group-btn">
+                  <button name="search" class="search-button gainsboro btn"><i class="fa fa-search"></i></i></button>
+                </span>
+            </div>
+        </form>
+      </div>
     </div>
-	</section>
+
+  <!-- End of Header -->
+  <section class="container" id="prime-content">
+      <h2>404</h2>
+      <h4>Looks like the page you were looking for could not be found.</h4>
+  </section>
 <!--START: username-->
 
 <!--END: username-->
 
-	<!-- Footer -->
+  <!-- Footer -->
 
-	<!--START: FRAME_MAILLIST-->
+  <!--START: FRAME_MAILLIST-->
 
-	<footer class="container-fluid">
-    	<div class="newsletter-signup">
-            <h5>Get Awesome Offers & Product News Via Email!</h5>
-            <div id="newsletter-target"></div>
-
-            <div class="social-icons">
-                <a target="_blank" href="http://pinterest.com/standishstuff"><i class="icon-pinterest-sign"></i></a>
-                <a target="_blank" href="http://twitter.com/StandishStuff"><i class="icon-twitter-sign"></i></a>
-                <a target="_blank" href="http://www.facebook.com/standishstuff"><i class="icon-facebook-sign"></i></a>
-                <a target="_blank" href="https://plus.google.com/116238618067398415215/about?gl=us&hl=en"><i class="icon-google-plus-sign"></i></a>
-            </div>
+  <footer>
+      <div class="container-fluid footer-content padd-top padd-bottom-10">
+        <div class="col-md-3 col-sm-3">
+          <h5>Trusted Partners</h5>
+          <div class="col-md-12">
+            <div><img src="assets/templates/standish-responsive/images/standish_salon_goods.png" height="56"/></div>
+          </div>
+          <div class="col-md-12">
+            <div><img src="assets/templates/standish-responsive/images/Keamark.png" height="56" /></div>
+          </div>
+          <div class="col-md-12">
+            <div><img src="assets/templates/standish-responsive/images/salon_centric_footer.png" height="56" /></div>
+          </div>
         </div>
-    </div>
-        <!--END: FRAME_MAILLIST-->
 
-    <div class="container-fluid">
-          <div class="footer-navigation footer-child">
-                <a href="/myaccount.asp?secure" class="account-button login"><i class="icon-user"></i> <span>Login to your account<span></a>
-                <a href="/affiliate-marketing" class="account-button affiliate"><i class="icon-money"></i> Become an Affiliate</a>
-                <a href="/contact-us" class="account-button contact"><i class="icon-bullhorn"></i> Contact Us</a>
+        <div class="col-md-3 col-sm-3">
+          <h5>About Us</h5>
+          <p>We are a Texas-based company passionate about bringing you the perfect balance between affordable and quality. With a wide variety of products to outfit your salon, including many items made here in the USA, we are your one-stop shop for all things salon equipment.</p>
+        </div>
+
+        <div class="col-md-3 col-sm-3 footer-logos">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-4 footer-logo-sm">
+              <img class="img-responsive" src="/assets/templates/standish-responsive/images/PBA.png">
             </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 footer-logo-sm">
+              <img class="img-responsive" src="/assets/templates/standish-responsive/images/New_Norton_Logo.png">
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 footer-logo-sm">
+              <img class="img-responsive" src="/assets/templates/standish-responsive/images/IC.png">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-4 footer-logo-sm">
+              <img class="img-responsive" src="/assets/templates/standish-responsive/images/BBB.png">
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 footer-logo-sm">
+              <img class="img-responsive" src="/assets/templates/standish-responsive/images/BOA.png">
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4 footer-logo-sm">
+              <img class="img-responsive" src="/assets/templates/standish-responsive/images/Bravo.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3">
+          <h5>Get Awesome Offers & Product News Via Email!</h5>
+          <div id="newsletter-target"></div>
+        </div>
+        <div class="clearfix"></div>
+         <div class="social-icons col-md-12">
+            <div class="center-block col-md-2">
+              <a target="_blank" href="http://pinterest.com/standishstuff"><i class="fa fa-pinterest-square"></i></a>
+              <a target="_blank" href="http://twitter.com/StandishStuff"><i class="fa fa-twitter-square"></i></a>
+              <a target="_blank" href="http://www.facebook.com/standishstuff"><i class="fa fa-facebook-square"></i></a>
+              <a target="_blank" href="https://plus.google.com/116238618067398415215/about?gl=us&hl=en"><i class="fa fa-google-plus-square"></i></a>
+            </div>
+        </div>  
+      </div>
+        <!--END: FRAME_MAILLIST-->
+    <div class="container-fluid">
       <div class="col-md-12 text-center footer-child">
+        <!--START: global_footer-->[GLOBAL_FOOTER]<!--END: global_footer-->
       </div>
       <div class="col-md-12 footer-child">
-        <p class="footer-copy">&copy; 2015 Standish Salon Goods | <a href="/dallas-salon-furniture-showroom.html">Dallas Showroom</a> | <a href="/Privacy-Policy_ep_60-1.html">Privacy Policy</a> | <span class="bold"><script type="text/JavaScript" src="https://secure.ifbyphone.com/js/keyword_replacement.js"></script></span></p>
+        <p class="footer-copy">&copy; Standish LLC. All Rights Reserved | <a href="/dallas-salon-furniture-showroom.html">Dallas Showroom</a> | <a href="/Privacy-Policy_ep_60-1.html">Privacy Policy</a> | <span class="bold">888-885-8511</span></p>
       </div>
     </div>
-	</footer>
-  <nav id="mobile-menu" style="display:none;">
-  </nav>
+  </footer>
+
   <!-- End of Footer Content -->
-	
-  <!------- EXTERNAL OPTIMIZATIONS AND TRACKING SCRIPTS ------->
-    <!--Adobe Edge Runtime-->
-		<script type="text/javascript" charset="utf-8" src="/assets/templates/standish-responsive/scripts/TailoredStandishAnimation_edgePreload.js"></script>
-    <!--Adobe Edge Runtime End-->
+  <!-- SITE PLUGINS AND CUSTOM SCRIPTS -->
+
+
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="assets/templates/standish-responsive/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Javascript Support -->
+    <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+    <script type='text/javascript' src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>  
+
+    <!-- IE hacks -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+
+    <!-- Equal Heights -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.6.0/jquery.matchHeight-min.js"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="assets/templates/standish-responsive/scripts/slick.min.js"></script>
+
+    <!-- Sidr -->
+    <script type="text/javascript" language="javascript" src="assets/templates/standish-responsive/scripts/jquery.sidr.min.js"></script>
+    <!-- Custom Stuff -->
+    <script type="text/javascript" src="assets/templates/standish-responsive/scripts/scrollDepth.js"></script>
+    <script type="text/javascript" src="assets/templates/standish-responsive/scripts/hacks.js"></script>
+    <script type="text/javascript" src="assets/templates/common/js/utilities.js"></script>
+    
+
+    <script type="text/javascript" src="assets/templates/standish-responsive/scripts/custom.js"></script>
+    <script type="text/javascript" src="assets/templates/standish-responsive/scripts/menu-behaviors.js"></script>
+
+
+    <!-- Hubspot Form Script -->
+    <script charset="utf-8" src="https://js.hubspot.com/forms/current.js"></script>
+    <!-- Newsletter Signup -- Load after hubspot --> 
+    <script type="text/javascript" src="assets/templates/standish-responsive/scripts/hubspot-newsletter-sign-up-form.js"></script>
+    <script type="text/javascript" src="assets/templates/standish-responsive/scripts/instafeed.js"></script>
+    <!-- discourage robots from indexing check out page -->
+    <script type="text/javascript">
+      //check if page is a checkout page and if true then add no index no follow
+      if (window.location.href.indexOf("thankyou") > -1) {
+          $('meta[name=ROBOTS]').attr('CONTENT', 'NOINDEX, NOFOLLOW');
+      }
+    </script>
+    <!-- 3d quick search -- search the site -->
+    <script type="text/javascript" src="assets/templates/standish-responsive/scripts/3dquicksearch.js"></script>
+    <!---- Custom ajax script that takes in json from custom top bar content -->
+    <script type="text/javascript" src="assets/templates/standish-responsive/scripts/top-bar-custom-content.js"></script>
+    
+
+  <!--EXTERNAL OPTIMIZATIONS AND TRACKING SCRIPTS -->
     <!-- Start of Async HubSpot Analytics Code -->
-		<script async type="text/javascript" src="/assets/templates/standish-responsive/scripts/async-hubspot-analytics.js"></script>
+    <script async type="text/javascript" src="/assets/templates/standish-responsive/scripts/async-hubspot-analytics.js"></script>
     <!-- End of Async HubSpot Analytics Code -->
 
-		<!-- optimizely -->
-    <script src="//cdn.optimizely.com/js/2743921241.js"></script>
     <!--  Enversa Global Tracking Pixel -->
     <script type="text/javascript" src="/assets/templates/standish-responsive/scripts/enversa-global-tracking-pixel.js"></script>
     <!-- End of Enversa Global Tracking Pixel -->
+    <!--  Pinterest Tracking Pixel -->
+    <img style="display: none" height="1" width="1" alt="" src="https://ct.pinterest.com/?tid=9vm4Li6QLNo"/>
+    <!-- End of Pinterest Tracking Pixel -->
     <!-- Adroll -->
-		<script src="/assets/templates/standish-responsive/scripts/adroll-script.js"></script>
-	
-		<!-- Scroll Tracking Code -- Tracks scrolling and sends to GA -->
+    <script src="/assets/templates/standish-responsive/scripts/adroll-script.js"></script>
+  
+    <!-- Scroll Tracking Code -- Tracks scrolling and sends to GA -->
     <script type="text/javascript" src="/assets/templates/standish-responsive/scripts/scroll-tracking.js"></script>
-	
-		<!-- datafeedexperts.com click tracking code -->
-		<script type="text/javascript" src="https://track.datafeedexperts.com/jclick/312"></script>
+  
+    <!-- datafeedexperts.com click tracking code -->
+    <script type="text/javascript" src="https://track.datafeedexperts.com/jclick/312"></script>
     <!-- HEAP tracking code -->
     <script type="text/javascript">
-		window.heap=window.heap||[],heap.load=function(t,e){window.heap.appid=t,window.heap.config=e;var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+t+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(t){return function(){heap.push([t].concat(Array.prototype.slice.call(arguments,0)))}},p=["clearEventProperties","identify","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
-		heap.load("3950494447");
-  	</script>
+    window.heap=window.heap||[],heap.load=function(t,e){window.heap.appid=t,window.heap.config=e;var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+t+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(t){return function(){heap.push([t].concat(Array.prototype.slice.call(arguments,0)))}},p=["clearEventProperties","identify","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+    heap.load("3950494447");
+    </script>
 
     <!-- dfe, will try to find out what this means -->
-		<script type="text/javascript">
+    <script type="text/javascript">
       dfe.click();
     </script>
-    
+
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PPSN"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -262,25 +460,6 @@ olark.identify('6778-882-10-3773');/*]]>{/literal}*/</script><noscript><a href="
        document.getElementsByTagName("head")[0].appendChild(mf);
    })();
 </script> 
-
-<!-- Google Code for Remarketing Tag -->
-<!--------------------------------------------------
-Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
---------------------------------------------------->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 950640180;
-var google_custom_params = window.google_tag_params;
-var google_remarketing_only = true;
-/* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/950640180/?value=0&guid=ON&script=0"/>
-</div>
-</noscript>
 
 <!-- BEGIN: Google Trusted Stores -->
 <script type="text/javascript">

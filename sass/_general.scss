@@ -58,10 +58,6 @@ body {
 .container-fluid, .no-padd {
 	padding: 0px;
 }
-/* Primary Content Section */
-body section#prime-content {
-	margin-top: 40px;
-}
 
 a:focus {
   outline: thin dotted;
@@ -205,7 +201,7 @@ legend {
 .corner-tag {
   width: 75px;
   height: 75px;
-  background: url("/assets/templates/standish/images/corner-tag-sprite.png");
+  background: url("/assets/templates/standish-responsive/images/corner-tag-sprite.png");
   position: relative;
   top: 74px;
   left: 4px;
