@@ -96,6 +96,7 @@ input::-moz-focus-inner {
   line-height: 28px;
   padding: 0 10px;
   -moz-appearance: window;
+  height: 100%;
 /*   padding: 6px 0 0 3px; */
 }
 .fancy-select {
@@ -117,7 +118,8 @@ input::-moz-focus-inner {
   top: 0;
   font-size: 18px;
   border-left: 1px solid #dcdcdc;
-  padding: 9px 12px;
+  padding: 6% 5%;
+  height: 100%;
 }
 
 

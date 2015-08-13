@@ -1,4 +1,3 @@
-/* Pink */
 /* line 2, ../sass/_typography.scss */
 p,
 ul,
@@ -704,9 +703,10 @@ input::-moz-focus-inner {
   line-height: 28px;
   padding: 0 10px;
   -moz-appearance: window;
+  height: 100%;
   /*   padding: 6px 0 0 3px; */ }
 
-/* line 101, ../sass/_forms.scss */
+/* line 102, ../sass/_forms.scss */
 .fancy-select, .fancy-select-lg {
   margin-right: 10px;
   padding: 0;
@@ -719,7 +719,7 @@ input::-moz-focus-inner {
   display: inline-block;
   position: relative; }
 
-/* line 113, ../sass/_forms.scss */
+/* line 114, ../sass/_forms.scss */
 .fancy-select i, .fancy-select-lg i {
   z-index: 1;
   position: absolute;
@@ -727,9 +727,10 @@ input::-moz-focus-inner {
   top: 0;
   font-size: 18px;
   border-left: 1px solid #dcdcdc;
-  padding: 9px 12px; }
+  padding: 6% 5%;
+  height: 100%; }
 
-/* line 125, ../sass/_forms.scss */
+/* line 127, ../sass/_forms.scss */
 button,
 .button,
 input[type=button],
@@ -751,7 +752,7 @@ button[type=submit],
   padding: 10px 20px 10px 20px;
   text-decoration: none; }
 
-/* line 147, ../sass/_forms.scss */
+/* line 149, ../sass/_forms.scss */
 .button.btn.btn-secondary,
 .btn.btn-secondary,
 .btn-secondary {
@@ -763,27 +764,27 @@ button[type=submit],
   background-image: linear-gradient(to bottom, #b6b6b6, #838383);
   text-shadow: 0px -1px 0px #b6b6b6; }
 
-/* line 159, ../sass/_forms.scss */
+/* line 161, ../sass/_forms.scss */
 button[type=submit].btn-lg, .btn.btn-lg {
   padding: 10px 16px;
   font-size: 105%; }
 
-/* line 164, ../sass/_forms.scss */
+/* line 166, ../sass/_forms.scss */
 .btn-hello {
   background-color: #7ecdf4;
   border-bottom: 1px solid #20a8ec; }
 
-/* line 168, ../sass/_forms.scss */
+/* line 170, ../sass/_forms.scss */
 .btn-hello:hover {
   background-color: #96d6f6;
   border-bottom: 1px solid #4fbaf0; }
 
-/* line 173, ../sass/_forms.scss */
+/* line 175, ../sass/_forms.scss */
 btn.focus, .btn:focus, .btn:hover, .hs-form .hs-button:focus, .hs-form .hs-button:hover {
   color: white;
   font-weight: bold; }
 
-/* line 178, ../sass/_forms.scss */
+/* line 180, ../sass/_forms.scss */
 input[type=button]:hover,
 input[type=submit]:hover,
 button:hover,
@@ -797,7 +798,7 @@ button:hover,
   background-image: linear-gradient(to bottom, #e82a79, #e82a79);
   text-decoration: none; }
 
-/* line 191, ../sass/_forms.scss */
+/* line 193, ../sass/_forms.scss */
 .button.btn.btn-secondary:hover,
 .btn.btn-secondary:hover,
 .btn-secondary:hover {
@@ -809,61 +810,61 @@ button:hover,
   background-image: linear-gradient(to bottom, #838383, #838383);
   text-decoration: none; }
 
-/* line 202, ../sass/_forms.scss */
+/* line 204, ../sass/_forms.scss */
 .button.medium,
 button.medium {
   font-size: 16px;
   padding: 0 24px;
   height: 40px; }
 
-/* line 208, ../sass/_forms.scss */
+/* line 210, ../sass/_forms.scss */
 .button.large,
 button.large {
   font-size: 18px;
   height: 50px; }
 
-/* line 213, ../sass/_forms.scss */
+/* line 215, ../sass/_forms.scss */
 .total .button.large {
   padding: 0 35px; }
 
 /* Button bootstrap overrides */
-/* line 217, ../sass/_forms.scss */
+/* line 219, ../sass/_forms.scss */
 .btn-group-lg > .btn, .btn-lg {
   border-radius: 3px; }
 
-/* line 220, ../sass/_forms.scss */
+/* line 222, ../sass/_forms.scss */
 .input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child > .btn-group:not(:first-child) > .btn, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   font-size: 15px; }
 
-/* line 226, ../sass/_forms.scss */
+/* line 228, ../sass/_forms.scss */
 .button.gainsboro,
 button.gainsboro {
   color: #696969;
   border-color: #a9a9a9; }
 
-/* line 231, ../sass/_forms.scss */
+/* line 233, ../sass/_forms.scss */
 .button.darkgray,
 button.darkgray {
   color: #fff;
   border-color: #696969; }
 
-/* line 236, ../sass/_forms.scss */
+/* line 238, ../sass/_forms.scss */
 .button .add-on-left,
 button .add-on-left {
   padding: 5px 11px 5px 0;
   margin-right: 10px;
   border-right: 1px solid #fff; }
 
-/* line 242, ../sass/_forms.scss */
+/* line 244, ../sass/_forms.scss */
 .button .add-on-left i,
 button .add-on-left i {
   position: relative;
   top: 2px;
   font-size: 15px; }
 
-/* line 249, ../sass/_forms.scss */
+/* line 251, ../sass/_forms.scss */
 .form-stacked input[type="text"],
 .form-stacked input[type="password"],
 .form-stacked input[type="email"],
@@ -883,7 +884,7 @@ button .add-on-left i {
 .form-stacked textarea {
   display: block; }
 
-/* line 268, ../sass/_forms.scss */
+/* line 270, ../sass/_forms.scss */
 input {
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -892,7 +893,7 @@ input {
   min-height: 20px;
   padding: 0 10px; }
 
-/* line 276, ../sass/_forms.scss */
+/* line 278, ../sass/_forms.scss */
 input.form-control {
   background: #efefef; }
 
@@ -903,22 +904,22 @@ input.form-control {
 }
 */
 /* ~~~ Hubspot Stuff ~~~ */
-/* line 289, ../sass/_forms.scss */
+/* line 291, ../sass/_forms.scss */
 .hs-input {
   color: #a9a9a9;
   font-size: 14px;
   font-weight: 400;
   line-height: 2.25em; }
 
-/* line 296, ../sass/_forms.scss */
+/* line 298, ../sass/_forms.scss */
 .hbspt-form li {
   list-style: none; }
 
-/* line 299, ../sass/_forms.scss */
+/* line 301, ../sass/_forms.scss */
 .hbspt-form li input {
   margin-right: 10px; }
 
-/* line 302, ../sass/_forms.scss */
+/* line 304, ../sass/_forms.scss */
 textarea.hs-input {
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -928,7 +929,7 @@ textarea.hs-input {
   padding: 0 10px;
   line-height: 1.5em; }
 
-/* line 311, ../sass/_forms.scss */
+/* line 313, ../sass/_forms.scss */
 .main_content .hbspt-form {
   background: rgba(111, 187, 238, 0.52);
   -moz-border-radius: 5px;
@@ -939,26 +940,26 @@ textarea.hs-input {
   float: left;
   border-bottom: 1px solid #696969; }
 
-/* line 322, ../sass/_forms.scss */
+/* line 324, ../sass/_forms.scss */
 .main_content .hbspt-form .hs-form-field, .main_content .hbspt-form .hs_submit {
   width: 100%;
   margin: 0 auto 30px auto;
   float: none; }
 
-/* line 328, ../sass/_forms.scss */
+/* line 330, ../sass/_forms.scss */
 .hs-form-field {
   margin-bottom: 30px; }
 
-/* line 336, ../sass/_forms.scss */
+/* line 338, ../sass/_forms.scss */
 .hbspt-form .hs-form.stacked .actions {
   margin: 0;
   padding: 0; }
 
-/* line 341, ../sass/_forms.scss */
+/* line 343, ../sass/_forms.scss */
 .hbspt-form .multi-container {
   padding-left: 22px; }
 
-/* line 345, ../sass/_forms.scss */
+/* line 347, ../sass/_forms.scss */
 .product-form input[type=file] {
   float: right;
   width: 283px;
@@ -1202,7 +1203,7 @@ legend {
 .corner-tag {
   width: 75px;
   height: 75px;
-  background: url("/assets/templates/salon-responsive/images/corner-tag-sprite.png");
+  background: url("/assets/templates/salon-responsive/images/CornerTag.svg");
   position: relative;
   top: 74px;
   left: 4px;
@@ -2070,7 +2071,7 @@ li.first.far a {
     height: 100%; }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 991px) {
   /* line 245, ../sass/_mobile.scss */
   .badges .badges-list .badge-product {
     width: 100%; } }
@@ -2650,56 +2651,58 @@ fieldset {
 /* line 425, ../sass/_product.scss */
 .cornersprite {
   display: none;
-  background-image: url("/assets/templates/salon-responsive/images/corner-tag-sprite.png");
+  background-repeat: no-repeat;
+  background-image: url("/assets/templates/salon-responsive/images/CornerTag.svg");
+  background-size: 208px;
   width: 75px;
   height: 75px;
-  background-position: -76px 0;
+  background-position: -115px -23px;
   position: absolute;
   top: -5px;
   left: -5px; }
 
-/* line 435, ../sass/_product.scss */
+/* line 437, ../sass/_product.scss */
 .cornersprite.new {
   background-position: 0 0; }
 
-/* line 438, ../sass/_product.scss */
+/* line 440, ../sass/_product.scss */
 .tweet_button {
   background: url("/assets/templates/salon-responsive/images/tweet-sprite.png");
   width: 56px;
   height: 21px;
   display: inline-block; }
 
-/* line 444, ../sass/_product.scss */
+/* line 446, ../sass/_product.scss */
 .tweet_button:hover {
   background-position: 0 -21px; }
 
-/* line 447, ../sass/_product.scss */
+/* line 449, ../sass/_product.scss */
 .promotions {
   font-size: 14px; }
 
 /* Instagram 3 picture limit */
-/* line 452, ../sass/_product.scss */
+/* line 454, ../sass/_product.scss */
 #instafeed a:nth-child(n+4) {
   display: none; }
 
-/* line 456, ../sass/_product.scss */
+/* line 458, ../sass/_product.scss */
 #instafeed {
   width: 470px; }
 
-/* line 460, ../sass/_product.scss */
+/* line 462, ../sass/_product.scss */
 #instafeed img {
   padding: 0px 2px 0px 2px; }
 
-/* line 464, ../sass/_product.scss */
+/* line 466, ../sass/_product.scss */
 .MagicZoomPlus img {
   max-height: 650px; }
 
 /* Price Drop Feature Styles */
-/* line 471, ../sass/_product.scss */
+/* line 473, ../sass/_product.scss */
 .priceDropTitle {
   margin-bottom: 10px; }
 
-/* line 474, ../sass/_product.scss */
+/* line 476, ../sass/_product.scss */
 .priceDropButton {
   font-size: 16px;
   padding: 0 24px;
@@ -2710,11 +2713,11 @@ fieldset {
   margin-bottom: 10px;
   margin-top: 0px; }
 
-/* line 484, ../sass/_product.scss */
+/* line 486, ../sass/_product.scss */
 .vex-content .hs-form-field label {
   font-size: 18px; }
 
-/* line 487, ../sass/_product.scss */
+/* line 489, ../sass/_product.scss */
 .vex-content .hs-form-field {
   margin-bottom: 15px; }
 

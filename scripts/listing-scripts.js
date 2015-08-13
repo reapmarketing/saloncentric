@@ -280,7 +280,7 @@
 			var badgeslug = v.trim();
 			if( typeof( badgetext[badgeslug] ) != 'undefined' ) {
 //				console.log( badgetext[badgeslug].title );
-				$badges_list.append( '<a href="http://www.standishsalongoods.com/quality#' + badgetext[badgeslug].class + '" style="display:block;color:#696969;" class="badge-product badge-' + badgetext[badgeslug].class + '" title="' + badgetext[badgeslug].tooltip + '"><i></i><div class="badge-text">' + badgetext[badgeslug].title + '</div></a>' );
+				$badges_list.append( '<a href="/quality#' + badgetext[badgeslug].class + '" style="display:block;color:#696969;" class="badge-product badge-' + badgetext[badgeslug].class + '" title="' + badgetext[badgeslug].tooltip + '"><i></i><div class="badge-text">' + badgetext[badgeslug].title + '</div></a>' );
 			}			
 		});
 

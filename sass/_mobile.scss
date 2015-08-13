@@ -241,7 +241,7 @@
 }
 
 /* Custom, iPhone Retina */ 
-@media only screen and (max-width : $xs) {
+@media only screen and (max-width : $medium - 1) {
     .badges .badges-list .badge-product {
 		width: 100%;
 	}

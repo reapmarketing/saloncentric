@@ -7,7 +7,7 @@
 
 
 	Standish.EqualHeights = function() {
-		if ($(window).width() >= 768) {
+		if ($(window).width() >= 992) {
 			function resizeColumns(groups) {
 				$.each(groups, function(index, value) {
 					$(value).matchHeight({
@@ -31,7 +31,7 @@
 	}
 
 	Standish.EqualHeightsMobile = function() {
-		if ($(window).width() <= 768) {
+		if ($(window).width() <= 992 - 1) {
 			function resizeColumns(groups) {
 				$.each(groups, function(index, value) {
 					$(value).matchHeight({
