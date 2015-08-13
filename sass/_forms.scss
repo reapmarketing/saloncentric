@@ -93,7 +93,6 @@ button[type=submit],
   color: white;
   font-size: 14px;
   padding: 10px 20px 10px 20px;
-  border: solid $accent-color 1px;
   text-decoration: none;
 }
 
@@ -268,6 +267,7 @@ textarea.hs-input {
   -khtml-border-radius: 5px;
   border-radius: 5px;
   padding: 15px 40px 40px 40px;
+  float: left;
   border-bottom: 1px solid $primary-gray;
 }
 
