@@ -1,0 +1,258 @@
+<!---------------------- BEGINNING OF CHECKOUT STEP 4 ------>
+<!-- Template: checkout-step4.html -->
+<div class="template" style="display:none" data-template="checkout-step4"></div>
+  <div class="col-md-10">
+    <!--START: 3stepsCheckout-->
+			<!-- [checkout1_step] [checkout2_step] [checkout3_step] <span class="steps_on">[checkout4_step]</span> -->
+    <!--END: 3stepsCheckout-->
+
+      <!--START: CATEGORY_HEADER-->
+        
+        <div class="col-md-12" width="98%">
+					[CONTENT]
+        </div>
+        
+        <!--END: CATEGORY_HEADER-->
+        <div class="col-md-12">
+        
+              <!--START: ordercompleted--> 
+              <!--START: invoicedata-->
+              <p>[checkout4_invoicemessage]</p>
+              <!--END: invoicedata-->
+                <p>[thankyoumessage]</p>
+              <!--END: ordercompleted-->
+
+          <div class="panel-default panel col-md-12 center-block text-center"><h3>Order [invoice-prefix][invoice-number]</h3></div>
+          <!------ START: Confirmation ---------------------------------->
+          <div class="col-md-3 col-sm-4">
+          	<!--start customer info block-->
+          	<!--START: invoicelogo-->
+           <img src="../[invoicelogo]" /><!--END: invoicelogo-->
+           
+           <p>
+               
+              <address>
+                <strong>[company]</strong><br />
+                 [address1] 
+                 <!--START: address2-->[address2] <!--END: address2-->
+                 <br />
+                 [city], [state] [zip]<br />
+              </address>
+              <strong>[invoice_dateordered]</strong> [odate]<br />
+              <strong>[invoice_ordernum]</strong>: [invoice-prefix][invoice-number]<br />
+              <!--START: salesperson-->
+              <strong>Sales Person</strong>: [salesperson]<br />
+            </p>
+            <br />
+            <!--END: salesperson-->
+            <!--end invoice info block--> 
+            <!--start billing block-->
+            <p>
+              <!--START: billing_block-->
+              <strong>[invoice_billingaddress]</strong><br />
+              [ofirstname] [olastname] <br />
+                
+                <!--START: ocompany-->
+                
+                  [ocompany] <br />
+                
+                <!--END: ocompany-->
+                
+                  [oaddress] <br />
+                
+                <!--START: oaddress2-->
+                
+                  [oaddress2] <br />
+                
+                <!--END: oaddress2-->
+                
+                  [ocity], [ostate] [ozip] - [ocountry]<br />
+                
+                <!--START: ophone-->
+                
+                  [ophone]<br />
+                
+                <!--END: ophone--> 
+                <!--START: oemail-->
+                
+                  [oemail]<br />
+            
+            <!--END: oemail-->
+            <!--END: billing_block-->
+            </p>
+            <!--START: vme_billing_block-->
+              <div id="divVme">
+              <img src="assets/templates/common/images/vme_accpt_mark.png">
+             </div>
+            <!--END: vme_billing_block-->
+            <!--end billing block--> 
+            <!--start shipping block-->
+            <br />
+            <p>
+              <strong>[invoice_shippingaddress]</strong><br />
+                
+                
+                  [oshipfirstname] [oshiplastname]<br />
+                
+                <!--START: oshipcompany-->
+                
+                  [oshipcompany]<br />
+                
+                <!--END: oshipcompany-->
+                
+                  [oshipaddress]<br />
+                
+                <!--START: oshipaddress2-->
+                
+                  [oshipaddress2]<br />
+                
+                <!--END: oshipaddress2-->
+                
+                  [oshipcity], [oshipstate] [oshipzip]-[oshipcountry]<br />
+                
+            <!--end shipping block--> 
+            </p>
+          </div>
+                  
+          <div class="col-md-9 col-sm-8">
+            <p>
+            <strong>[invoice_shipmethod]</strong> [oshipmethod] ([totalweight]lbs.)<br />
+            </p>
+          <!--START: trackingcode-->
+            <p>
+            <strong>[invoice_trackingnum]:</strong> <a href="shiptracking.asp?trackingnumber=[trackingcode]" target="new">[trackingcode]</a><br />
+            </p>
+            <!--END: trackingcode--> 
+            <!--START: oshippeddate-->
+            <p>
+              <strong>[invoice_shippeddate]</strong> [oshippeddate]<br />
+            </p>
+            <!--END: oshippeddate--> 
+            <!--START: opaymethod-->
+            <p>
+              <strong>[invoice_paymenttype]</strong> [opaymethod]<br />
+            </p>
+            <!--END: opaymethod--> 
+            <!--START: coupon-->
+            <p>
+              <strong>[invoice_discounts]</strong><br />
+            </p>
+            <p>
+              [invoice_coupon]: [coupon] - [coupondiscount]<br />
+            </p>
+             <!--END: coupon-->
+    
+          
+            <table class="table panel panel-default">
+        
+              <tr class="invoice_title">
+                <td width="15%" height="20" align="left" class="invoice_title"><strong>[shoppingcart_itemid]</strong>
+                <td width="53%" height="20" align="left" class="invoice_title"><strong>[shoppingcart_items]</strong>
+                <td width="1%" class="invoice_title">
+                <td width="9%" height="20" align="center" class="invoice_title"><strong>[shoppingcart_price]</strong>
+                <td width="1%" class="invoice_title">
+                <td width="9%" height="20" align="center"><strong>[shoppingcart_quantity]</strong>
+                <td width="2%">
+                <td width="10%" height="20" align="center"><strong>[shoppingcart_total]</strong>
+              
+              <!--START: items-->
+              <tr class="invoice_table">
+                <td valign="top" align="left" class="item" width="15%">[id]
+                <td valign="top" align="left" class="item" width="53%">[itemname]
+                <td width="1%">
+                <td valign="top" align="right" class="item" width="9%">[unitprice]
+                <td width="1%">
+                <td valign="top" align="center" class="item" width="9%">[numitems]
+                <td width="2%">
+                <td valign="top" align="right" class="item" width="10%">[subtotal] 
+              
+              <!--END: items-->
+            </table>
+            <p class="col-md-6 col-sm-6 col-xs-6">
+              <!--START: invoice_terms--> 
+              <br />
+              [invoice_terms] <br />
+                
+                <!--END: invoice_terms-->
+              <strong>[shoppingcart_subtotal]:</strong><br />
+              [subtotal]<br />
+            
+            
+              <strong>[shoppingcart_discount]:</strong><br />
+              [discounts]<br />
+            
+            <!--START: TAX-->
+            
+              <strong>[shoppingcart_taxes]:</strong><br />
+              [tax]<br />
+            
+            <!--END: TAX--> 
+            <!--START: TAX2-->
+            
+              <strong>[shoppingcart_taxes2]:</strong><br />
+              [tax2]<br />
+            
+            <!--END: TAX2--> 
+            <!--START: TAX3-->
+            
+              <strong>[shoppingcart_taxes3]:</strong><br />
+              [tax3]<br />
+            
+            <!--END: TAX3-->
+            
+              <strong>[shoppingcart_shipping]:</strong><br />
+              [shipping]<br />
+              <hr />
+            
+            
+              <strong>[shoppingcart_total]:</strong><br />
+              [ototal]<br />
+            
+            <!--START: GIFTCERTS-->
+            
+              <strong>[shoppingcart_giftcertificate]:</strong><br />
+              [GIFTCERTS]<br />
+            
+            
+              <strong>[shoppingcart_balance]:</strong><br />
+              [BALANCE]<br />
+            
+            <!--END: GIFTCERTS-->
+            </p>
+          
+          <!------ END: Confirmation ------------------------------------>
+          </div>
+       
+        <!--START: CATEGORY_FOOTER-->
+        
+        <div class="col-md-12">
+          
+            [CONTENT]
+          
+        </div>
+	
+		<!--END: CATEGORY_FOOTER-->
+    
+
+<script type="text/javascript" src="//track.datafeedexperts.com/sales/312"></script>
+<script type="text/javascript">
+		dfe.conversion("[total_noformat]","[invoice-prefix][invoice-number]"); //should be filled by the total sales amount and the order id ([orderid])
+</script>
+
+<!---------------------- END OF CHECKOUT STEP 4 ------>
+
+<!--  Enversa Conversion Tracking Pixel -->
+<script type="text/javascript">
+(function(){var x=null,p,q,m,
+o="10823",
+l="ORDER ID",
+i="TOTAL ORDER AMOUNT",
+c="",
+k="PRODUCT IDs",
+g="PRODUCT QUANTITIES",
+j="UNIT PRICES",
+u="",
+shadditional="";
+try{p=top.document.referer!==""?encodeURIComponent(top.document.referrer.substring(0,512)):""}catch(n){p=document.referrer!==null?document.referrer.toString().substring(0,512):""}try{q=window&&window.top&&document.location&&window.top.location===document.location?document.location:window&&window.top&&window.top.location&&""!==window.top.location?window.top.location:document.location}catch(b){q=document.location}try{m=parent.location.href!==""?encodeURIComponent(parent.location.href.toString().substring(0,512)):""}catch(z){try{m=q!==null?encodeURIComponent(q.toString().substring(0,512)):""}catch(h){m=""}}var A,y=document.createElement("script"),w=null,v=document.getElementsByTagName("script"),t=Number(v.length)-1,r=document.getElementsByTagName("script")[t];if(typeof A==="undefined"){A=Math.floor(Math.random()*100000000000000000)}w="dx.steelhousemedia.com/spx?conv=1&shaid="+o+"&tdr="+p+"&plh="+m+"&cb="+A+"&shoid="+l+"&shoamt="+i+"&shocur="+c+"&shopid="+k+"&shoq="+g+"&shoup="+j+"&shpil="+u+shadditional;y.type="text/javascript";y.src=("https:"===document.location.protocol?"https://":"http://")+w;r.parentNode.insertBefore(y,r)}());
+</script>
+<!-- End of Enversa Conversion Tracking Pixel -->
