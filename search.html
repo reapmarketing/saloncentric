@@ -35,71 +35,30 @@ jQuery( function($) {
       </div>
     <!--END: NO_RESULTS-->
   </div>
-  
-  <!--START: PAGING-->
-  <div class="col-md-12 clearfix">
-    <!-- [category_moreresults] -->
-    <div class="pagination">
-      <!--START: PREV-->
-        <a class="btn first" href="search.asp?keyword=[keyword]&amp;page=[prev]">&laquo;</a>
-        <!-- [category_previouspage] -->
-      <!--END: PREV-->
-      <!--START: PAGES--> 
-        <!--START: FIRST_PAGE--> 
-          <a class="btn" href="search.asp?keyword=[keyword]&amp;page=PAGE">PAGE</a>
-        <!--END: FIRST_PAGE--> 
-        <!--START: PAGES_SELECTED--> 
-          <a class="btn active selected" href="#">PAGE</a>
-        <!--END: PAGES_SELECTED--> 
-        <!--START: PAGES_NOTSELECTED--> 
-          <a class="btn" href="search.asp?keyword=[keyword]&amp;page=PAGE">PAGE</a> 
-        <!--END: PAGES_NOTSELECTED--> 
-        <!--START: LAST_PAGE--> 
-          <a class="btn" href="search.asp?keyword=[keyword]&amp;page=PAGE">PAGE</a> 
-        <!--END: LAST_PAGE--> 
-      <!--END: PAGES--> 
-      <!--START: NEXT--> 
-        <a class="btn last" href="search.asp?keyword=[keyword]&amp;page=[next]">&raquo;</a>
-        <!-- [category_nextpage] -->
-        <div class="clearfix"></div>
-        <!-- <a href="search.asp?viewall=1&cat=[catid]">View All</a> -->
-      <!--END: NEXT-->
-    </div>
-  </div>
-  <!--END: PAGING-->
-  
+
   <div class="row">
     
     <!--START: CATEGORY_ITEMS-->
-    
     <!--START: ITEM_TEMPLATE-->
-      <!--START: product_review-->
-        <!--START: product_review_average-->
-          <!-- <img src="assets/templates/common/images/star[review_average].png" alt="Average Rating" border="0" /> -->
-          <!-- <div class="item">[review_count] Review(s)</div> -->
-        <!--END: product_review_average-->
-      <!--END: product_review-->
-      <div class="col-md-2-2 col-sm-4 col-xs-6 listing">
-        <a href="product.asp?itemid=[catalogid]"><img class="product_thumb" src="thumbnail.asp?file=[THUMBNAIL]&maxx=138&maxy=178" alt="[name]" border="0" /></a>
-        <div class="listing-container">
-          <p class="title"><a href="product.asp?itemid=[catalogid]">[name]</a></p>
-          <!--START: ITEMPRICE-->
-            <!-- [product_yourprice] -->
-            <p class="price nozero">[product_yourprice] [ITEMPRICE]</p>
-          <!--END: ITEMPRICE-->
-          <!--START: SALEPRICE-->
-            <p class="msrp nozero">[product_yourprice] [ITEMPRICE]</p>
-            <!-- <span class="coral-text">[product_onsale]: </span> -->
-            <p class="price bold allcaps"><img src="assets/templates/common/images/on_sale.png" alt="On Sale" style="position: relative;top: 4px;" border="0" /> <span class="nozero">[ITEMSALEPRICE]</span></p>
-          <!--END: SALEPRICE-->
-          <!-- <button>Add to Cart</button> -->
-        </div>
-        <!-- [category_buyitlink] -->
-        <input type="button" value="See Details" onclick="window.location='product.asp?itemid=[catalogid]'" class="button btn hidden-sm hidden-xs">
+    <div class="col-md-2-2 col-sm-4 col-xs-6 listing">
+      <a href="product.asp?itemid=[catalogid]"><img class="product_thumb" src="thumbnail.asp?file=[THUMBNAIL]&maxx=400&maxy=400" alt="[name]" border="0" /></a>
+      <div class="listing-container">
+        <p class="title"><a href="product.asp?itemid=[catalogid]">[name]</a></p>
+        <!--START: ITEMPRICE-->
+          <p class="price nozero">[product_yourprice] [ITEMPRICE]</p>
+        <!--END: ITEMPRICE-->
+        <!--START: SALEPRICE-->
+          <p class="msrp nozero">[product_yourprice] [ITEMPRICE]</p>
+          <p class="price bold allcaps"><img src="assets/templates/common/images/on_sale.png" alt="On Sale" style="position: relative;top: 4px;" border="0" /> <span class="nozero">[ITEMSALEPRICE]</span></p>
+        <!--END: SALEPRICE-->
       </div>
+      <input type="button" value="See Details" onclick="window.location='product.asp?itemid=[catalogid]'" class="button btn hidden-sm hidden-xs">
+    </div>
     <!--END: ITEM_TEMPLATE-->
+    <!--END: CATEGORY_ITEMS-->
   </div>
-  <!--END: CATEGORY_ITEMS-->
+  
+
   <!--START: PAGING-->
     
   <div class="col-md-12 clearfix">
@@ -135,7 +94,7 @@ jQuery( function($) {
   <!--START: SEARCH_PAGES-->
   
   <div class="col-md-12 clearfix">
-      <hr />  
+      <hr />
       <h3>&nbsp;[Search_Header-pages]</h3>
       <!--START: SEARCH_PAGES_FORMAT-->
       <p>

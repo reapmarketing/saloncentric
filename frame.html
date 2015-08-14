@@ -41,8 +41,7 @@
 
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" />
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="assets/templates/[template]/style/main.css?cachebuster=201500478" />
-
+		<link rel="stylesheet" href="assets/templates/[template]/style/main.css?cachebuster=2015789453624" />
 
 		<link rel="stylesheet" href="assets/templates/common/quicksearch/quicksearch.css" /> 
 
@@ -192,7 +191,7 @@
 
 										<div class="col-sm-8 col-xs-7">
 											<div class="pull-right">
-												<a class="inline" href="/view_cart.asp"><i class="fa fa-shopping-cart fa-2x"></i><span>[ITEMSINCART]</span></a>
+												<a class="inline" href="/view_cart.asp"><i class="fa fa-shopping-cart fa-2x"></i><span class="h4 padd-left">[ITEMSINCART]</span></a>
 												<a class="inline" href="/myaccount.asp?secure"><i class="fa fa-user fa-2x"></i></a>
 												<a class="inline toggle-navigation"><i class="fa fa-bars fa-2x"></i></a>
 											</div>
@@ -240,7 +239,7 @@
 				<div class="main-navigation">
 					<ul class="nav-menu">
 						<li class="has-submenu subcategories"><a class="menu-open" href="#">Brands</a>
-							<ul class="submenu hidden menu mobile-menu">
+							<ul class="column submenu hidden menu mobile-menu">
 								<li><a href="/adjust-a-sink">Adjust-a-Sink <span class="hidden-sm hidden-xs"> <i class="icon icon-star"></i> New</span> </a></li>
 								<li><a href="/belava-pedicure-equipment">Belava</a></li>
 								<li><a href="/continuum-pedicure-spas">Continuum</a></li>
@@ -254,7 +253,7 @@
 							</ul>
 						</li>
 						<li class="has-submenu subcategories"><a class="menu-open" href="#">Equipment</a>
-							<ul class="submenu hidden menu mobile-menu">
+							<ul class="column submenu hidden menu mobile-menu">
 								<li class="has-submenu"> <a class="category-header" href="/hair-salon-chairs">Chairs</a>
 									<ul class="submenu hidden-sm hidden-xs">
 										<li><a href="/salon-styling-chairs">Styling Chairs</a></li>
@@ -306,8 +305,8 @@
 							</ul>            
 						</li>
 						<li><a href="/quality">Quality</a></li>
-						<li class="has-submenu"><a href="#">About</a></li>
-							<ul class="submenu">
+						<li class="has-submenu subcategories"><a class="menu-open" href="#">About</a>
+							<ul class="column submenu hidden menu mobile-menu">
 								<li class="submenu"> <a class="category-header" href="/why-standish">Why Standish?</a></li>
 								<li class="submenu"> <a class="category-header" href="/warranty">Warranty</a></li>
 								<li class="submenu"> <a class="category-header" href="/returns">Return Policy</a></li>
@@ -340,19 +339,7 @@
 
 	<!-- End of Header -->
 		<section class="container" id="prime-content">
-		
-				
-				<!--
-						<div class="col-md-8 filter">
-								Filters Go Here if Possible
-						</div>
-						<div class="grid_4 search">
-								<form method="get" name="searchForm" action="search.asp">
-										<input type="text" size="25" name="keyword" id="searchlight" class="search-text" onfocus="javascript:if (document.searchForm.keyword.value=='search by keyword') {document.searchForm.keyword.value='';};" onblur="if(this.value.length == 0) this.value = 'search by keyword'" value="search by keyword">
-										<button name="search" class="search-button gainsboro"><i class="icon-search icon-flip-horizontal"></i></button>
-								</form>
-						</div>
-				-->
+
 				<!--START: LEFT BAR-->
 				<div class="col-md-2 left-bar hidden-xs hidden-sm" id="category-sidebar">
 					
@@ -401,10 +388,10 @@
 
 	<footer>
 			<div class="container-fluid footer-content padd-top padd-bottom-10">
-				<div class="col-md-3 col-sm-4">
+				<div class="col-md-3 col-sm-4 partners">
 					<h5>Trusted Partners</h5>
 					<div class="col-md-12">
-						<div><img src="assets/templates/[template]/images/standish_salon_goods.png" height="56"/></div>
+						<div><img src="assets/templates/[template]/images/standish_salon_goods.png" style="height: 44px;"/></div>
 					</div>
 					<div class="col-md-12">
 						<div><img src="assets/templates/[template]/images/Keamark.png" height="56" /></div>
@@ -422,36 +409,36 @@
 						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4">
 							<h6 class="subheader">Accredited: </h6>
 							<a target="_blank" id="bbblink" class="ruhzbus" href="https://www.bbb.org/dallas/business-reviews/beauty-supplies-and-equipment/standish-salon-goods-in-dallas-tx-90402331#bbblogo" title="Standish Salon Goods, LLC, Beauty Supplies & Equipment, Dallas, TX" style="display: block;position: relative;overflow: hidden; width: 100px; height: 45px; margin: 0px; padding: 0px;">
-							<img style="padding: 0px; border: none;" id="bbblinkimg" src="https://seal-dallas.bbb.org/logo/ruhzbus/standish-salon-goods-90402331.png" alt="Standish Salon Goods, LLC, Beauty Supplies & Equipment, Dallas, TX"></a><script type="text/javascript">var bbbprotocol = ( ("https:" == document.location.protocol) ? "https://" : "http://" ); document.write(unescape("%3Cscript src='" + bbbprotocol + 'seal-dallas.bbb.org' + unescape('%2Flogo%2Fstandish-salon-goods-90402331.js') + "' type='text/javascript'%3E%3C/script%3E"));</script>
+							<img class="footer-creds" style="padding: 0px; border: none;" id="bbblinkimg" src="https://seal-dallas.bbb.org/logo/ruhzbus/standish-salon-goods-90402331.png" alt="Standish Salon Goods, LLC, Beauty Supplies & Equipment, Dallas, TX"></a><script type="text/javascript">var bbbprotocol = ( ("https:" == document.location.protocol) ? "https://" : "http://" ); document.write(unescape("%3Cscript src='" + bbbprotocol + 'seal-dallas.bbb.org' + unescape('%2Flogo%2Fstandish-salon-goods-90402331.js') + "' type='text/javascript'%3E%3C/script%3E"));</script>
 						</div>
-						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4">
+						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4 center-block text-center">
 							<a href="https://probeauty.org/">
 								<h6 class="subheader">Industry Recognized: </h6>
-								<img class="img-responsive" src="/assets/templates/[template]/images/PBA.png">
+								<img class="img-responsive center-block footer-creds" src="/assets/templates/[template]/images/PBA.png">
 							</a>
 						</div>
-						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4">
+						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4 center-block text-center">
 							<a href="http://interestingcompanies.com/portfolio/standish-salon-goods/">
 								<h6 class="subheader">Award Winning: </h6>
-								<img class="img-responsive" src="/assets/templates/[template]/images/IC.png">
+								<img class="img-responsive center-block footer-creds" src="/assets/templates/[template]/images/IC.png">
 							</a>
 						</div>
-						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4">
+						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4 center-block text-center">
 							<a href="">
 								<h6 class="subheader">As Seen On: </h6>
-								<img class="img-responsive" src="/assets/templates/[template]/images/Bravo-tv-logo.png">
+								<img class="img-responsive center-block footer-creds" src="/assets/templates/[template]/images/Bravo-tv-logo.png">
 							</a>
 						</div>
-						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4">
+						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4 center-block text-center">
 							<a href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&dn=www.standishsalongoods.com&lang=en">
 								<h6 class="subheader">Secure Browsing: </h6>
-								<img class="img-responsive" src="/assets/templates/[template]/images/New_Norton_Logo_White.png">
+								<img class="img-responsive center-block footer-creds" src="/assets/templates/[template]/images/New_Norton_Logo_White.png">
 							</a>
 						</div>
-						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4">
+						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4 center-block text-center">
 							<a href="/american-made-salon-furniture">
 								<h6 class="subheader">U.S. Items: </h6>
-								<img class="img-responsive" src="/assets/templates/[template]/images/made-usa-badge-white.png">
+								<img class="img-responsive center-block footer-creds" src="/assets/templates/[template]/images/made-usa-badge-white.png">
 							</a>
 						</div>
 						<div class="footer-logo-sm col-md-2-2 col-sm-4 col-xs-4">

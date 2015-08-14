@@ -37,9 +37,6 @@
 	total_interest = Math.round( ( yearly_interest * term_years ) * 100 ) / 100;
 	payment = ( Math.round( ( ( total_interest + price ) / ( term_years * 12 ) ) * 100 ) / 100 ).toFixed(2);
 	// console.log( "PRICE: ", price, yearly_interest, total_interest, payment );
-	if( price > 1000 ) {
-		$(".pricebox .left-price").append('<a href="/financing.html" class="financing">* or as low as $' + payment + '/month</a>');
-	}
 
 	// ---- IMAGE COLOR CHANGING FEATURE ---- //
 	color_list = [];

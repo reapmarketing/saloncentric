@@ -54,6 +54,8 @@
 					var el = this;
 					$(el).on('click', '.sidr-class-menu-open', function(e) {
 						e.preventDefault();
+
+						$(this).toggleClass('open-caret');
 						$(this).siblings('.sidr-class-mobile-menu').toggle();
 						$(el).siblings().children('.sidr-class-mobile-menu').hide();
 					});

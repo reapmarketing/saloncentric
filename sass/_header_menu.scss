@@ -100,7 +100,6 @@ button.cart i {
   min-width: 170px;
   line-height: 16px;
   font-size: 14px;
-  text-transform: uppercase;
   letter-spacing: 1px;
   color: $secondary-color;
   padding: 4px 25px;
@@ -116,7 +115,7 @@ button.cart i {
 }
 .navigation ul li:hover > ul,
 ul.nav-menu li:hover > div ul {
-  display: block;
+  display: block !important;
 }
 .navigation li li.allcaps {
 	a {

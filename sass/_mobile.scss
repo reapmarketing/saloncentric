@@ -94,12 +94,31 @@
 }
 
 
+#mobile-open {
+	a.sidr-class-menu-open {
+		&:after {
+			content: "\f0da";
+			padding-left: 15px;
+			font: normal normal normal 14px/1 FontAwesome;
+		}
+	}
+	a.sidr-class-menu-open.open-caret {
+		&:after {
+			content: "\f0d7";
+		}
+	}
+}
+
+
 // mobile menu tablet icons
 @media only screen and (min-width:$xs + 1) and (max-width:$medium - 1) {
 	#mobile-menu {
 		i.fa {font-size: 3em;}
 	}
 }
+
+
+
 
 @media only screen and (max-width: 61.9375em) {
 	.toggle-navigation {
@@ -113,6 +132,15 @@
 	}
 }
 
+@media only screen and (max-width : $xs) {
+	.buttons-order {
+		.button, .btn, input {
+			width: 100%;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+	}
+}
 @media only screen and (max-width : $tablet) {
 	.fancy-select,
 	.product-form .fancy-select,
@@ -127,6 +155,8 @@
 			height: 3.2rem;
 		}
 	}
+
+
 }
 
 
