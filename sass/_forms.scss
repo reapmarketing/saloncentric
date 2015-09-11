@@ -118,7 +118,7 @@ input::-moz-focus-inner {
   top: 0;
   font-size: 18px;
   border-left: 1px solid #dcdcdc;
-  padding: 6% 5%;
+  padding: 2% 3%;
   height: 100%;
 }
 
@@ -164,12 +164,13 @@ button[type=submit].btn-lg, .btn.btn-lg {
 }
 
 .btn-hello {
-  background-color: darken($accent-color, 10%);
-  border-bottom: 1px solid darken($accent-color, 30%);
+  background-color: white;
+  border-bottom: 1px solid darken(white, 20%);
 }
 .btn-hello:hover {
-  background-color: darken($accent-color, 5%);
-  border-bottom: 1px solid darken($accent-color, 20%);
+  color: $primary-gray;
+  background-color: white;
+  border-bottom: 1px solid darken(white, 20%);
 }
 
 btn.focus, .btn:focus, .btn:hover, .hs-form .hs-button:focus, .hs-form .hs-button:hover {

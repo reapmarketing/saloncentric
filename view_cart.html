@@ -248,13 +248,13 @@ jQuery(function(){
             </select>
             <input type="button" class="btn standishgreen" value="Clear" onClick="document.shipquote.action='shipquote.asp?action=clean';document.shipquote.submit();" onMouseOver="this.className='btn_over'" onMouseOut="this.className='btn'" id="Button2" name="Button5">
         <!--END: viewcart_ship-->
-        
-        
+
+
         <!--END: ShipQuoteInternational-->
-    
-        <!--START: savecart--><input type="button" value="[viewcart_save-cart]" onclick="document.location.href='myaccount.asp?action=save_cart';" class="btn" onMouseOver="this.className='btn_over'" onMouseOut="this.className='btn'" id="Button3" name="Button6"><!--END: savecart-->
-    
-    
+
+        <!--START: savecart-->
+        <!-- <input type="button" value="[viewcart_save-cart]" onclick="document.location.href='myaccount.asp?action=save_cart';" class="btn" onMouseOver="this.className='btn_over'" onMouseOut="this.className='btn'" id="Button3" name="Button6">--><!--END: savecart-->
+
         <!--START: INTERNATIONAL_CHECKOUT-->
         - Outside the U.S. - 
         <a href="internationalcheckout.asp"><img src="assets/templates/common/images/international_checkout.gif" border="0" />
@@ -392,7 +392,7 @@ jQuery(function(){
           <p>
           <strong class="dimgray-text">[viewcart_coupon-header]</strong>
           </p>
-          <div class="input-group col-md-4 pull-left">
+          <div class="input-group col-md-4 col-sm-4 pull-left">
             <input type="text" name="coupon_code" class="form-control txtBoxStyle">
             <span class="input-group-btn">
               <input type="submit" class="button btn" value="Go!" id="Submit1" name="Submit1" />
