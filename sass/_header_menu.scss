@@ -38,7 +38,6 @@ button.cart i {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  border-left: 1px solid $primary-gray;
 }
 .navigation li {
   display: inline-block;
@@ -64,15 +63,38 @@ button.cart i {
   /* padding: 0 14px; */
   text-decoration: none;
 }
-.navigation ul ul {
-/*   font-weight: 700; */
-  background-color: $primary-gray;
-  display: none;
-  float: left;
+
+.navigation {
+  min-height: 61px;
+}
+ul.column.submenu.hidden.menu.mobile-menu {
+  left: -5px;
+}
+ul.column .column.col-md-3.col1:first-of-type {
+    padding-left: 0;
+}
+.navigation ul.nav-menu ul.column.submenu.equipment {
+  width: 600px;
+}
+.navigation ul.nav-menu ul.column.submenu {
+  padding: 10px 0;
+  top: 100%;
+}
+.navigation ul.nav-menu, .navigation ul.nav-menu ul.column.submenu {
+  position: absolute;
+  background-color: #4d4d4d;
+  z-index: 10;
+}
+.navigation > ul {
   position: absolute;
   top: 60px;
   padding: 21px 0 20px 0;
-  left: 0;
+}
+.navigation > ul > ul {
+/*   font-weight: 700; */
+  background-color: $primary-gray;
+  float: left;
+  position: absolute;
   z-index: 19;
   width: 250px;
 }
@@ -82,9 +104,8 @@ button.cart i {
   margin: 0;
   line-height: 20px;
 }
-.navigation ul ul ul {
-  left: 100%;
-  top: -20px;
+.navigation ul > ul > ul {
+
   background: #5e5e5e;
   font-weight: normal;
 }

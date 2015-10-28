@@ -6,14 +6,16 @@
 
 
 ;(function($) {
-	
+
 	document.addEventListener('DOMContentLoaded', function() {
-	hbspt.forms.create({
-		portalId: '239485',
-    	formId: 'd863658c-58f3-48a5-9701-dd75806746b3',
-		css: '',
-		target: '#newsletter-target',
-	}).done(function() {
+		/*hbspt.forms.create({
+			portalId: '239485',
+	    	formId: 'd863658c-58f3-48a5-9701-dd75806746b3',
+			css: '',
+			target: '#newsletter-target',
+		})
+	
+	.done(function() {
 		$('.hs-form input[type=email]').each( function () {
 				if( $(this).val() == 'Enter Email' ) {
 					var element = $(this);
@@ -22,8 +24,8 @@
 					});
 				}
 			});
+	});*/
 	});
-});
 
 	
 } (jQuery)) 

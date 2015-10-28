@@ -101,6 +101,8 @@
 				hbar_slug = $('.custom_bar').first().data('bar');
 			}
 			
+
+			/*
 			var url = "//json.stand.sh/standish/data.json";
 			
 			// Hellobar code for getting external data
@@ -115,5 +117,5 @@
 				} else {
 					$('.hbar_content').html( data['default'] );
 				}
-			});
+			});*/
 		});
